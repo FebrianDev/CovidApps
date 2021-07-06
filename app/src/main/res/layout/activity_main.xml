@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="#181824"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Statistik\nCovid-19"
+        android:textColor="#FFFAFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_total_kasus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Total Kasus"
+        android:textColor="#FFFAFF"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_light_italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title" />
+
+    <TextView
+        android:id="@+id/total_kasus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="1.234"
+        android:textColor="#FFFAFF"
+        android:textSize="42sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_total_kasus"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tambah_kasus"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="(+70)"-->
+<!--        android:textColor="#FFFAFF"-->
+<!--        android:textSize="24sp"-->
+<!--        android:fontFamily="@font/poppins_medium"-->
+<!--        app:layout_constraintStart_toEndOf="@id/total_kasus"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/total_kasus"/>-->
+
+    <TextView
+        android:id="@+id/tgl_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Terakhir Update"
+        android:layout_marginTop="0dp"
+        android:textColor="#FFFAFF"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_kasus" />
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Rabu, 21 Juni 2021"
+        android:textColor="#FFFAFF"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgl_update" />
+    <TextView
+        android:id="@+id/text_provinsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provinsi"
+        android:textColor="#00FFCD"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_light"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:entries="@array/list"
+        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+        />
+
+    <TextView
+        android:id="@+id/provinsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jawa Timur"
+        android:textColor="#FFFAFF"
+        android:textSize="12sp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintTop_toBottomOf="@+id/text_provinsi"
+        app:layout_constraintEnd_toEndOf="@+id/spinner" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_positif"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red_custom"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provinsi">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Positif"
+                android:textColor="#FFFAFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/positif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="100 (+10)"
+                android:textColor="#FFFAFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sembuh"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/green_custom"
+        app:cardCornerRadius="8dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/card_positif"
+        app:layout_constraintStart_toStartOf="@+id/card_positif"
+        app:layout_constraintTop_toBottomOf="@+id/card_positif">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Sembuh"
+                android:textColor="#FFFAFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="200 (+10)"
+                android:textColor="#FFFAFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_meninggal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/gray_custom"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/card_sembuh"
+        app:layout_constraintStart_toStartOf="@+id/card_sembuh"
+        app:layout_constraintTop_toBottomOf="@+id/card_sembuh">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Meninggal"
+                android:textColor="#FFFAFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/meninggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="80 (+5)"
+                android:textColor="#FFFAFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#FFFAFF"
+        app:cardCornerRadius="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_meninggal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Kasus Harian"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="24dp"
+                android:orientation="horizontal">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_width="0dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="2"
+                    android:layout_height="220dp"
+                  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat\nBerdasarkan"
+                        android:textSize="10sp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:layout_marginTop="16dp"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="2dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFAFF"
+                        android:background="@drawable/bg_total"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="2dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red_custom"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sembuh"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="2dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_custom"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meninggal"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="2dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_custom"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Per Daerah"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        app:itemTextColor="@color/selected_bottom_navigation"
+        app:itemIconTint="@color/selected_bottom_navigation"
+        app:itemBackground="@drawable/state_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
