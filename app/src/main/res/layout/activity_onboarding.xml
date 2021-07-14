@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#39375B"
-    tools:context=".MainActivity">
+    tools:context=".screen.OnboardingActivity">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
@@ -25,7 +25,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="32dp"
-        app:piv_unselectedColor="@color/white"
+        app:piv_unselectedColor="#CEF1F1F1"
         />
 
 </RelativeLayout>

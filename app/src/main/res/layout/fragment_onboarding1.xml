@@ -18,7 +18,6 @@
             android:layout_marginTop="32dp"
             android:src="@drawable/onboard1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.531"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -31,8 +30,8 @@
             android:text="Hai! Selamat Datang\n
 di nama aplikasi!"
             android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textStyle="bold"
+            android:textSize="28sp"
+            android:fontFamily="@font/montserrat_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,9 +43,9 @@ di nama aplikasi!"
             android:gravity="center"
             android:text="Aku nama maskot yang
 akan memandumu!"
+            android:fontFamily="@font/montserrat_bold"
             android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textStyle="bold"
+            android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />

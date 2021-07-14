@@ -1,4 +1,4 @@
-package com.febrian.covidapp
+package com.febrian.covidapp.home
 
 data class DataResponse(
     val provinsi: String?,

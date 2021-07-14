@@ -7,6 +7,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class ViewPagerAdapter(fragmentManager : FragmentManager) : FragmentPagerAdapter(fragmentManager) {
 
+    var position : Int? = 0
+
     val list = listOf(
         Onboarding1(),
         OnBoarding2(),
@@ -21,6 +23,12 @@ class ViewPagerAdapter(fragmentManager : FragmentManager) : FragmentPagerAdapter
     }
 
     override fun getItem(position: Int): Fragment {
+        this.position = position
         return list[position]
+    }
+
+    @JvmName("getPosition1")
+    fun getPosition() : Int? {
+        return position
     }
 }

@@ -3,12 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".news.fragment.TrendingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+       >
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        app:queryHint="Search Here"
+        app:searchIcon="@drawable/ic_baseline_search_24"
+        app:searchHintIcon="@drawable/ic_baseline_search_24"
+        app:defaultQueryHint="Search Here"
+        android:background="@drawable/bg_seacrh"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:layout_height="42dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_news"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:visibility="gone"
+        tools:listitem="@layout/item_news" />
 
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+            <include layout="@layout/shimmer_item_news" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </LinearLayout>
 </FrameLayout>

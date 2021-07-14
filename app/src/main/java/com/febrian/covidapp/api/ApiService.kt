@@ -22,4 +22,13 @@ object ApiService {
 
         retrofit.create(ApiEndPoint::class.java)
     }
+
+    val globalDataCovid: ApiEndPoint by lazy {
+        val retrofit = Retrofit.Builder()
+            .baseUrl(Constant.BASE_URL_GLOBAL_DATA_COVID)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        retrofit.create(ApiEndPoint::class.java)
+    }
 }

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1CDD7"
+    tools:context=".home.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#39375B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistik\n
+COVID-19"
+        android:textSize="28sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/view"/>
+        
+        <LinearLayout
+            android:padding="16dp"
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_atas"
+            android:layout_marginTop="24dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Kasus"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingExtra="0dp"
+                android:fontFamily="@font/montserrat_medium"/>
+                <TextView
+                    android:id="@+id/total_kasus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.222.7625"
+                    android:lineSpacingExtra="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat_bold"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            >
+            <LinearLayout
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:id="@+id/negara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dki Jakarta"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/montserrat_medium"
+               />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_gravity="end"
+                android:entries="@array/list"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 July 2021"
+                android:layout_marginEnd="24dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/montserrat_light"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_bawah"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/line1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/v_red"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_atas_merah"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chart" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/ll_red"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_bawah_merah"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/v_red" >
+                    <TextView
+                        android:id="@+id/positif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:textColor="@color/red_custom"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_green"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_atas_hijau"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_red" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sembuh"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_bawah_hijau"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/v_green" >
+                    <TextView
+                        android:id="@+id/sembuh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:textColor="@color/green_custom"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_blue"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_atas_biru"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chart"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dirawat"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_brown"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_bawah_biru"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/v_blue" >
+                    <TextView
+                        android:id="@+id/aktif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:textColor="@color/blue_custom"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_brown"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_atas_abu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_brown"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meninggal"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_bawah_abu"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/v_brown" >
+                    <TextView
+                        android:id="@+id/meninggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:textColor="@color/brown_custom"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_semibold"/>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

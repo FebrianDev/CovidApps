@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter
 import androidx.annotation.RequiresApi
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.ActivityMainBinding
+import com.febrian.covidapp.home.DataResponse
+import com.febrian.covidapp.home.Response
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.data.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
