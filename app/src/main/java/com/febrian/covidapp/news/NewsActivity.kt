@@ -9,6 +9,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.news.fragment.SectionPagerAdapter
 import com.febrian.covidapp.databinding.ActivityNewsBinding
@@ -49,7 +52,6 @@ class NewsActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, BookmarkActivity::class.java)
             startActivity(intent)
         }
-
     }
 
     private fun showRecycleview(q:String){
@@ -85,6 +87,8 @@ class NewsActivity : AppCompatActivity() {
                             listNews.add(data)
                         }
 
+                        setHeadline(listNews)
+
                         val adapter = NewsAdapter(listNews, activity = this@NewsActivity)
                         binding.rvNews.setHasFixedSize(true)
                         binding.rvNews.layoutManager = LinearLayoutManager(applicationContext)
@@ -95,10 +99,52 @@ class NewsActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<NewsResponse>, t: Throwable) {
-
+                binding.shimmerFrameLayout.stopShimmer()
+                binding.shimmerFrameLayout.visibility = View.GONE
+                binding.rvNews.visibility = View.VISIBLE
             }
 
         })
+    }
+
+    override fun onStart() {
+        super.onStart()
+        binding.shimmerFrameLayout.startShimmer()
+        binding.shimmerFrameLayout.visibility = View.VISIBLE
+    }
+
+    override fun onStop() {
+        binding.shimmerFrameLayout.stopShimmer()
+        binding.shimmerFrameLayout.visibility = View.GONE
+        super.onStop()
+    }
+
+    private fun setHeadline(listNews : ArrayList<NewsDataResponse>){
+        binding.titleNews1.text = listNews[0].title.toString()
+        binding.titleNews2.text = listNews[1].title.toString()
+        binding.titleNews3.text = listNews[2].title.toString()
+
+        Glide.with(applicationContext)
+            .load(listNews[0].urlToImage)
+            .apply(
+                RequestOptions.placeholderOf(R.drawable.ic_baseline_refresh_24)
+                    .error(R.drawable.ic_baseline_broken_image_24)
+            )
+            .into(binding.imageNews1)
+        Glide.with(applicationContext)
+            .load(listNews[1].urlToImage)
+            .apply(
+                RequestOptions.placeholderOf(R.drawable.ic_baseline_refresh_24)
+                    .error(R.drawable.ic_baseline_broken_image_24)
+            )
+            .into(binding.imageNews1)
+        Glide.with(applicationContext)
+            .load(listNews[2].urlToImage)
+            .apply(
+                RequestOptions.placeholderOf(R.drawable.ic_baseline_refresh_24)
+                    .error(R.drawable.ic_baseline_broken_image_24)
+            )
+            .into(binding.imageNews1)
     }
 
 }

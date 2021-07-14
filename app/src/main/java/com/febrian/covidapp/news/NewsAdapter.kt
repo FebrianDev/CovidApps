@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ShareCompat
@@ -15,9 +16,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.febrian.covidapp.R
 import com.febrian.covidapp.databinding.ItemNewsBinding
+import com.febrian.covidapp.databinding.ItemNewsTrendingBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.room.EntityNews
 import com.febrian.covidapp.news.room.NewsRoomDatabase
+import com.google.android.material.snackbar.Snackbar
 
 class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var activity: Activity?) :
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
@@ -41,7 +44,7 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
     private var bookmarkCheck: Boolean = false
     private lateinit var sharedPref: SharedPreferences
 
-    inner class ViewHolder(private val binding: ItemNewsBinding) :
+    inner class ViewHolder(private val binding: ItemNewsTrendingBinding) :
         RecyclerView.ViewHolder(binding.root) {
         @SuppressLint("CommitPrefEdits")
         fun bind(news: NewsDataResponse) {
@@ -78,7 +81,7 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
                     Log.d("Check", bookmarkCheck.toString())
                     Log.d("Check", news.title.toString())
                     if (!bookmarkCheck) {
-                        Toast.makeText(itemView.context, "OKE", Toast.LENGTH_LONG).show()
+                        Snackbar.make(itemView, "News success add to bookmark", Snackbar.LENGTH_SHORT).show()
                         Glide.with(itemView.context)
                             .load(R.drawable.ic_baseline_bookmark_24)
                             .into(binding.bookmark)
@@ -90,7 +93,7 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
                         )
                         mRoomDatabase.insert(entityNews)
                     } else {
-                        Toast.makeText(itemView.context, "YA", Toast.LENGTH_LONG).show()
+                        Snackbar.make(itemView, "News success delete from bookmark", Snackbar.LENGTH_SHORT).show()
                         Glide.with(itemView.context).load(R.drawable.ic_baseline_bookmark_border_24)
                             .into(binding.bookmark)
                         val entityNews = EntityNews(
@@ -117,7 +120,7 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsAdapter.ViewHolder {
-        val binding = ItemNewsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemNewsTrendingBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 

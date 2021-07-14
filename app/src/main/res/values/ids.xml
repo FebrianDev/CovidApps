@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="item_container" type="id">item_container</item>
-    <item name="img_poster" type="id">img_poster</item>
-    <item name="tv_item_title" type="id">tv_item_title</item>
-    <item name="tv_item_date" type="id">tv_item_date</item>
-</resources>

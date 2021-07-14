@@ -3,6 +3,7 @@ package com.febrian.covidapp.news
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.febrian.covidapp.databinding.ActivityBookmarkBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
@@ -37,6 +38,10 @@ class BookmarkActivity : AppCompatActivity() {
         binding.rvBookmark.setHasFixedSize(true)
         binding.rvBookmark.layoutManager = LinearLayoutManager(this)
         binding.rvBookmark.adapter = adapter
+
+        binding.shimmerFrameLayout.stopShimmer()
+        binding.shimmerFrameLayout.visibility = View.GONE
+        binding.rvBookmark.visibility = View.VISIBLE
 
     }
 }
