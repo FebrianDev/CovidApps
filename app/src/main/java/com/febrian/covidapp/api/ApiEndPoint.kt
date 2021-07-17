@@ -36,4 +36,9 @@ interface ApiEndPoint {
     @GET("/api")
     fun getGlobalData() : Call<CountryResponse>
 
+    //get data global daily
+    @GET("/api/daily")
+    fun getGlobalDataDaily(
+        @Path("daily") daily : String
+    )
 }

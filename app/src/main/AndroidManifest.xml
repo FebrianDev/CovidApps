@@ -9,26 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidApp">
-        <activity android:name=".news.BookmarkActivity"></activity>
-        <activity android:name=".news.DetailNewsActivity" />
-        <activity android:name=".global.GlobalActivity" />
-        <activity android:name=".home.HomeActivity" />
-        <activity android:name=".screen.OnboardingActivity" />
-        <activity android:name=".screen.SplashScreenActivity" />
-        <activity android:name=".lokal.CovidLocalActivity" />
-        <activity android:name=".news.NewsActivity">
+        <activity android:name=".MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".news.BookmarkActivity" />
+        <activity android:name=".news.DetailNewsActivity" />
+        <activity android:name=".global.GlobalActivity">
+
+        </activity>
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".screen.OnboardingActivity" />
+        <activity android:name=".screen.SplashScreenActivity" />
+        <activity android:name=".lokal.CovidLocalActivity" />
+        <activity android:name=".news.NewsActivity" />
         <activity android:name=".MainActivity" />
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <!-- Allow the app to change the WLAN status. -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 </manifest>

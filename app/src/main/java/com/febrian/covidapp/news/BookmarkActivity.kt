@@ -1,5 +1,6 @@
 package com.febrian.covidapp.news
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -42,6 +43,12 @@ class BookmarkActivity : AppCompatActivity() {
         binding.shimmerFrameLayout.stopShimmer()
         binding.shimmerFrameLayout.visibility = View.GONE
         binding.rvBookmark.visibility = View.VISIBLE
+
+        binding.back.setOnClickListener {
+            val intent = Intent(this@BookmarkActivity, NewsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 }

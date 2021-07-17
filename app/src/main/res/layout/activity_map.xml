@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.hms.maps.TextureMapView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mapview_mapviewdemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    map:cameraTargetLat="48.893478"
+    map:cameraTargetLng="2.334595"
+    map:cameraZoom="10"/>

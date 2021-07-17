@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgColorPrimary"
     tools:context=".news.BookmarkActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ImageButton
         android:id="@+id/btn_bookmarks"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,11 +27,11 @@
         android:text="Covid-19 News"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
-       android:layout_marginStart="24dp"
+        android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:textColor="@color/black_secondary"/>
+        style="@style/TextPrimary"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,15 +55,18 @@
             app:searchIcon="@drawable/ic_baseline_search_24" />
 
         <HorizontalScrollView
+            android:id="@+id/data_headline"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
             <androidx.cardview.widget.CardView
                 style="@style/CardView.Light"
-                android:layout_width="match_parent"
+                android:layout_width="280dp"
                 android:layout_height="180dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginVertical="16dp"
@@ -78,7 +85,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_gravity="bottom"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:background="#43383F51"
                     android:paddingHorizontal="16dp"
                     android:paddingTop="8dp"
@@ -86,18 +93,18 @@
                     <TextView
                         android:layout_alignParentTop="true"
                         android:id="@+id/title_news1"
-                        android:layout_width="200dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Vaksin Covid 90% Efektif"
                         android:textColor="@color/white"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     style="@style/CardView.Light"
-                    android:layout_width="match_parent"
+                    android:layout_width="280dp"
                     android:layout_height="180dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginVertical="16dp"
@@ -116,7 +123,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_gravity="bottom"
-                        android:layout_height="50dp"
+                        android:layout_height="60dp"
                         android:background="#43383F51"
                         android:paddingHorizontal="16dp"
                         android:paddingTop="8dp"
@@ -128,14 +135,14 @@
                             android:layout_height="wrap_content"
                             android:text="Vaksin Covid 90% Efektif"
                             android:textColor="@color/white"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     style="@style/CardView.Light"
-                    android:layout_width="match_parent"
+                    android:layout_width="280dp"
                     android:layout_height="180dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginEnd="24dp"
@@ -155,7 +162,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_gravity="bottom"
-                        android:layout_height="50dp"
+                        android:layout_height="60dp"
                         android:background="#43383F51"
                         android:paddingHorizontal="16dp"
                         android:paddingTop="8dp"
@@ -167,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:text="Vaksin Covid 90% Efektif"
                             android:textColor="@color/white"
-                            android:textSize="14sp"
+                            android:textSize="12sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -176,13 +183,33 @@
 
         </HorizontalScrollView>
 
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <include layout="@layout/shimmer_item_news" />
+
+                <include layout="@layout/shimmer_item_news" />
+
+                <include layout="@layout/shimmer_item_news" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Trending News"
             android:textSize="20sp"
             android:fontFamily="@font/montserrat_semibold"
-            android:textColor="@color/black_primary"
+            style="@style/TextPrimary"
             android:paddingStart="8dp"
             android:layout_margin="16dp"/>
 
@@ -201,7 +228,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/search">
+            app:layout_constraintTop_toBottomOf="@+id/text_title">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -251,5 +278,6 @@
         </com.facebook.shimmer.ShimmerFrameLayout>
 
     </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

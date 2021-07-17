@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:textColor="@color/black_secondary"/>
+        android:textColor="@color/colorPrimary"/>
 
     <LinearLayout
         android:layout_width="match_parent"

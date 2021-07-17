@@ -17,6 +17,7 @@ import com.febrian.covidapp.news.fragment.SectionPagerAdapter
 import com.febrian.covidapp.databinding.ActivityNewsBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.data.NewsResponse
+import com.febrian.covidapp.news.room.NewsRoomDatabase
 import com.google.android.material.tabs.TabLayoutMediator
 import retrofit2.Call
 import retrofit2.Callback
@@ -51,17 +52,21 @@ class NewsActivity : AppCompatActivity() {
         binding.btnBookmarks.setOnClickListener {
             val intent = Intent(applicationContext, BookmarkActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 
     private fun showRecycleview(q:String){
         listNews.clear()
+
+        val mRoomDatabase = NewsRoomDatabase.getDatabase(applicationContext).newsDao()
+
         binding.shimmerFrameLayout.startShimmer()
         binding.shimmerFrameLayout.visibility = View.VISIBLE
-        Log.d("TAG", "Resume")
-        Toast.makeText(applicationContext, "Resume", Toast.LENGTH_LONG).show()
-        Log.d("TAG", listNews.size.toString())
-        binding.shimmerFrameLayout.startShimmer()
+
+        binding.shimmerFrameLayout1.startShimmer()
+        binding.shimmerFrameLayout1.visibility = View.VISIBLE
+
         ApiService.newsCovid.getNews(
             q,
             "health",
@@ -76,9 +81,13 @@ class NewsActivity : AppCompatActivity() {
                     binding.shimmerFrameLayout.visibility = View.GONE
                     binding.rvNews.visibility = View.VISIBLE
 
+                    binding.shimmerFrameLayout1.stopShimmer()
+                    binding.shimmerFrameLayout1.visibility = View.GONE
+                    binding.dataHeadline.visibility = View.VISIBLE
+
                     val articles = response.body()?.articles
                     if(articles != null){
-                        for(i in 0 until articles.size - 1 ) {
+                        for(i in 0 until articles.size ) {
                             val data: NewsDataResponse = NewsDataResponse(
                                 articles[i].title?.split(" - ")?.get(0).toString(),
                                 articles[i].url,
@@ -89,7 +98,15 @@ class NewsActivity : AppCompatActivity() {
 
                         setHeadline(listNews)
 
+
                         val adapter = NewsAdapter(listNews, activity = this@NewsActivity)
+
+                        for (i in 0 until articles.size){
+                            if(mRoomDatabase.newsExist(listNews[i].title.toString())){
+                                adapter.setBookmark(i)
+                            }
+                        }
+
                         binding.rvNews.setHasFixedSize(true)
                         binding.rvNews.layoutManager = LinearLayoutManager(applicationContext)
                         binding.rvNews.adapter = adapter
@@ -99,24 +116,17 @@ class NewsActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<NewsResponse>, t: Throwable) {
+
                 binding.shimmerFrameLayout.stopShimmer()
                 binding.shimmerFrameLayout.visibility = View.GONE
                 binding.rvNews.visibility = View.VISIBLE
+
+                binding.shimmerFrameLayout1.stopShimmer()
+                binding.shimmerFrameLayout1.visibility = View.GONE
+                binding.dataHeadline.visibility = View.VISIBLE
             }
 
         })
-    }
-
-    override fun onStart() {
-        super.onStart()
-        binding.shimmerFrameLayout.startShimmer()
-        binding.shimmerFrameLayout.visibility = View.VISIBLE
-    }
-
-    override fun onStop() {
-        binding.shimmerFrameLayout.stopShimmer()
-        binding.shimmerFrameLayout.visibility = View.GONE
-        super.onStop()
     }
 
     private fun setHeadline(listNews : ArrayList<NewsDataResponse>){
@@ -137,14 +147,14 @@ class NewsActivity : AppCompatActivity() {
                 RequestOptions.placeholderOf(R.drawable.ic_baseline_refresh_24)
                     .error(R.drawable.ic_baseline_broken_image_24)
             )
-            .into(binding.imageNews1)
+            .into(binding.imageNews2)
         Glide.with(applicationContext)
             .load(listNews[2].urlToImage)
             .apply(
                 RequestOptions.placeholderOf(R.drawable.ic_baseline_refresh_24)
                     .error(R.drawable.ic_baseline_broken_image_24)
             )
-            .into(binding.imageNews1)
+            .into(binding.imageNews3)
     }
 
 }

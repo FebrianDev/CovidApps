@@ -26,6 +26,11 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
 
     val myListNews: ArrayList<NewsDataResponse> = ArrayList()
+    val listPosition : ArrayList<Int> = ArrayList()
+
+    fun setBookmark(position : Int){
+        listPosition.add(position)
+    }
 
     init {
         if (listNews != null && listNews.size > 0) {
@@ -67,13 +72,12 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
                     intent.putExtra(KEY_URL, news.url.toString())
                     itemView.context.startActivity(intent)
                 }
-                mRoomDatabase.newsExist(news.title.toString())
-                if (bookmarkCheck) {
-                    Glide.with(itemView.context).load(R.drawable.ic_baseline_bookmark_24)
+
+                for (i in 0 until listPosition.size){
+                    if(adapterPosition == listPosition[i]){
+                        Glide.with(itemView.context).load(R.drawable.ic_baseline_bookmark_24)
                         .into(binding.bookmark)
-                } else {
-                    Glide.with(itemView.context).load(R.drawable.ic_baseline_bookmark_border_24)
-                        .into(binding.bookmark)
+                    }
                 }
 
                 binding.bookmark.setOnClickListener {
@@ -120,7 +124,7 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsAdapter.ViewHolder {
-        val binding = ItemNewsTrendingBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =  ItemNewsTrendingBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
