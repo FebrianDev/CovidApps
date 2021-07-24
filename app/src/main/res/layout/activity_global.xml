@@ -15,7 +15,7 @@
         android:fontFamily="@font/montserrat_semibold"
         android:text="Global COVID-19 Statistics"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+     android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="20dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Today’s Statistics"
         android:textSize="18sp"
@@ -36,9 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_baseline_calendar_today_24"
-        app:layout_constraintBottom_toBottomOf="@+id/tgl"
+        app:layout_constraintTop_toTopOf="@+id/tgl"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/tgl" />
 
     <TextView
@@ -206,7 +205,7 @@
         android:layout_marginTop="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="20dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Weekly Statistics"
         android:textSize="18sp"
@@ -215,64 +214,144 @@
         />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
-        android:layout_marginTop="12dp"
+      android:layout_marginTop="4dp"
         android:layout_marginHorizontal="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_weekly"
         app:layout_constraintEnd_toEndOf="parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_marginTop="4dp"
+        <LinearLayout
+            android:id="@+id/total_case_statistic"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/circle_blue"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/ic_circle_blue"
+                android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_blue"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Case"
-            android:textSize="12sp"
+            android:padding="4dp"
+            android:textSize="11sp"
             android:gravity="center"
-            android:layout_marginHorizontal="8dp"
-            android:paddingVertical="4dp"
-            android:background="@color/black_secondary"
-            android:textColor="@color/white"/>
+            android:textColor="@color/colorPrimary"/>
 
-        <TextView
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirmed_statistic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_yellow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
             android:layout_marginTop="4dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/ic_baseline_brightness_1_24_yellow"
+            android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_yellow"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Confirmed"
-            android:textSize="12sp"
+            android:textSize="11sp"
+        android:padding="4dp"
+            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:layout_marginHorizontal="8dp"
-            android:paddingVertical="4dp"
             android:textColor="@color/colorPrimary"/>
-
-        <TextView
-            android:layout_marginTop="4dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Recovered"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:layout_marginHorizontal="8dp"
-            android:paddingVertical="4dp"
-            android:textColor="@color/colorPrimary"/>
-
-        <TextView
-            android:layout_marginTop="4dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Deceased"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:layout_marginHorizontal="8dp"
-            android:paddingVertical="4dp"
-            android:textColor="@color/colorPrimary"
-          />
     </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recovered_statistic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_green"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/ic_baseline_brightness_1_24_green"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deceased_statistic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_red"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deceased"
+                android:padding="4dp"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:minHeight="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 package com.febrian.covidapp.api
 
-import com.febrian.covidapp.Constant
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

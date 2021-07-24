@@ -1,316 +1,396 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C1CDD7"
-    tools:context=".home.HomeActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#39375B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    tools:context=".global.GlobalActivity">
 
     <TextView
+        android:id="@+id/text_title"
+        style="@style/TextPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Statistik\n
-COVID-19"
-        android:textSize="28sp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:textColor="@color/white"
-        android:gravity="center"
+        android:text="Global Statistics"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintBottom_toBottomOf="@+id/view"/>
-        
-        <LinearLayout
-            android:padding="16dp"
-            android:id="@+id/line1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/bg_atas"
-            android:layout_marginTop="24dp"
-            android:weightSum="2"
-            android:orientation="horizontal"
-            android:layout_marginHorizontal="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/view">
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:hint="Search Here"
+        android:elevation="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/bg_seacrh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:defaultQueryHint="Search Here"
+        app:queryHint="Search Here"
+        app:searchHintIcon="@drawable/ic_baseline_search_24"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/text_today"
+        style="@style/TextPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Today’s Statistics"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintTop_toTopOf="@+id/tgl"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tgl" />
+
+    <TextView
+        android:id="@+id/tgl"
+        style="@style/TextPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text=""
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        app:layout_constraintTop_toBottomOf="@+id/text_today">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="0dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="5"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="220dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_confirmed"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="@color/yellow_primary"
+                app:cardCornerRadius="8dp"
                 >
-            <TextView
-                android:layout_width="wrap_content"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="0dp"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Confirmed"
+                        android:textColor="#FFFAFF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/confirmed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="0"
+                        android:textColor="#FFFAFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_recovered"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Total Kasus"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:lineSpacingExtra="0dp"
-                android:fontFamily="@font/montserrat_medium"/>
-                <TextView
-                    android:id="@+id/total_kasus"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/green_custom"
+                app:cardCornerRadius="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center"
+                >
+
+                <LinearLayout
+                    android:paddingVertical="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2.222.7625"
-                    android:lineSpacingExtra="0dp"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/montserrat_bold"/>
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Recovered"
+                        android:textColor="#FFFAFF"
+                        android:textSize="13sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_gravity="end"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="8dp"
-            >
-            <LinearLayout
-                android:layout_gravity="end"
-                android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/recovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFAFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_deceased"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/red_custom"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                android:layout_marginEnd="4dp"
                 >
-            <TextView
-                android:id="@+id/negara"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dki Jakarta"
-                android:textColor="@color/white"
-                android:textSize="13sp"
-                android:layout_gravity="end"
-                android:fontFamily="@font/montserrat_medium"
-               />
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_gravity="end"
-                android:entries="@array/list"
-                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
-                />
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/text_tgl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7 July 2021"
-                android:layout_marginEnd="24dp"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:layout_gravity="end"
-                android:fontFamily="@font/montserrat_light"
-                />
+                <LinearLayout
+                    android:paddingVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Deceased"
+                        android:textColor="#FFFAFF"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/deceased"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFAFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_weekly"
+        style="@style/TextPrimary"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Weekly Statistics"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_weekly"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/total_case_statistic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/circle_blue"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/ic_circle_blue"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_blue"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Case"
+                android:padding="4dp"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/line2"
-            android:layout_width="match_parent"
+            android:id="@+id/confirmed_statistic"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/bg_bawah"
-            android:orientation="vertical"
-            android:padding="24dp"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginBottom="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/line1">
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_yellow"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/ic_baseline_brightness_1_24_yellow"
+                android:layout_gravity="center"/>
 
-                <com.github.mikephil.charting.charts.PieChart
-                    android:id="@+id/chart"
-                    android:layout_width="match_parent"
-                    android:layout_height="220dp"
-                    android:layout_gravity="start"
-                    android:layout_marginHorizontal="24dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <LinearLayout
-                    android:id="@+id/v_red"
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="24dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_atas_merah"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/chart" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Positif"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@id/ll_red"
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:background="@drawable/bg_bawah_merah"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/v_red" >
-                    <TextView
-                        android:id="@+id/positif"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Positif"
-                        android:textColor="@color/red_custom"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/v_green"
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_atas_hijau"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ll_red" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sembuh"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:background="@drawable/bg_bawah_hijau"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/v_green" >
-                    <TextView
-                        android:id="@+id/sembuh"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Positif"
-                        android:textColor="@color/green_custom"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/v_blue"
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="24dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_atas_biru"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/chart"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dirawat"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll_brown"
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:background="@drawable/bg_bawah_biru"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/v_blue" >
-                    <TextView
-                        android:id="@+id/aktif"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Positif"
-                        android:textColor="@color/blue_custom"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/v_brown"
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_atas_abu"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ll_brown"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Meninggal"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="25dp"
-                    android:gravity="center"
-                    android:background="@drawable/bg_bawah_abu"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/v_brown" >
-                    <TextView
-                        android:id="@+id/meninggal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Positif"
-                        android:textColor="@color/brown_custom"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/montserrat_semibold"/>
-                </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
+            <TextView
+                android:id="@+id/text_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:textSize="11sp"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/recovered_statistic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
-</ScrollView>
+            <ImageView
+                android:id="@+id/ic_green"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/ic_baseline_brightness_1_24_green"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovered"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deceased_statistic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_red"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deceased"
+                android:padding="4dp"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:minHeight="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        app:itemTextColor="@color/selected_bottom_navigation"
+        app:itemIconTint="@color/selected_bottom_navigation"
+        android:layout_width="match_parent"
+        app:itemIconSize="32dp"
+        app:elevation="16dp"
+        android:elevation="@dimen/upsdk_margin_m"
+        android:background="@color/bgColorPrimary"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

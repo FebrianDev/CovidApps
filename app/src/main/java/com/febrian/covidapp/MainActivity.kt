@@ -70,20 +70,20 @@ class MainActivity : AppCompatActivity() {
 
         binding.update.text = currentDate
 
-        binding.bottomNavigation.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener {item ->
-
-            when(item.itemId) {
-                R.id.page_1 -> {
-                    // Respond to navigation item 1 click
-                    true
-                }
-                R.id.page_2 -> {
-                    // Respond to navigation item 2 click
-                    true
-                }
-                else -> false
-            }
-        })
+//        binding.bottomNavigation.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener {item ->
+//
+//            when(item.itemId) {
+//                R.id.page_1 -> {
+//                    // Respond to navigation item 1 click
+//                    true
+//                }
+//                R.id.page_2 -> {
+//                    // Respond to navigation item 2 click
+//                    true
+//                }
+//                else -> false
+//            }
+//        })
     }
 
     private fun setBarChart(positif:Float, sembuh:Float, meninggal:Float) {
