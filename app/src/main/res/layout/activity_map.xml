@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.huawei.hms.maps.TextureMapView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mapview_mapviewdemo"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    map:cameraTargetLat="48.893478"
-    map:cameraTargetLng="2.334595"
-    map:cameraZoom="10"/>
+    android:layout_height="match_parent">
+
+    <!--fragment to display our maps-->
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        class="com.huawei.hms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <!--search view to search our location-->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/idSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:elevation="5dp"
+        android:background="@drawable/bg_seacrh"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search Here" />
+
+</RelativeLayout>

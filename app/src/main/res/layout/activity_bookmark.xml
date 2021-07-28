@@ -44,9 +44,11 @@
             android:layout_height="42dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
+            android:elevation="4dp"
             android:background="@drawable/bg_seacrh"
             app:defaultQueryHint="Search Here"
             app:queryHint="Search Here"
+            app:iconifiedByDefault="false"
             app:searchHintIcon="@drawable/ic_baseline_search_24"
             app:searchIcon="@drawable/ic_baseline_search_24" />
 

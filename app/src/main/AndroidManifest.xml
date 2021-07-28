@@ -4,7 +4,6 @@
     package="com.febrian.covidapp">
 
     <application
-
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,49 +11,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MapActivity">
+
+        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".news.BookmarkActivity" />
+        <activity android:name=".news.DetailNewsActivity" />
+        <activity android:name=".global.GlobalActivity">
+
+        </activity>
+        <activity android:name=".home.HomeActivity"></activity>
+        <activity android:name=".screen.OnboardingActivity" />
+        <activity android:name=".screen.SplashScreenActivity" />
+        <activity android:name=".lokal.CovidLocalActivity" />
+        <activity android:name=".news.NewsActivity"></activity>
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".news.BookmarkActivity" />
-        <activity android:name=".news.DetailNewsActivity" />
-        <activity android:name=".global.GlobalActivity">
-
-        </activity>
-        <activity android:name=".home.HomeActivity">
-
-        </activity>
-        <activity android:name=".screen.OnboardingActivity" />
-        <activity android:name=".screen.SplashScreenActivity" />
-        <activity android:name=".lokal.CovidLocalActivity" />
-        <activity android:name=".news.NewsActivity">
-
-        </activity>
-        <activity android:name=".MainActivity" />
     </application>
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
-
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" /> <!-- Allow the app to change the WLAN status. -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
-    <!-- Allow the app to change the WLAN status. -->
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission-sdk-23 android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
 
     <uses-permission-sdk-23 android:name="android.permission.CHANGE_WIFI_STATE" />
+
 </manifest>

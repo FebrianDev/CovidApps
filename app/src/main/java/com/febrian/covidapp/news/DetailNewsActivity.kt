@@ -27,7 +27,7 @@ class DetailNewsActivity : AppCompatActivity() {
             binding.web.settings.javaScriptEnabled = true
             binding.web.webViewClient = object : WebViewClient() {
                 override fun onPageFinished(view: WebView?, url: String?) {
-                    view?.loadUrl("javascript:alert('Web Berhasil Di Load')")
+                 //   view?.loadUrl("javascript:alert('Web Berhasil Di Load')")
                 }
             }
 

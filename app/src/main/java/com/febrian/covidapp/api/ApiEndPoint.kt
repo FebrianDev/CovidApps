@@ -10,6 +10,8 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
+import com.febrian.covidapp.global.response.Response as ProvinceResponse
+import retrofit2.Response as ResponseRetrofit
 
 interface ApiEndPoint {
 
@@ -46,4 +48,7 @@ interface ApiEndPoint {
 
     @GET("/v3/covid-19/historical/all?lastdays=lastday")
     fun getGlobalStatistic()
+
+    @GET("/api/confirmed")
+    fun getConfirmed() : Call<ArrayList<ProvinceResponse>>
 }

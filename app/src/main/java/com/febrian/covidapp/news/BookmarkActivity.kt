@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.febrian.covidapp.MainActivity
 import com.febrian.covidapp.databinding.ActivityBookmarkBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.room.NewsRoomDatabase
@@ -35,7 +36,7 @@ class BookmarkActivity : AppCompatActivity() {
             listNews.add(list)
         }
 
-        val adapter = BookmarkAdapter(listNews)
+        val adapter = BookmarkAdapter(listNews,activity = this@BookmarkActivity)
         binding.rvBookmark.setHasFixedSize(true)
         binding.rvBookmark.layoutManager = LinearLayoutManager(this)
         binding.rvBookmark.adapter = adapter
@@ -45,8 +46,6 @@ class BookmarkActivity : AppCompatActivity() {
         binding.rvBookmark.visibility = View.VISIBLE
 
         binding.back.setOnClickListener {
-            val intent = Intent(this@BookmarkActivity, NewsActivity::class.java)
-            startActivity(intent)
             finish()
         }
 
