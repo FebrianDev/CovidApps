@@ -1,24 +1,20 @@
 package com.febrian.covidapp.news
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
-import com.febrian.covidapp.news.fragment.SectionPagerAdapter
 import com.febrian.covidapp.databinding.ActivityNewsBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.data.NewsResponse
 import com.febrian.covidapp.news.room.NewsRoomDatabase
-import com.google.android.material.tabs.TabLayoutMediator
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

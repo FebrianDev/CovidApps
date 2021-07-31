@@ -56,7 +56,7 @@ class BookmarkFragment : Fragment() {
             listNews.add(list)
         }
 
-        val adapter = BookmarkAdapter(listNews)
+        val adapter = BookmarkAdapter(listNews,activity)
         binding.rvBookmark.setHasFixedSize(true)
         binding.rvBookmark.layoutManager = LinearLayoutManager(c)
         binding.rvBookmark.adapter = adapter

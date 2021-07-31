@@ -6,11 +6,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.app.ShareCompat
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -82,8 +79,7 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
 
                 binding.bookmark.setOnClickListener {
                     bookmarkCheck = mRoomDatabase.newsExist(news.title.toString())
-                    Log.d("Check", bookmarkCheck.toString())
-                    Log.d("Check", news.title.toString())
+
                     if (!bookmarkCheck) {
                         Snackbar.make(itemView, "News success add to bookmark", Snackbar.LENGTH_SHORT).show()
                         Glide.with(itemView.context)
