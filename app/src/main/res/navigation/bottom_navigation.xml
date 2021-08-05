@@ -20,5 +20,15 @@
         android:name="com.febrian.covidapp.news.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.febrian.covidapp.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.febrian.covidapp.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 
 </navigation>

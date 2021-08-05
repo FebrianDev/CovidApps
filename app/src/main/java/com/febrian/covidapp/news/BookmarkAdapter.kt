@@ -10,11 +10,11 @@ import androidx.core.app.ShareCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.febrian.covidapp.databinding.ItemBookmarkBinding
-import com.febrian.covidapp.databinding.ItemNewsBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.room.EntityNews
 import com.febrian.covidapp.news.room.NewsRoomDatabase
 import com.google.android.material.snackbar.Snackbar
+
 
 class BookmarkAdapter(private var listNews: ArrayList<NewsDataResponse>, private var activity: Activity?) : RecyclerView.Adapter<BookmarkAdapter.ViewHolder>() {
 
@@ -40,7 +40,10 @@ val myListNews: ArrayList<NewsDataResponse> = ArrayList()
 
                 binding.titleNews.setOnClickListener {
                     val intent = Intent(itemView.context, DetailNewsActivity::class.java)
-                    intent.putExtra(NewsAdapter.KEY_URL, news.url.toString())
+                    intent.putExtra(NewsAdapter.KEY_TITLE, news.title)
+                    intent.putExtra(NewsAdapter.KEY_URL, news.url)
+                    intent.putExtra(NewsAdapter.KEY_IMAGE_URL, news.urlToImage)
+                    intent.putExtra(NewsAdapter.KEY_PUBLISHEDAT, news.publishedAt)
                     itemView.context.startActivity(intent)
                 }
 

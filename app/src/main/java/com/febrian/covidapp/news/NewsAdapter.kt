@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.SharedPreferences
+import android.os.Parcelable
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -18,6 +19,7 @@ import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.room.EntityNews
 import com.febrian.covidapp.news.room.NewsRoomDatabase
 import com.google.android.material.snackbar.Snackbar
+import java.io.Serializable
 
 class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var activity: Activity?) :
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
@@ -39,6 +41,10 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
 
     companion object {
         const val KEY_URL = "URL"
+        const val KEY_TITLE = "TITLE"
+        const val KEY_NEWS = "NEWS"
+        const val KEY_PUBLISHEDAT = "PUBLISHED_AT"
+        const val KEY_IMAGE_URL = "IMAGE_URL"
         const val PREFERENCENAME = "PREFERENCE_NAME"
         const val BOOKMARK = "BOOKMARK"
     }
@@ -66,7 +72,10 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
 
                 binding.titleNews.setOnClickListener {
                     val intent = Intent(itemView.context, DetailNewsActivity::class.java)
-                    intent.putExtra(KEY_URL, news.url.toString())
+                    intent.putExtra(KEY_TITLE, news.title)
+                    intent.putExtra(KEY_URL, news.url)
+                    intent.putExtra(KEY_IMAGE_URL, news.urlToImage)
+                    intent.putExtra(KEY_PUBLISHEDAT, news.publishedAt)
                     itemView.context.startActivity(intent)
                 }
 

@@ -12,6 +12,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import com.febrian.covidapp.MapActivity
 import com.febrian.covidapp.R
@@ -47,7 +48,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentGlobalBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -136,7 +137,6 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         binding.confirmed.text = NumberFormat.getInstance().format(confirmed).toString()
         binding.recovered.text = NumberFormat.getInstance().format(recovered).toString()
         binding.deceased.text = NumberFormat.getInstance().format(deaths).toString()
-
         setBarChart(confirmed, recovered, deaths, totalCase)
     }
 
@@ -192,16 +192,22 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
     private var broadcastReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             if (!InternetConnection.isConnected(context)) {
-                AlertDialog.Builder(context)
-                    // Judul
-                    .setTitle("Alert Dialog Title")
-                    .setCancelable(false)
-                    // Pesan yang di tamopilkan
-                    .setMessage("Pesan Alert Dialog")
-                    .setPositiveButton("Ya", DialogInterface.OnClickListener { dialogInterface, i ->
-                        onReceive(context, intent)
-                        main()
-                    }).show()
+
+                val builder = AlertDialog.Builder(view?.context)
+                val l_view = LayoutInflater.from(view?.context).inflate(R.layout.alert_dialog_no_internet,null)
+                builder.setView(l_view)
+
+                val dialog = builder.create()
+                dialog.show()
+                dialog.setCancelable(false)
+                dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+                val btnRetry = l_view.findViewById<AppCompatButton>(R.id.btn_retry)
+                btnRetry.setOnClickListener{
+                    dialog.dismiss()
+                    onReceive(context,intent)
+                    main()
+                }
             }
         }
     }

@@ -11,32 +11,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidApp"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".MapActivity"></activity>
+        <activity
+            android:name=".info.DetailListInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".info.list.FoodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".info.list.ExerciseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".info.list.PreventionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".info.list.SymptomsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".info.dropdown.PeopleAtRiskActivity"
+            android:exported="true" />
+        <activity android:name=".info.dropdown.CovidTestActivity" />
+        <activity android:name=".info.dropdown.VaccinesActivity" />
+        <activity android:name=".info.dropdown.GeneralActivity" />
+        <activity android:name=".MapActivity" />
         <activity android:name=".news.BookmarkActivity" />
         <activity android:name=".news.DetailNewsActivity" />
-        <activity android:name=".global.GlobalActivity">
+        <activity android:name=".global.GlobalActivity" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".screen.OnboardingActivity" >
 
         </activity>
-        <activity android:name=".home.HomeActivity"></activity>
-        <activity android:name=".screen.OnboardingActivity" />
-        <activity android:name=".screen.SplashScreenActivity" />
-        <activity android:name=".lokal.CovidLocalActivity" />
-        <activity android:name=".news.NewsActivity"></activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".screen.SplashScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lokal.CovidLocalActivity" />
+        <activity android:name=".news.NewsActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false" />
+
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" /> <!-- Allow the app to change the WLAN status. -->
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -46,5 +74,11 @@
     <uses-permission-sdk-23 android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
 
     <uses-permission-sdk-23 android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+    </queries>
 
 </manifest>

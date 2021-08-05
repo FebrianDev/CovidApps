@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.febrian.covidapp.MainActivity
 import com.febrian.covidapp.R
 import com.febrian.covidapp.databinding.FragmentOnboarding5Binding
 import com.febrian.covidapp.global.GlobalActivity
@@ -32,7 +33,7 @@ class Onboarding5 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnStart.setOnClickListener {
-            val intent = Intent(view.context, GlobalActivity::class.java)
+            val intent = Intent(view.context, MainActivity::class.java)
             startActivity(intent)
             activity?.finish()
         }

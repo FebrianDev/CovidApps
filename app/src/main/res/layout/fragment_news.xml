@@ -14,7 +14,6 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bgColorPrimary"
         tools:context=".news.BookmarkActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -101,14 +100,14 @@
                                 android:layout_height="60dp"
                                 android:background="#43383F51"
                                 android:paddingHorizontal="16dp"
-                                android:paddingTop="8dp"
+                                android:paddingVertical="8dp"
                                 >
                                 <TextView
                                     android:layout_alignParentTop="true"
                                     android:id="@+id/title_news1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Vaksin Covid 90% Efektif"
+                                    android:text=""
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:textStyle="bold" />
@@ -140,14 +139,14 @@
                                 android:layout_height="60dp"
                                 android:background="#43383F51"
                                 android:paddingHorizontal="16dp"
-                                android:paddingTop="8dp"
+                                android:paddingVertical="8dp"
                                 >
                                 <TextView
                                     android:layout_alignParentTop="true"
                                     android:id="@+id/title_news2"
-                                    android:layout_width="200dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Vaksin Covid 90% Efektif"
+                                    android:text=""
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:textStyle="bold" />
@@ -180,14 +179,14 @@
                                 android:layout_height="60dp"
                                 android:background="#43383F51"
                                 android:paddingHorizontal="16dp"
-                                android:paddingTop="8dp"
+                                android:paddingVertical="8dp"
                                 >
                                 <TextView
                                     android:layout_alignParentTop="true"
                                     android:id="@+id/title_news3"
-                                    android:layout_width="200dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Vaksin Covid 90% Efektif"
+                                    android:text=""
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:textStyle="bold" />
@@ -225,13 +224,14 @@
                     android:textSize="20sp"
                     android:fontFamily="@font/montserrat_semibold"
                     style="@style/TextPrimary"
-                    android:paddingStart="8dp"
-                    android:layout_margin="16dp"/>
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="16dp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_news"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:paddingBottom="54dp"
                     android:visibility="gone"
                     tools:listitem="@layout/item_news" />
 

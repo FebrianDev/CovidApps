@@ -2,7 +2,10 @@ package com.febrian.covidapp.home
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.graphics.Color
 import android.graphics.Typeface
 import android.net.ConnectivityManager
@@ -11,6 +14,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import com.febrian.covidapp.R
@@ -23,6 +27,12 @@ import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.*
 import com.github.mikephil.charting.formatter.ValueFormatter
+import com.huawei.hms.analytics.HiAnalytics
+import com.huawei.hms.analytics.HiAnalyticsInstance
+import com.huawei.hms.analytics.HiAnalyticsTools
+import com.huawei.hms.analytics.type.HAEventType
+import com.huawei.hms.analytics.type.HAParamType
+import com.huawei.hms.analytics.type.ReportPolicy
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
@@ -36,6 +46,7 @@ import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
+import kotlin.collections.HashSet
 
 class HomeFragment : Fragment() {
 
@@ -56,6 +67,36 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        HiAnalyticsTools.enableLog()
+        val instance : HiAnalyticsInstance = HiAnalytics.getInstance(view.context)
+        instance.setAnalyticsEnabled(true)
+        instance.setUserProfile("userKey", "value")
+        instance.setAutoCollectionEnabled(true)
+        instance.regHmsSvcEvent()
+        val launch : ReportPolicy = ReportPolicy.ON_APP_LAUNCH_POLICY
+        val report : MutableSet<ReportPolicy> = HashSet<ReportPolicy>()
+
+        report.add(launch)
+
+        instance.setReportPolicies(report)
+
+        val bundle = Bundle()
+        bundle.putString("exam_difficulty", "high")
+        bundle.putString("exam_level", "1-1")
+        bundle.putString("exam_time", "20190520-08")
+        instance.onEvent("begin_examination", bundle)
+// Enable tracking of the predefined event in proper positions of the code.
+        val bundle_pre = Bundle()
+        bundle_pre.putString(HAParamType.PRODUCTID, "item_ID")
+        bundle_pre.putString(HAParamType.PRODUCTNAME, "name")
+        bundle_pre.putString(HAParamType.CATEGORY, "category")
+        bundle_pre.putLong(HAParamType.QUANTITY, 100L)
+        bundle_pre.putDouble(HAParamType.PRICE, 10.01)
+        bundle_pre.putDouble(HAParamType.REVENUE, 10.0)
+        bundle_pre.putString(HAParamType.CURRNAME, "currency")
+        bundle_pre.putString(HAParamType.PLACEID, "location_ID")
+        instance.onEvent(HAEventType.ADDPRODUCT2WISHLIST, bundle_pre)
 
         main()
         binding.swiperefresh.setOnRefreshListener {
@@ -108,14 +149,14 @@ class HomeFragment : Fragment() {
                                 val deaths = body.deaths?.value!!.toBigDecimal()
                                 val confirmed = totalCase - (recovered + deaths)
 
-                                binding.confirmed.text =
+                                binding.confirmedValue.text =
                                     NumberFormat.getInstance().format(confirmed).toString()
-                                binding.recovered.text =
+                                binding.recoveredValue.text =
                                     NumberFormat.getInstance().format(recovered).toString()
-                                binding.deceased.text =
+                                binding.deathValue.text =
                                     NumberFormat.getInstance().format(deaths).toString()
-
-                                setBarChart(confirmed, recovered, deaths, totalCase)
+                                binding.totalCaseValue.text = NumberFormat.getInstance().format(totalCase).toString()
+                                setBarChart(confirmed, recovered, deaths, totalCase, query)
                             }
                             binding.swiperefresh.isRefreshing = false
                         } catch (e: Exception) {
@@ -135,16 +176,22 @@ class HomeFragment : Fragment() {
     private var broadcastReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             if (!InternetConnection.isConnected(context)) {
-                AlertDialog.Builder(context)
-                    // Judul
-                    .setTitle("Alert Dialog Title")
-                    .setCancelable(false)
-                    // Pesan yang di tamopilkan
-                    .setMessage("Pesan Alert Dialog")
-                    .setPositiveButton("Ya", DialogInterface.OnClickListener { dialogInterface, i ->
-                        onReceive(context, intent)
-                        main()
-                    }).show()
+                
+                val builder = AlertDialog.Builder(view?.context)
+                val l_view = LayoutInflater.from(view?.context).inflate(R.layout.alert_dialog_no_internet,null)
+                builder.setView(l_view)
+
+                val dialog = builder.create()
+                dialog.show()
+                dialog.setCancelable(false)
+                dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+                val btnRetry = l_view.findViewById<AppCompatButton>(R.id.btn_retry)
+                btnRetry.setOnClickListener{
+                    dialog.dismiss()
+                    onReceive(context,intent)
+                    main()
+                }
             }
         }
     }
@@ -171,23 +218,25 @@ class HomeFragment : Fragment() {
                     val listActive = ArrayList<Entry>()
                     val listRecovered = ArrayList<Entry>()
                     val listDeath = ArrayList<Entry>()
-
                     var j = 1f
-                    for (i in 7 downTo 1) {
+
+                    for (i in 8 downTo 2) {
                         val getCases =
                             cases.getInt(DateUtils.getDate(-i)) - cases.getInt(DateUtils.getDate(-(i + 1)))
-                        listCases.add(Entry(j, getCases.toFloat()))
+                            listCases.add(Entry(j, getCases.toFloat()))
                         val getRecovered =
                             recoveredCase.getInt(DateUtils.getDate(-i)) - recoveredCase.getInt(
                                 DateUtils.getDate(-(i + 1))
                             )
-                        listRecovered.add(Entry(j, getRecovered.toFloat()))
+                            listRecovered.add(Entry(j, getRecovered.toFloat()))
                         val getDeath = deathCase.getInt(DateUtils.getDate(-i)) - deathCase.getInt(
                             DateUtils.getDate(-(i + 1))
                         )
                         listDeath.add(Entry(j, getDeath.toFloat()))
                         val getActive = getCases - (getRecovered - getDeath)
-                        listActive.add(Entry(j, getActive.toFloat()))
+                            listActive.add(Entry(j, getActive.toFloat()))
+
+                        Log.d("Data", getCases.toString())
                         j++
                     }
                     blue()
@@ -222,7 +271,7 @@ class HomeFragment : Fragment() {
                 responseBody: ByteArray?,
                 error: Throwable?
             ) {
-
+                Log.d("P", error?.message.toString())
             }
 
         })
@@ -259,7 +308,7 @@ class HomeFragment : Fragment() {
         legend.isEnabled = false
 
         val date = ArrayList<String>();
-        for (i in 8 downTo 1) {
+        for (i in 9 downTo 2) {
             date.add(DateUtils.getDateStatistic(-i))
         }
 
@@ -290,7 +339,8 @@ class HomeFragment : Fragment() {
         confirmed: BigDecimal,
         recovered: BigDecimal,
         death: BigDecimal,
-        totalCase: BigDecimal
+        totalCase: BigDecimal,
+        countryName : String
     ) {
         val listPie = ArrayList<PieEntry>()
         val listColors = ArrayList<Int>()
@@ -314,9 +364,9 @@ class HomeFragment : Fragment() {
         binding.pieChart.animateY(1400, Easing.EaseInOutQuad)
 
         //set text center
-        binding.pieChart.centerText = "Total Case\n${NumberFormat.getInstance().format(totalCase)}"
-        binding.pieChart.setCenterTextColor(Color.argb(255, 80, 125, 188))
-        binding.pieChart.setCenterTextSize(18f)
+        binding.pieChart.centerText = countryName.capitalize()
+        binding.pieChart.setCenterTextColor(resources.getColor(R.color.colorPrimary))
+        binding.pieChart.setCenterTextSize(22f)
         // val myFont = Typeface.createFromAsset(view?.context?.assets, "font/montserrat_black.ttf")
         binding.pieChart.setCenterTextTypeface(Typeface.DEFAULT_BOLD)
 

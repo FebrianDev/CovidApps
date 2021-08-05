@@ -21,6 +21,11 @@ class BookmarkActivity : AppCompatActivity() {
         binding = ActivityBookmarkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+       main()
+
+    }
+
+    fun main(){
         val mRoomDatabase = NewsRoomDatabase.getDatabase(this)
         val data = mRoomDatabase.newsDao().getAllNews()
         Log.d("TAG", data.size.toString())
@@ -48,6 +53,6 @@ class BookmarkActivity : AppCompatActivity() {
         binding.back.setOnClickListener {
             finish()
         }
-
     }
+
 }

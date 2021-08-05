@@ -19,12 +19,12 @@
         android:icon="@drawable/ic_baseline_article_24"
         tools:ignore="MenuTitle" />
     <item
-        android:id="@+id/page_4"
+        android:id="@+id/infoFragment"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_info_24"
         tools:ignore="MenuTitle" />
     <item
-        android:id="@+id/page_5"
+        android:id="@+id/settingFragment"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_settings_24"
         tools:ignore="MenuTitle" />

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#39375B"
     tools:context=".screen.OnboardingActivity">
 
     <androidx.viewpager.widget.ViewPager
@@ -21,7 +20,7 @@
         app:piv_radius="5dp"
         app:piv_animationType="worm"
         app:piv_strokeWidth="5dp"
-        app:piv_selectedColor="@color/white"
+        app:piv_selectedColor="@color/colorPrimary"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="32dp"

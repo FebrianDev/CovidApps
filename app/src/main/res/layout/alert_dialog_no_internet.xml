@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_layout_error"
+    android:paddingVertical="32dp"
+    android:paddingHorizontal="24dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/error"
+        />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/colorPrimary"
+        android:text="Whoops!  Something went wrong."/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="96dp"
+        android:layout_height="42dp"
+        android:id="@+id/btn_retry"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/bgColorPrimary"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_error"
+        android:text="Retry"/>
+
+
+</LinearLayout>

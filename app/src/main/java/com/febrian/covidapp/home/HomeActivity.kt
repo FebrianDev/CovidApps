@@ -74,20 +74,6 @@ class HomeActivity : AppCompatActivity() {
             }
         })
 
-//        binding.bottomNavigation.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
-//
-//            when(item.itemId) {
-//                R.id.page_1 -> {
-//                    // Respond to navigation item 1 click
-//                    true
-//                }
-//                R.id.page_2 -> {
-//                    // Respond to navigation item 2 click
-//                    true
-//                }
-//                else -> false
-//            }
-//        })
     }
 
     @DelicateCoroutinesApi
@@ -187,7 +173,7 @@ class HomeActivity : AppCompatActivity() {
                     }
 
                 } catch (e: java.lang.Exception) {
-                    Log.d("P", e.message.toString())
+                    Log.d("PError", e.message.toString())
                 }
             }
 

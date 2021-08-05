@@ -1,8 +1,5 @@
 package com.febrian.covidapp.global
 
-import android.annotation.SuppressLint
-import androidx.annotation.NonNull
-import com.febrian.covidapp.global.DateUtil.getDate
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -10,7 +7,7 @@ object DateUtils {
 
     fun getDate(minus: Int): String {
         val calendar = Calendar.getInstance()
-        val dateFormat = SimpleDateFormat("M/dd/yy")
+        val dateFormat = SimpleDateFormat("M/d/yy")
         calendar.add(Calendar.DATE, minus)
 
         return dateFormat.format(calendar.time)
@@ -18,7 +15,7 @@ object DateUtils {
 
     fun getDateStatistic(minus: Int): String {
         val calendar = Calendar.getInstance()
-        val dateFormat = SimpleDateFormat("dd\nMMM")
+        val dateFormat = SimpleDateFormat("d\nMMM")
         calendar.add(Calendar.DATE, minus)
 
         return dateFormat.format(calendar.time)
