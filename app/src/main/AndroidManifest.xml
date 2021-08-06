@@ -13,43 +13,62 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".info.DetailListInfoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".info.list.FoodActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".info.list.ExerciseActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".info.list.PreventionActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".info.list.SymptomsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".info.dropdown.PeopleAtRiskActivity"
-            android:exported="true" />
-        <activity android:name=".info.dropdown.CovidTestActivity" />
-        <activity android:name=".info.dropdown.VaccinesActivity" />
-        <activity android:name=".info.dropdown.GeneralActivity" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".news.BookmarkActivity" />
-        <activity android:name=".news.DetailNewsActivity" />
-        <activity android:name=".global.GlobalActivity" />
-        <activity android:name=".home.HomeActivity" />
-        <activity android:name=".screen.OnboardingActivity" >
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".info.dropdown.CovidTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".info.dropdown.VaccinesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".info.dropdown.GeneralActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".news.BookmarkActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".news.DetailNewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".global.GlobalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".home.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".screen.OnboardingActivity"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".screen.SplashScreenActivity" >
+        <activity android:name=".screen.SplashScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lokal.CovidLocalActivity" />
-        <activity android:name=".news.NewsActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".lokal.CovidLocalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".news.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
 
         </activity>
 
