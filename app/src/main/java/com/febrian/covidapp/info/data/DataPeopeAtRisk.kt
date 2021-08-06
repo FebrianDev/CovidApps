@@ -5,8 +5,8 @@ object DataPeopeAtRisk {
         val list = ArrayList<Model>()
 
         list.add(Model(
-            "",
-            ""
+            "Who is at risk of developing severe disease?",
+            "Older people, and people of all ages with pre-existing medical conditions (such as diabetes, high blood pressure, heart disease, lung disease, or cancer) appear to develop serious illness more often than others."
         ))
 
         list.add(Model(

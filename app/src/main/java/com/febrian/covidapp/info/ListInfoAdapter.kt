@@ -33,11 +33,6 @@ class ListInfoAdapter(listData: ArrayList<ModelList>) :
                 Glide.with(itemView.context).load(m.image).into(binding.imageItem)
 
                 itemView.setOnClickListener {
-//                    val intent = Intent(itemView.context, DetailListInfoActivity::class.java)
-//                    intent.putExtra(KEY_TITLE_INFO, m.title)
-//                    intent.putExtra(KEY_DESCRIPTION, m.description)
-//                    intent.putExtra(KEY_IMAGE_INFO, m.image)
-//                    itemView.context.startActivity(intent)
 
                     val builder = AlertDialog.Builder(itemView.context)
                     val l_view = LayoutInflater.from(itemView.context).inflate(R.layout.alert_dialog_item_list_info,null)
@@ -55,10 +50,9 @@ class ListInfoAdapter(listData: ArrayList<ModelList>) :
                     title.text = m.title
                     description.text = m.description
                     val btnClose = l_view.findViewById<AppCompatButton>(R.id.btn_close)
-                    btnClose.setOnClickListener{
+                    btnClose.setOnClickListener {
                         dialog.dismiss()
                     }
-
                 }
             }
         }

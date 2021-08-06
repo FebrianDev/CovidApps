@@ -24,7 +24,7 @@ android {
     signingConfigs {
         release {
             // Signing certificate.
-            storeFile file("C:\\Users\\natan\\OneDrive\\Documents\\GitHub\\CovidApps\\keystore.jks")
+            storeFile file("F:\\AndroidProject\\CovidApp\\keystore.jks")
             // KeyStore password.
             storePassword "Psjk1234"
             // Alias.
@@ -34,7 +34,7 @@ android {
             v2SigningEnabled true
         }
         config {
-            storeFile file('C:/Users/natan/OneDrive/Documents/GitHub/CovidApps/keystore.jks')
+            storeFile file('F:/AndroidProject/CovidApp/keystore.jks')
             storePassword 'Psjk1234'
             keyPassword 'Psjk1234'
             keyAlias 'keystore'

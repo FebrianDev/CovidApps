@@ -13,7 +13,7 @@ object DataFood {
                         " - Choose white meat (e.g. poultry) and fish, which are generally low in fat, rather than red meat.\n" +
                         " - Choose fresh fruits instead of sweet snacks such as cookies, cakes and chocolate.\n" +
                         " - Where possible, opt for low-fat or reduced-fat versions of milk and dairy products.\n",
-                R.drawable.food_choose
+                R.drawable.tochoose
         ))
 
         list.add(
@@ -26,7 +26,7 @@ object DataFood {
                         " - Avoid foods (e.g. snacks) that are high in salt and sugar.\n" +
                         " - Limit your intake of soft drinks or sodas and other drinks that are high in sugar (e.g. fruit juices, fruit juice concentrates and syrups, flavoured milks and yogurt drinks).\n" +
                         "\n",
-                R.drawable.food_avoid
+                R.drawable.toavoidrev
         ))
 
         return list

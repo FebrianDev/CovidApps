@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:padding="24dp"
         android:gravity="center_vertical"
-        android:layout_marginVertical="42dp"
         android:orientation="vertical">
 
      <ImageView
