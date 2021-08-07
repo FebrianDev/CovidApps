@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CovidApp</string>
-</resources>
+<string name = "app_name"> CovidApp </string>
+    <string name = "how_can_i_help_nyou_today"> बगाईमना साया दपत \ nmembantu? </string>
+<string name = "hi_how_can_i_nhelp_you_today"> है, बगाईमना साया दपत \ nmembantu? </string>
+<string name = "countries_statistics"> सांख्यिकीय नेगारा </string>
+<string name = "deep_breathing_while_on_your_back"> नफास दलम सेमासा पुंगगुंग अंडा </string>
+<string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> झूठ di Belakang anda दान bengkokkan lutut anda supaya bahagian Bawah काकी anda sedang berehat Di Atas katil। लेटक्कन टंगन और अ दी अतस पेरुत और अताउ बंगकुस्न्या दी सीसी पेरुत औरा। ए टुटुप बीर एंडा दन लेटक्कन लिडाह एंडा डि बंबुंग मुलुट एंडा। तारिक नफास मेलालुई हिदुंग दन तारिक उडारा के पेरुत और एक दी मन टंगन और बेरदा। क्यूबा मेलेबर्कन जरी और डेंगन नफास औरा। हेम्बुस्कन नफ़स पेरलाहन-लहन मेललुई हिदुंग। उलंगी नफस दलम-दलम सेलमा सतु मिनित। </string>
+<string name = "close"> टुटअप </string>
+<string name = "whoops_something_went_wrong"> आलमक, नमपाकन्या अदा रलत! </string>
+<string name= "global_statistics"> स्टेटिस्टिक ग्लोबल </string>
+<string name = "realtime_maps"> पेटा मासा न्याता </string>
+<string name= "lokasi_sekarang"> लोकसी सेमासा </string>
+<string name = "open_maps"> बुका पेटा </string>
+<string name = "today_s_statistics"> सांख्यिकी हरि इनि </string>
+<string name = "weekly_statistics"> सांख्यिकीय मिंगगुआन </string>
+<string name = "general"> उमम </string>
+<string name = "symptoms"> गीजाला </string>
+<string name= "prevention"> पेंसगहन </string>
+<string name = "covid_test"> उजियान कोविड </string>
+<string name = "exercise"> सुकन </string>
+<string name = "food"> मकानन </string>
+<string name = "people_at_risk"> ओरंग यांग बेरिसिको </string>
+<string name = "covid_19_news"> Berita Covid-19 </string>
+<string name = "trending_news"> बेरिटा ट्रेंडिंग </string>
+<string name = "you_can_also"> अंडा जुगा बोले </string>
+<string name = "see_covid_stats_for_any_country"> लिहाट स्टेटिस्टिक कोविद नेगारा लैन </string>
+<string name = "hi_welcome_to_the_international_covid_center"> है, सेलामत दातांग दी पुसत कोविड अंतरबंगसा! </string>
+<string name = "here_you_can_see_the_covid_19_cases_update_globally"> एंडा बोले मेलिहाट स्टेटिस्टिक केस कोविड-19 सेकरा ग्लोबल </string>
+<string name = "did_we_mention_about"> अदाका इतु मेनयेबुतकन बहावा ... </string>
+<string name = "you_can_get_covid_related_news_per_country"> बोलेहका और मेम्बाका बेरीटा कोविड मेंगीकुट नेगारा? </string>
+<string name = "and_of_course"> डैन टेंटू साजा ... </string>
+<string name = "you_can_learn_covid_19_related_information_from_the_best_sources"> आंदा बोले मेंडापाटकन मक्लुमत मेनगेनाई कोविड-19 दारी सुम्बर यांग डिपरकायई </string>
+<string name = "are_you_ready"> अदाका और सुदाह बर्सेडिया? </string>
+<string name= "start"> मुला </string>
+<string name = "settings"> टेटापन </string>
+<string name = "language"> भाषा </string>
+<string name = "english"> इंडोनेशिया </string>
+<string name= "darkmode"> मॉड जेलाप </string>
+<string name = "notification"> पेम्बरिटहुआन </string>
+<string name = "about"> टेंटांग </string>
+<string name= "provinsi_negara"> विलायह, नेगारा </string>
+<string name = "last_updated_10_feb_2021"> केमास किनी तेराखिर: 10 फरवरी 2021 </string>
+<string name = "confirmed"> दिशाकन </string>
+
+    </resources>

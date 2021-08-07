@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CovidApp</string>
-</resources>
+    <string name = "app_name"> CovidApp </string>
+    <string name = "how_can_i_help_nyou_today"> Paano ako makakatulong? </string>
+    <string name = "hi_how_can_i_nhelp_you_today"> Kumusta, Paano ako makakatulong? </string>
+    <string name = "countries_statistics"> Country Statistics </string>
+    <string name = "deep_breathing_while_on_your_back"> Malalim na Paghinga Sa Iyong Likod </string>
+    <string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> Kasinungalingan sa iyong likod at yumuko iyong tuhod kaya na sa ilalim portion're nagpapahinga ang iyong mga paa sa itaas ng sopa. Ilagay ang iyong mga kamay sa iyong tiyan o balutin ito sa mga gilid ng iyong tiyan. a Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. Huminga sa pamamagitan ng iyong ilong at iguhit ang hangin sa iyong tiyan kung nasaan ang iyong mga kamay. Subukang ikalat ang iyong mga daliri gamit ang iyong hininga. Dahan-dahang huminga sa pamamagitan ng iyong ilong. Ulitin ang malalim na paghinga para sa isang minuto. </string>
+    <string name = "close"> Isara </string>
+    <string name = "whoops_something_went_wrong"> Naku, tila mayroong isang error! </string>
+    <string name = "global_statistics"> Global Statistics </string>
+    <string name = "realtime_maps"> Realtime Maps </string>
+    <string name = "lokasi_sekarang"> Kasalukuyang Lokasyon </string>
+    <string name = "open_maps"> Buksan ang Maps </string>
+    <string name = "today_s_statistics"> Statistics Ngayon </ string>
+    <string name = "weekly_statistics"> Lingguhang Istatistika </string>
+    <string name = "general"> Pangkalahatan </string>
+    <string name = "symptoms"> Mga Sintomas </string>
+    <string name = "prevention"> Pag-iwas </string>
+    <string name = "covid_test"> Covid test </string>
+    <string name = "exercise"> Palakasan </string>
+    <string name = "food"> Pagkain </string>
+    <string name = "people_at_risk"> Mga taong nasa peligro </string>
+    <string name = "covid_19_news"> Balitang Covid-19 </string>
+    <string name = "trending_news"> Trending News </string>
+    <string name = "you_can_also"> Maaari mo ring </string>
+    <string name = "see_covid_stats_for_any_country"> Tingnan ang mga istatistika ng Covid ng ibang mga bansa </string>
+    <string name = "hi_welcome_to_the_international_covid_center"> Kumusta, Maligayang Pagdating sa International Covid Center! </string>
+    <string name = "here_you_can_see_the_covid_19_cases_update_globally"> Maaari mong makita ang Covid-19 kaso ng mga istatistika sa buong mundo </string>
+    <string name = "did_we_mention_about"> Nabanggit ba nito na ... </string>
+    <string name = "you_can_get_covid_related_news_per_country"> Maaari mo bang basahin ang balita ng Covid ayon sa bansa? </string>
+    <string name = "and_of_course"> At syempre ... </string>
+    <string name = "you_can_learn_covid_19_related_information_from_the_best_sources"> Maaari kang makakuha ng impormasyon tungkol sa Covid-19 mula sa mga pinagkakatiwalaang mapagkukunan </string>
+    <string name = "are_you_ready"> Handa ka na ba? </string>
+    <string name = "start"> Start </string>
+    <string name = "settings"> Mga setting </string>
+    <string name = "language"> Wika </string>
+    <string name = "english"> Indonesian </string>
+    <string name = "darkmode"> Dark Mode </string>
+    <string name = "notification"> Mga Notification </string>
+    <string name = "about"> About </string>
+    <string name = "provinsi_negara"> Rehiyon, Bansa </string>
+    <string name = "last_updated_10_feb_2021"> Huling Nai-update: 10 Peb 2021 </string>
+    <string name = "confirmed"> Napatunayan </string>
+
+</ mapagkukunan>

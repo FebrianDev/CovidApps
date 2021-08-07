@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CovidApp</string>
+    <string name = "app_name"> CovidApp </string>
+    <string name = "how_can_i_help_nyou_today"> Bagaimana saya dapat \ nmembantu? </string>
+    <string name = "hi_how_can_i_nhelp_you_today"> Hai, Bagaimana saya dapat \ nmembantu? </string>
+    <string name = "countries_statistics"> Statistik Negara </string>
+    <string name = "deep_breathing_while_on_your_back"> Nafas Dalam Semasa Punggung Anda </string>
+    <string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> Lie di belakang anda dan bengkokkan lutut anda supaya bahagian bawah kaki anda sedang berehat di atas katil. Letakkan tangan anda di atas perut anda atau bungkusnya di sisi perut anda. a Tutup bibir anda dan letakkan lidah anda di bumbung mulut anda. Tarik nafas melalui hidung dan tarik udara ke perut anda di mana tangan anda berada. Cuba melebarkan jari anda dengan nafas anda. Hembuskan nafas perlahan-lahan melalui hidung. Ulangi nafas dalam-dalam selama satu minit. </string>
+    <string name = "close"> Tutup </string>
+    <string name = "whoops_something_went_wrong"> Alamak, nampaknya ada ralat! </string>
+    <string name = "global_statistics"> Statistik Global </string>
+    <string name = "realtime_maps"> Peta Masa Nyata </string>
+    <string name = "lokasi_sekarang"> Lokasi Semasa </string>
+    <string name = "open_maps"> Buka Peta </string>
+    <string name = "today_s_statistics"> Statistik Hari Ini </string>
+    <string name = "weekly_statistics"> Statistik Mingguan </string>
+    <string name = "general"> Umum </string>
+    <string name = "symptoms"> Gejala </string>
+    <string name = "prevention"> Pencegahan </string>
+    <string name = "covid_test"> Ujian covid </string>
+    <string name = "exercise"> Sukan </string>
+    <string name = "food"> Makanan </string>
+    <string name = "people_at_risk"> Orang yang berisiko </string>
+    <string name = "covid_19_news"> Berita Covid-19 </string>
+    <string name = "trending_news"> Berita Trending </string>
+    <string name = "you_can_also"> Anda juga boleh </string>
+    <string name = "see_covid_stats_for_any_country"> Lihat statistik Covid negara lain </string>
+    <string name = "hi_welcome_to_the_international_covid_center"> Hai, Selamat Datang di Pusat Covid Antarabangsa! </string>
+    <string name = "here_you_can_see_the_covid_19_cases_update_globally"> Anda boleh melihat statistik kes Covid-19 secara global </string>
+    <string name = "did_we_mention_about"> Adakah itu menyebutkan bahawa ... </string>
+    <string name = "you_can_get_covid_related_news_per_country"> Bolehkah anda membaca berita Covid mengikut negara? </string>
+    <string name = "and_of_course"> Dan tentu saja ... </string>
+    <string name = "you_can_learn_covid_19_related_information_from_the_best_sources"> Anda boleh mendapatkan maklumat mengenai Covid-19 dari sumber yang dipercayai </string>
+    <string name = "are_you_ready"> Adakah anda sudah bersedia? </string>
+    <string name = "start"> Mula </string>
+    <string name = "settings"> Tetapan </string>
+    <string name = "language"> Bahasa </string>
+    <string name = "english"> Indonesia </string>
+    <string name = "darkmode"> Mod Gelap </string>
+    <string name = "notification"> Pemberitahuan </string>
+    <string name = "about"> Tentang </string>
+    <string name = "provinsi_negara"> Wilayah, Negara </string>
+    <string name = "last_updated_10_feb_2021"> Kemas kini Terakhir: 10 Feb 2021 </string>
+    <string name = "confirmed"> Disahkan </string>
+
 </resources>

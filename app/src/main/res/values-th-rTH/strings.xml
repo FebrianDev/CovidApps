@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CovidApp</string>
+<string name = "app_name">CovidApp</string>
+<string name = "how_can_i_help_nyou_today"> ฉันจะ \ n ช่วยได้อย่างไร </string>
+<string name = "hi_how_can_i_nhelp_you_today"> สวัสดี ฉันจะ \ n ช่วยได้อย่างไร </string>
+<string name = "countries_statistics"> สถิติประเทศ </string>
+<string name = "deep_breathing_while_on_your_back"> หายใจเข้าลึกๆ ระหว่างหลัง </string>
+<string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> นอนหงายงอเข่าของคุณเพื่อให้ portion're ด้านล่างที่วางอยู่ที่เท้าของคุณอยู่ด้านบนของที่นอน วางมือบนท้องหรือพันไว้ข้างท้อง ก. ปิดริมฝีปากและวางลิ้นของคุณไว้บนหลังคาปากของคุณ หายใจเข้าทางจมูกและดึงอากาศเข้าสู่ท้องตรงที่มือของคุณอยู่ พยายามกางนิ้วออกด้วยลมหายใจ หายใจออกช้าๆทางจมูกของคุณ ทำซ้ำการหายใจลึก ๆ เป็นเวลาหนึ่งนาที </string>
+<string name = "close"> ปิด </string>
+<string name = "whoops_something_went_wrong"> อนิจจา ดูเหมือนว่าจะมีข้อผิดพลาด! </string>
+<string name = "global_statistics"> สถิติโลก </string>
+<string name = "realtime_maps">แผนที่เรียลไทม์</string>
+<string name = "lokasi_sekarang">ตำแหน่งปัจจุบัน</string>
+<string name = "open_maps"> เปิดแผนที่ </string>
+<string name = "today_s_statistics"> สถิติวันนี้ </string>
+<string name = "weekly_statistics"> สถิติรายสัปดาห์ </string>
+<string name = "general"> ทั่วไป </string>
+<string name = "symptoms"> อาการ </string>
+<string name = "prevention"> การป้องกัน </string>
+<string name = "covid_test">ตรวจโควิด </string>
+<string name = "exercise"> กีฬา </string>
+<string name = "food"> อาหาร </string>
+<string name = "people_at_risk"> บุคคลที่มีความเสี่ยง </string>
+<string name = "covid_19_news"> ข่าวโควิด-19 </string>
+<string name = "trending_news"> ข่าวเด่น </string>
+<string name = "you_can_also"> คุณก็ทำได้ </string>
+<string name = "see_covid_stats_for_any_country"> ดูสถิติโควิดของประเทศอื่นๆ </string>
+<string name = "hi_welcome_to_the_international_covid_center"> สวัสดี ยินดีต้อนรับสู่ศูนย์โควิดนานาชาติ! </string>
+<string name = "here_you_can_see_the_covid_19_cases_update_globally"> คุณสามารถดูสถิติผู้ป่วย Covid-19 ได้ทั่วโลก </string>
+<string name = "did_we_mention_about"> พูดถึงมั้ย ... </string>
+<string name = "you_can_get_covid_related_news_per_country"> อ่านข่าวโควิดตามประเทศได้ไหม? </string>
+<string name = "and_of_course"> และแน่นอน ... </string>
+<string name = "you_can_learn_covid_19_related_information_from_the_best_sources"> คุณสามารถรับข้อมูลเกี่ยวกับโควิด-19 จากแหล่งที่เชื่อถือได้ </string>
+<string name = "are_you_ready"> พร้อมหรือยัง? </string>
+<string name = "start"> เริ่ม </string>
+<string name = "settings"> การตั้งค่า </string>
+<string name = "language"> ภาษา </string>
+<string name = "english"> ภาษาชาวอินโดนีเซีย </string>
+<string name = "darkmode"> โหมดมืด </string>
+<string name = "notification"> แจ้งเตือน </string>
+<string name = "about"> เกี่ยวกับ </string>
+<string name = "provinsi_negara"> ภูมิภาค ประเทศ </string>
+<string name = "last_updated_10_feb_2021"> อัปเดตล่าสุด: 10 ก.พ. 2021 </string>
+<string name = "confirmed"> ตรวจสอบสิทธิ์แล้ว </string>
 </resources>

@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CovidApp</string>
+    <string name = "app_name">CovidApp</string>
+    <string name = "how_can_i_help_nyou_today"> 我如何帮助？ </string>
+    <string name = "hi_how_can_i_nhelp_you_today"> 嗨，我该如何\nhelp？ </string>
+    <string name = "countries_statistics">国家统计数据</string>
+    <string name = "deep_breathing_while_on_your_back">背部深呼吸</string>
+    <string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> 在你的背上说谎，弯曲膝盖，使底部portionre休息你的脚在沙发上。将您的手放在您的腹部或将其包裹在您的腹部两侧。 a 闭上嘴唇，将舌头放在上颚上。通过你的鼻子吸气，将空气吸入你的手所在的腹部。试着用你的呼吸展开你的手指。通过鼻子慢慢呼气。重复深呼吸一分钟</string>
+    <string name = "close">关闭</string>
+    <string name = "whoops_something_went_wrong"> 唉，好像出错了！ </string>
+    <string name = "global_statistics">全局统计</string>
+    <string name = "realtime_maps">实时地图</string>
+    <string name = "lokasi_sekarang">当前位置</string>
+    <string name = "open_maps"> 打开地图</string>
+    <string name = "today_s_statistics">今天的统计数据</string>
+    <string name = "weekly_statistics">每周统计数据</string>
+    <string name = "general"> 一般</string>
+    <string name = "symptoms"> 症状</string>
+    <string name = "prevention"> 预防</string>
+    <string name = "covid_test">Covid 测试</string>
+    <string name = "exercise">体育</string>
+    <string name = "food">食物</string>
+    <string name = "people_at_risk"> 处于危险中的人 </string>
+    <string name = "covid_19_news"> Covid-19 新闻 </string>
+    <string name = "trending_news">热门新闻</string>
+    <string name = "you_can_also"> 你也可以 </string>
+    <string name = "see_covid_stats_for_any_country"> 查看其他国家的 Covid 统计数据 </string>
+    <string name = "hi_welcome_to_the_international_covid_center"> 您好，欢迎来到国际新冠肺炎中心！ </string>
+    <string name = "here_you_can_see_the_covid_19_cases_update_globally">您可以全局查看Covid-19病例统计数据</string>
+    <string name = "did_we_mention_about"> 有没有提到... </string>
+<string name = "you_can_get_covid_related_news_per_country"> 您能按国家/地区阅读 Covid 新闻吗？ </string>
+    <string name = "and_of_course"> 当然...... </string>
+    <string name = "you_can_learn_covid_19_related_information_from_the_best_sources">您可以从可信来源获取有关 Covid-19 的信息</string>
+<string name = "are_you_ready"> 你准备好了吗？ </string>
+    <string name = "start">开始</string>
+    <string name = "settings"> 设置</string>
+    <string name = "language"> 语言</string>
+    <string name = "english">印尼语</string>
+    <string name = "darkmode"> 暗模式 </string>
+    <string name = "notification"> 通知</string>
+    <string name = "about"> 关于</string>
+    <string name = "provinsi_negara">地区，国家</string>
+    <string name = "last_updated_10_feb_2021">上次更新：2021 年 2 月 10 日 </string>
+    <string name = "confirmed"> 已认证</string>
+
 </resources>
