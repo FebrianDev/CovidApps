@@ -5,5 +5,43 @@
     <string name="hi_how_can_i_nhelp_you_today">Hi, How Can I \nHelp You Today?</string>
 
     <string name="countries_statistics">Countries Statistics</string>
+    <string name="deep_breathing_while_on_your_back">Deep Breathing While On Your Back</string>
+    <string name="lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute">Lie on your back and bend your knees so that the bottom of your feet are resting on the bed. Place your hands on top of your stomach or wrap them around the sides of your stomach. a Close your lips and place your tongue on the roof of your mouth. Breathe in through the nose and pull air down into your stomach where your hands are. Try to spread your fingers apart with your breath. Slowly exhale your breath through the nose. Repeat deep breaths for one minute.</string>
+    <string name="close">Close</string>
+    <string name="whoops_something_went_wrong">Whoops! Something went wrong.</string>
+    <string name="global_statistics">Global Statistics</string>
+    <string name="realtime_maps">Realtime Maps</string>
+    <string name="lokasi_sekarang">Lokasi Sekarang</string>
+    <string name="open_maps">Open Maps</string>
+    <string name="today_s_statistics">Today’s Statistics</string>
+    <string name="weekly_statistics">Weekly Statistics</string>
+    <string name="general">General</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="prevention">Prevention</string>
+    <string name="covid_test">Covid Test</string>
+    <string name="exercise">Exercise</string>
+    <string name="food">Food</string>
+    <string name="people_at_risk">People At Risk</string>
+    <string name="covid_19_news">Covid-19 News</string>
+    <string name="trending_news">Trending News</string>
+    <string name="you_can_also">You can also...</string>
+    <string name="see_covid_stats_for_any_country">See COVID stats for any country</string>
+    <string name="hi_welcome_to_the_international_covid_center">Hi, Welcome to the International Covid Center!</string>
+    <string name="here_you_can_see_the_covid_19_cases_update_globally">Here you can see the COVID-19 cases update globally.</string>
+    <string name="did_we_mention_about">Did We Mention About...</string>
+    <string name="you_can_get_covid_related_news_per_country">You can get covid related news per country?</string>
+    <string name="and_of_course">And of course...</string>
+    <string name="you_can_learn_covid_19_related_information_from_the_best_sources">You can learn covid-19 related information from the best sources</string>
+    <string name="are_you_ready">Are you ready?</string>
+    <string name="start">Start</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="darkmode">DarkMode</string>
+    <string name="notification">Notification</string>
+    <string name="about">About</string>
+    <string name="provinsi_negara">Provinsi, Negara</string>
+    <string name="last_updated_10_feb_2021">Last Updated : 10 Feb 2021</string>
+    <string name="confirmed">Confirmed</string>
 
 </resources>

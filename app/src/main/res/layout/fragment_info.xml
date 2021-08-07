@@ -90,7 +90,7 @@
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="General"
+                   android:text="@string/general"
                    android:paddingBottom="12dp"
                    android:textSize="16sp"
                    android:fontFamily="@font/montserrat_medium"
@@ -120,7 +120,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Symptoms"
+                       android:text="@string/symptoms"
                        android:paddingBottom="12dp"
                        android:textSize="16sp"
                        android:fontFamily="@font/montserrat_medium"
@@ -157,7 +157,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Prevention"
+                       android:text="@string/prevention"
                        android:paddingBottom="12dp"
                        android:textSize="16sp"
                        android:fontFamily="@font/montserrat_medium"
@@ -224,7 +224,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Covid Test"
+                       android:text="@string/covid_test"
                        android:paddingBottom="12dp"
                        android:textSize="16sp"
                        android:fontFamily="@font/montserrat_medium"
@@ -254,7 +254,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Exercise"
+                       android:text="@string/exercise"
                        android:paddingBottom="12dp"
                        android:textSize="16sp"
                        android:fontFamily="@font/montserrat_medium"
@@ -291,7 +291,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Food"
+                       android:text="@string/food"
                        android:paddingBottom="12dp"
                        android:textSize="16sp"
                        android:fontFamily="@font/montserrat_medium"
@@ -321,7 +321,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="People At Risk"
+                       android:text="@string/people_at_risk"
                        android:paddingBottom="12dp"
                        android:textSize="16sp"
                        android:fontFamily="@font/montserrat_medium"

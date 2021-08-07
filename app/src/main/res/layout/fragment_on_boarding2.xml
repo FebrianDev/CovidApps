@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You can also..."
+            android:text="@string/you_can_also"
             android:textSize="28sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/montserrat_semibold"
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="See COVID stats for any country"
+            android:text="@string/see_covid_stats_for_any_country"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
             android:textSize="16sp"

@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="And of course..."
+            android:text="@string/and_of_course"
             android:textSize="28sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/montserrat_semibold"
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You can learn covid-19 related information from the best sources"
+            android:text="@string/you_can_learn_covid_19_related_information_from_the_best_sources"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
             android:textSize="16sp"

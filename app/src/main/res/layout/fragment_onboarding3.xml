@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Did We Mention About..."
+            android:text="@string/did_we_mention_about"
             android:textSize="28sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/montserrat_semibold"
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You can get covid related news per country?"
+            android:text="@string/you_can_get_covid_related_news_per_country"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
             android:textSize="16sp"

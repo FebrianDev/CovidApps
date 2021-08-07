@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Global Statistics"
+            android:text="@string/global_statistics"
             android:textSize="24sp"
             android:layout_marginStart="20dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Today’s Statistics"
+            android:text="@string/today_s_statistics"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_title" />
@@ -119,7 +119,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat_semibold"
-                            android:text="Confirmed"
+                            android:text="@string/confirmed"
                             android:textColor="#FFFAFF"
                             android:textSize="13sp" />
 
@@ -157,7 +157,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat_semibold"
-                            android:text="Recovered"
+                            android:text="@string/recovered"
                             android:textColor="#FFFAFF"
                             android:textSize="13sp" />
 
@@ -195,7 +195,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat_semibold"
-                            android:text="Deceased"
+                            android:text="@string/deceased"
                             android:textColor="#FFFAFF"
                             android:textSize="13sp" />
 
@@ -223,7 +223,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Realtime Maps"
+            android:text="@string/realtime_maps"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lv"
@@ -270,7 +270,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Lokasi Sekarang"
+                        android:text="@string/lokasi_sekarang"
                         android:textColor="@color/colorPrimary"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -293,7 +293,7 @@
                     android:layout_height="40dp"
                     android:layout_marginEnd="12dp"
                     android:background="@drawable/bg_btn_maps"
-                    android:text="Open Maps"
+                    android:text="@string/open_maps"
                     android:textColor="@color/colorPrimary"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

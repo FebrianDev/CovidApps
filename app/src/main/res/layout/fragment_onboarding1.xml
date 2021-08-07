@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hi, Welcome to the International Covid Center!"
+            android:text="@string/hi_welcome_to_the_international_covid_center"
             android:textSize="28sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/montserrat_semibold"
@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Here you can see the COVID-19 cases update globally."
+            android:text="@string/here_you_can_see_the_covid_19_cases_update_globally"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
             android:textSize="16sp"

@@ -1,10 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CovidApp</string>
+    <string name="how_can_i_help_nyou_today">Bagaimana saya\nbisamembantu?</string>
+    <string name="hi_how_can_i_nhelp_you_today">Hi, Bagaimana saya\nbisamembantu?</string>
 
-    <string name="how_can_i_help_nyou_today">How can I help\n
-        you today?</string>
-    <string name="hi_how_can_i_nhelp_you_today">Hi, How Can I \nHelp You Today?</string>
+    <string name="countries_statistics">Statistik Negara</string>
+    <string name="deep_breathing_while_on_your_back">Deep Breathing While On Your Back</string>
+    <string name="lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute">Lie on your back and bend your knees so that the bottom of your feet are resting on the bed. Place your hands on top of your stomach or wrap them around the sides of your stomach. a Close your lips and place your tongue on the roof of your mouth. Breathe in through the nose and pull air down into your stomach where your hands are. Try to spread your fingers apart with your breath. Slowly exhale your breath through the nose. Repeat deep breaths for one minute.</string>
+    <string name="close">Tutup</string>
+    <string name="whoops_something_went_wrong">Ups, sepertinya ada kesalahan!</string>
+    <string name="global_statistics">Statistik Global</string>
+    <string name="realtime_maps">Peta Realtime</string>
+    <string name="lokasi_sekarang">Lokasi Sekarang</string>
+    <string name="open_maps">Buka Peta</string>
+    <string name="today_s_statistics">Statistik Hari Ini</string>
+    <string name="weekly_statistics">Statistik Mingguan</string>
+    <string name="general">Umum</string>
+    <string name="symptoms">Gejalan</string>
+    <string name="prevention">Pencegahan</string>
+    <string name="covid_test">Tes Covid</string>
+    <string name="exercise">Olahraga</string>
+    <string name="food">Makanan</string>
+    <string name="people_at_risk">Orang beresiko</string>
+    <string name="covid_19_news">Berita Covid-19</string>
+    <string name="trending_news">Berita Trending</string>
+    <string name="you_can_also">Kamu juga bisa</string>
+    <string name="see_covid_stats_for_any_country">Smelihat statistik Covid negara lain</string>
+    <string name="hi_welcome_to_the_international_covid_center">Hi, Selamat datang di International Covid Center!</string>
+    <string name="here_you_can_see_the_covid_19_cases_update_globally">Kamu bisa melihat statistik kasus Covid-19 secara global</string>
+    <string name="did_we_mention_about">Apakah sudah disebutkan kalau...</string>
+    <string name="you_can_get_covid_related_news_per_country">Kamu bisa membaca berita Covid per negara?</string>
+    <string name="and_of_course">Dan tentunya...</string>
+    <string name="you_can_learn_covid_19_related_information_from_the_best_sources">Kamu bisa mendapat informasi seputar Covid-19 dari sumber terpercaya/string>
+    <string name="are_you_ready">Apa kamu siap?</string>
+    <string name="start">Mulai</string>
+    <string name="settings">Pengaturan</string>
+    <string name="language">Bahasa</string>
+    <string name="english">Indonesia</string>
+    <string name="darkmode">Mode Gelap</string>
+    <string name="notification">Notifikasi</string>
+    <string name="about">Tentang</string>
+    <string name="provinsi_negara">Provinsi, Negara</string>
+    <string name="last_updated_10_feb_2021">Terakhir Update : 10 Feb 2021</string>
+    <string name="confirmed">Terkonfirmasi</string>
 
-    <string name="countries_statistics">Statistik Harian</string>
 </resources>

@@ -13,7 +13,7 @@
         android:id="@+id/text_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Provinsi, Negara"
+        android:text="@string/provinsi_negara"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/colorPrimary"
@@ -25,7 +25,7 @@
         android:id="@+id/last_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last Updated : 10 Feb 2021"
+        android:text="@string/last_updated_10_feb_2021"
         app:layout_constraintTop_toBottomOf="@+id/text_country"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Confirmed"
+                android:text="@string/confirmed"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:textColor="@color/yellow_primary"
@@ -66,7 +66,7 @@
             android:id="@+id/text_confirmed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="124.567"
+            android:text="@string/_124_567"
             android:textSize="18sp"
             android:textColor="@color/colorPrimary"
             android:layout_marginStart="24dp"/>
@@ -91,7 +91,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Deceased"
+                    android:text="@string/deceased"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:textColor="@color/red_custom"
@@ -102,7 +102,7 @@
                 android:id="@+id/text_deceased"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="124.567"
+                android:text="@string/_124_567"
                 android:textSize="18sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginStart="24dp"/>
@@ -135,7 +135,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Recovered"
+                    android:text="@string/recovered"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:textColor="@color/green_custom"
@@ -146,7 +146,7 @@
                 android:id="@+id/text_recovered"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="124.567"
+                android:text="@string/_124_567"
                 android:textSize="18sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginStart="24dp"/>
@@ -171,7 +171,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Case"
+                    android:text="@string/total_case"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:textColor="@color/blue_primary"
@@ -182,7 +182,7 @@
                 android:id="@+id/text_total_case"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="124.567"
+                android:text="@string/_124_567"
                 android:textSize="18sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginStart="24dp"/>

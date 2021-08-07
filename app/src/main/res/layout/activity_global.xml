@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Global Statistics"
+        android:text="@string/global_statistics"
         android:textSize="24sp"
         android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="20dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Today’s Statistics"
+        android:text="@string/today_s_statistics"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />

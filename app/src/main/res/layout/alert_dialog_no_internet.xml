@@ -24,7 +24,7 @@
         android:textSize="12sp"
         android:fontFamily="@font/montserrat_semibold"
         android:textColor="@color/colorPrimary"
-        android:text="Whoops!  Something went wrong."/>
+        android:text="@string/whoops_something_went_wrong"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="96dp"
         android:layout_height="42dp"
