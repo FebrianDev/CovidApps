@@ -38,4 +38,6 @@
     <color name="bgColorSecondary">@color/black_secondary</color>
     <color name="bgColorThird">@color/black_third</color>
 
+    <color name="bgBottomColor">@color/black</color>
+
 </resources>

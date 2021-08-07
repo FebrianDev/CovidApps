@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CovidApp</string>
+
     <string name="how_can_i_help_nyou_today">How can I help\n
         you today?</string>
     <string name="hi_how_can_i_nhelp_you_today">Hi, How Can I \nHelp You Today?</string>
 
-    <string name="countries_statistics">Countries Statistics</string>
-
+    <string name="countries_statistics">Statistik Harian</string>
 </resources>

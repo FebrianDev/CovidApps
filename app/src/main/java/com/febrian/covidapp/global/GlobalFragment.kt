@@ -64,18 +64,37 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         }
     }
 
-    private fun main(){
+    private fun main() {
         val currentDate = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(Date())
 
         binding.tgl.text = currentDate
 
-        ApiService.globalDataCovid.getGlobalData().enqueue(object : Callback<CountryResponse> {
+//        ApiService.globalDataCovid.getGlobalData().enqueue(object : Callback<CountryResponse> {
+//            override fun onResponse(
+//                call: Call<CountryResponse>,
+//                response: Response<CountryResponse>
+//            ) {
+//                if (response.isSuccessful) {
+//
+//                    val body = response.body()
+//                    if (body != null) {
+//                        setGlobalData(body)
+//                    }
+//
+//                    binding.refreshLayout.isRefreshing = false
+//                }
+//            }
+//
+//            override fun onFailure(call: Call<CountryResponse>, t: Throwable) {
+//
+//            }
+    //})
+        ApiService.newService.getGlobalDataV2().enqueue(object : Callback<GlobalResponse>{
             override fun onResponse(
-                call: Call<CountryResponse>,
-                response: Response<CountryResponse>
+                call: Call<GlobalResponse>,
+                response: Response<GlobalResponse>
             ) {
                 if (response.isSuccessful) {
-
                     val body = response.body()
                     if (body != null) {
                         setGlobalData(body)
@@ -85,8 +104,8 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
                 }
             }
 
-            override fun onFailure(call: Call<CountryResponse>, t: Throwable) {
-
+            override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
+                TODO("Not yet implemented")
             }
 
         })
@@ -128,10 +147,10 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
     }
 
     @SuppressLint("SetTextI18n")
-    private fun setGlobalData(body: CountryResponse) {
-        val totalCase = body.confirmed?.value!!.toBigDecimal()
-        val recovered = body.recovered?.value!!.toBigDecimal()
-        val deaths = body.deaths?.value!!.toBigDecimal()
+    private fun setGlobalData(body: GlobalResponse) {
+        val totalCase = body.cases?.toBigDecimal()!!
+        val recovered = body.recovered?.toBigDecimal()!!
+        val deaths = body.deaths?.toBigDecimal()!!
         val confirmed = totalCase - (recovered + deaths)
 
         binding.confirmed.text = NumberFormat.getInstance().format(confirmed).toString()

@@ -37,4 +37,14 @@ object ApiService {
 
         service.create(ApiEndPoint::class.java)
     }
+
+    val newService : ApiEndPoint by lazy {
+        val service = Retrofit
+            .Builder()
+            .baseUrl("https://disease.sh")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        service.create(ApiEndPoint::class.java)
+    }
 }

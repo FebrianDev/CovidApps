@@ -22,6 +22,7 @@
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_general.xml" value="0.11927083333333334" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_global.xml" value="0.17391304347826086" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_main.xml" value="0.16802536231884058" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_onboarding.xml" value="0.1671195652173913" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_people_at_risk.xml" value="0.25181159420289856" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/activity_prevention.xml" value="0.24320652173913043" />
@@ -33,6 +34,7 @@
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_global.xml" value="0.264" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_info.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_news.xml" value="0.16576086956521738" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.1671195652173913" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_onboarding1.xml" value="0.2" />
         <entry key="..\:/AndroidProject/CovidApp/app/src/main/res/layout/fragment_onboarding3.xml" value="0.1671195652173913" />

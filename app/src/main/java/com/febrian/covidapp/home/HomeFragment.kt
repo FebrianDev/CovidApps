@@ -21,6 +21,7 @@ import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.FragmentHomeBinding
 import com.febrian.covidapp.global.DateUtils
+import com.febrian.covidapp.global.GlobalResponse
 import com.febrian.covidapp.home.response.CountryResponse
 import com.febrian.covidapp.news.utils.InternetConnection
 import com.github.mikephil.charting.animation.Easing
@@ -51,6 +52,12 @@ import kotlin.collections.HashSet
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
+
+    companion object {
+        private const val NOTIFICATION_ID = 1
+        private const val CHANNEL_ID = "channel_01"
+        private const val CHANNEL_NAME = "covid channel"
+    }
 
     val TAG = "Home Activity"
 
@@ -132,21 +139,21 @@ class HomeFragment : Fragment() {
 
     @DelicateCoroutinesApi
     private fun showStatistic(query: String) {
-        ApiService.globalDataCovid.getCountries(query)
-            .enqueue(object : Callback<CountryResponse> {
+        ApiService.newService.getCountriesData(query)
+            .enqueue(object : Callback<GlobalResponse> {
                 @SuppressLint("SetTextI18n")
                 override fun onResponse(
-                    call: Call<CountryResponse>,
-                    response: Response<CountryResponse>
+                    call: Call<GlobalResponse>,
+                    response: Response<GlobalResponse>
                 ) {
                     if (response.isSuccessful) {
 
                         try {
                             val body = response.body()
                             if (body != null) {
-                                val totalCase = body.confirmed?.value!!.toBigDecimal()
-                                val recovered = body.recovered?.value!!.toBigDecimal()
-                                val deaths = body.deaths?.value!!.toBigDecimal()
+                                val totalCase = body.cases!!.toBigDecimal()
+                                val recovered = body.recovered!!.toBigDecimal()
+                                val deaths = body.deaths!!.toBigDecimal()
                                 val confirmed = totalCase - (recovered + deaths)
 
                                 binding.confirmedValue.text =
@@ -165,7 +172,7 @@ class HomeFragment : Fragment() {
                     }
                 }
 
-                override fun onFailure(call: Call<CountryResponse>, t: Throwable) {
+                override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
 
                 }
 
@@ -476,6 +483,10 @@ class HomeFragment : Fragment() {
     override fun onStop() {
         view?.context?.unregisterReceiver(broadcastReceiver)
         super.onStop()
+    }
+
+    fun sendNotification(){
+
     }
 
 }

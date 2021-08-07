@@ -11,6 +11,11 @@
         android:layout_height="match_parent"
         android:id="@+id/refreshLayout">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -299,6 +304,7 @@
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </FrameLayout>

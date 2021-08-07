@@ -270,25 +270,6 @@
 
                         <include layout="@layout/shimmer_item_news" />
 
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
                     </LinearLayout>
                 </com.facebook.shimmer.ShimmerFrameLayout>
 

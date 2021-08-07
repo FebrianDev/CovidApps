@@ -50,6 +50,9 @@ class DetailNewsActivity : AppCompatActivity() {
         binding = ActivityDetailNewsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        binding.loading.visibility = View.VISIBLE
+
         binding.back.setOnClickListener {
             finish()
         }
@@ -131,11 +134,6 @@ class DetailNewsActivity : AppCompatActivity() {
         }
 
         main()
-
-        binding.refreshLayout.visibility = View.GONE
-//        binding.refreshLayout.setOnRefreshListener {
-//            main()
-//        }
     }
 
     fun main(){
@@ -145,6 +143,8 @@ class DetailNewsActivity : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 //   view?.loadUrl("javascript:alert('Web Berhasil Di Load')")
              //   binding.refreshLayout.visibility = View.GONE
+
+                binding.loading.visibility = View.GONE
             }
         }
 
@@ -161,8 +161,6 @@ class DetailNewsActivity : AppCompatActivity() {
             }
         }
         binding.web.loadUrl(url)
-
-    //    binding.refreshLayout.isRefreshing = false
 
     }
 

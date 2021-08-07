@@ -53,4 +53,6 @@
     <color name="bgColorPrimary">@color/white_primary</color>
     <color name="bgColorSecondary">@color/white_secondary</color>
     <color name="bgColorThird">@color/white_third</color>
+
+    <color name="bgBottomColor">@color/white</color>
 </resources>

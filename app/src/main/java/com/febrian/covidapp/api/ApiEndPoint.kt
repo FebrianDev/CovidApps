@@ -1,5 +1,6 @@
 package com.febrian.covidapp.api
 
+import com.febrian.covidapp.global.GlobalResponse
 import com.febrian.covidapp.home.Response
 import com.febrian.covidapp.home.response.CountryDailyResponse
 import com.febrian.covidapp.home.response.CountryNameResponse
@@ -51,4 +52,12 @@ interface ApiEndPoint {
 
     @GET("/api/confirmed")
     fun getConfirmed() : Call<ArrayList<ProvinceResponse>>
+
+    @GET("/v3/covid-19/all")
+    fun getGlobalDataV2() : Call<GlobalResponse>
+
+    @GET("/v3/covid-19/countries/{country}")
+    fun getCountriesData(
+        @Path("country") country: String
+    ) : Call<GlobalResponse>
 }
