@@ -42,5 +42,36 @@
     <string name = "provinsi_negara">地区，国家</string>
     <string name = "last_updated_10_feb_2021">上次更新：2021 年 2 月 10 日 </string>
     <string name = "confirmed"> 已认证</string>
+    <string name = "who_should"> 谁应该接受当前感染的检测？</string>
+    <string name = "people_who"> - 有 COVID-19 症状的人。\ n "
+     - 大多数与确诊 COVID-19 的人有过密切接触（24 小时内 6 英尺以内，总共 15 分钟或更长时间）的人。\N”
+     - 未接种疫苗的人参加了使他们感染 COVID-19 的风险更高的活动，因为他们无法根据需要保持身体距离以避免接触，例如旅行、参加大型社交或群众集会，或者在拥挤或通风不良的室内设置。\n"
+     - 被要求或转介的人由他们的医疗保健提供者或州、部落、地方外部标志或领土卫生部门进行检测。”
+    </string>
 
+    <string name = "how_to_get_tested"> 如何对当前的 COVID-19 感染进行测试？</string>
+    <string name = "contact_your"> 联系您的医疗保健提供者或访问您所在的州、部落、localexternal icon 和领土卫生部门的网站，以查找有关检测的最新本地信息。提供的病毒性 COVID-19 测试类型可能因地点而异。</string>
+
+    <string name = "how_to_use_results">病毒检测结果如何使用？</string>
+    <string name = "if_you"> 如果检测结果呈阳性，请知道采取哪些保护措施来防止他人生病。\ n- 如果检测结果呈阴性，则您在收集样本时可能尚未感染。测试结果仅意味着您在测试时没有感染 COVID-19。继续采取措施保护自己。</string>
+
+    <string name = "what_are"> Covid-19 测试有哪些不同类型？</string>
+    <string name = "polymerase_chain"> - 聚合酶链反应 (PCR) 测试被送到实验室以诊断疾病 \n
+    - 横向流动测试 (LFT) 可以当场诊断 Covid-19，但不如 PCR 测试准确 \ n
+    - 抗体（或血清学）测试无法诊断活动性感染，但它们可以帮助判断一个人是否对 Covid-19 具有免疫力
+    </string>
+
+    <string name = "what_is_PCR">什么是PCR测试？</string>
+    <string name = "pcr_tests"> PCR 测试用于直接筛选病毒 RNA 的存在，在抗体形成或疾病症状出现之前，可以在体内检测到病毒 RNA。这意味着测试可以判断某人在患病的早期是否感染了病毒。\N
+    通过扩大 PCR 检测范围来筛查人群中的大量鼻咽拭子样本，公共卫生官员可以更清楚地了解 Covid-19 等疾病的传播情况。\N
+    但是，PCR 仍然有其警告。这些类型的 Covid-19 测试需要送到实验室进行分析，这意味着人们可能需要几天的时间才能找到结果。
+    </string>
+
+    <string name = "how_about_lateral"> 侧流测试怎么样？</string>
+    <string name = "lft"> LFT 类似于 PCR 测试，因为它们都是抗原测试的类型，旨在检测活跃的 Covid-19 感染，而不是该疾病的抗体。使用 Covid-19 LFT，将鼻咽样本放置在一个小的吸收垫上，然后通过毛细管沿着吸收垫将其吸入涂有抗体的条带，这些抗体与 SARS-Cov-2 蛋白结合。如果这些蛋白质存在，这将在测试中显示为一条彩色线，表明感染。
+    </string>
+
+    <string name = "what_is_antibody">什么是抗体检测？</string>
+    <string name = "antibody_tests"> 抗体测试用于评估已接种 Covid-19 疫苗的人的免疫反应。研究人员还不知道疫苗诱导的免疫力会持续多久，或者是否需要加强注射。有迹象表明，Covid-19 变体正在降低某些疫苗的有效性，但到目前为止，它们似乎仍能提供足够的保护来预防严重或致命的疾病。
+    </string>
 </resources>

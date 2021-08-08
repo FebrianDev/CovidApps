@@ -42,5 +42,36 @@
     <string name="provinsi_negara">Provinsi, Negara</string>
     <string name="last_updated_10_feb_2021">Terakhir Update : 10 Feb 2021</string>
     <string name="confirmed">Terkonfirmasi</string>
+    <string name = "who_should"> Siapa yang harus dites untuk infeksi saat ini? </string>
+    <string name="people_who"> - Orang yang memiliki gejala COVID-19. \ n "
+     - Kebanyakan orang yang pernah melakukan kontak dekat (dalam jarak 6 kaki selama total 15 menit atau lebih selama periode 24 jam) dengan seseorang yang terkonfirmasi COVID-19. \ N "
+     - Orang yang tidak divaksinasi yang telah mengambil bagian dalam kegiatan yang menempatkan mereka pada risiko lebih tinggi untuk COVID-19 karena mereka tidak dapat secara fisik menjaga jarak yang diperlukan untuk menghindari paparan, seperti bepergian, menghadiri pertemuan sosial atau massal yang besar, atau berada di dalam ruangan yang ramai atau berventilasi buruk pengaturan. \ n "
+     - Orang yang telah diminta atau dirujuk untuk dites oleh penyedia layanan kesehatan mereka, atau negara bagian, suku, ikon eksternal lokal, atau departemen kesehatan teritorial."
+    </string>
 
+    <string name = "how_to_get_tested"> Bagaimana cara dites untuk infeksi COVID-19 saat ini? </string>
+    <string name = "contact_your"> Hubungi penyedia layanan kesehatan Anda atau kunjungi situs web negara bagian, suku, ikon eksternal lokal, dan departemen kesehatan teritorial Anda untuk menemukan informasi lokal terbaru tentang pengujian. Jenis tes virus COVID-19 yang ditawarkan mungkin berbeda menurut lokasi. </string>
+
+    <string name = "how_to_use_results"> Bagaimana cara menggunakan hasil tes virus? </string>
+    <string name = "if_you"> Jika hasil tes Anda positif, ketahui langkah perlindungan apa yang harus diambil untuk mencegah orang lain jatuh sakit. \ n- Jika hasil tes Anda negatif, Anda mungkin tidak terinfeksi pada saat sampel Anda dikumpulkan. Hasil tes hanya berarti Anda tidak memiliki COVID-19 pada saat pengujian. Lanjutkan untuk mengambil langkah-langkah untuk melindungi diri Anda sendiri. </string>
+
+    <string name = "what_are"> Apa saja jenis tes Covid-19? </string>
+    <string name = "polymerase_chain"> - Tes reaksi berantai polimerase (PCR) dikirim ke laboratorium untuk mendiagnosis penyakit \ n
+    - Tes aliran lateral (LFT) dapat mendiagnosis Covid-19 di tempat, tetapi tidak seakurat tes PCR \ n
+    - Tes antibodi (atau serologi) tidak dapat mendiagnosis infeksi aktif, tetapi dapat membantu mengetahui apakah seseorang memiliki kekebalan terhadap Covid-19
+    </string>
+
+    <string name = "what_is_PCR"> Apa itu tes PCR? </string>
+    <string name = "pcr_tests"> Tes PCR digunakan untuk menyaring secara langsung keberadaan RNA virus, yang akan dapat dideteksi di dalam tubuh sebelum bentuk antibodi atau gejala penyakit muncul. Ini berarti tes dapat mengetahui apakah seseorang memiliki virus sejak awal penyakitnya. \ N
+    Dengan menskalakan pengujian PCR untuk menyaring sebagian besar sampel usap nasofaring dari dalam suatu populasi, pejabat kesehatan masyarakat dapat memperoleh gambaran yang lebih jelas tentang penyebaran penyakit seperti Covid-19. \ N
+    Namun, PCR masih memiliki peringatan. Jenis tes Covid-19 ini perlu dikirim ke laboratorium untuk dianalisis, yang berarti perlu waktu berhari-hari bagi orang untuk mengetahui hasilnya.
+    </string>
+
+    <string name = "how_about_lateral"> bagaimana tentang tes aliran lateral? </string>
+    <string name = "lft"> LFT mirip dengan tes PCR, karena keduanya adalah jenis tes antigen, yang dirancang untuk mendeteksi infeksi Covid-19 aktif, bukan antibodi terhadap penyakit. Dengan LFT Covid-19, sampel nasofaring ditempatkan pada bantalan penyerap kecil, yang kemudian ditarik di sepanjang bantalan melalui garis kapiler ke strip yang dilapisi antibodi, yang mengikat protein SARS-Cov-2. Jika protein ini ada, ini akan terlihat sebagai garis berwarna pada tes, yang menunjukkan infeksi.
+    </string>
+
+    <string name = "what_is_antibody"> Apa itu tes antibodi? </string>
+    <string name = "antibody_tests"> Tes antibodi digunakan untuk mengevaluasi respons imun pada orang yang telah divaksinasi terhadap Covid-19. Para peneliti belum tahu berapa lama kekebalan yang diinduksi vaksin akan bertahan atau apakah suntikan booster akan diperlukan. Ada beberapa indikasi bahwa varian Covid-19 membuat vaksin tertentu menjadi kurang efektif, tetapi sejauh ini tampaknya masih memberikan perlindungan yang cukup untuk mencegah penyakit parah atau fatal.
+    </string>
 </resources>

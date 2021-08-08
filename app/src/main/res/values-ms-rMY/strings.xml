@@ -42,5 +42,36 @@
     <string name = "provinsi_negara"> Wilayah, Negara </string>
     <string name = "last_updated_10_feb_2021"> Kemas kini Terakhir: 10 Feb 2021 </string>
     <string name = "confirmed"> Disahkan </string>
+    <string name = "who_should"> Siapa yang harus diuji untuk jangkitan semasa? </string>
+    <string name = "people_who"> - Orang yang mempunyai simptom COVID-19. \ n "
+     - Kebanyakan orang yang mempunyai hubungan rapat (dalam jarak 6 kaki selama 15 minit atau lebih dalam tempoh 24 jam) dengan seseorang yang mempunyai COVID-19 yang disahkan. \ N "
+     - Orang yang tidak divaksinasi yang telah mengambil bahagian dalam aktiviti yang menjadikan mereka berisiko lebih tinggi untuk COVID-19 kerana mereka tidak dapat menjauhkan secara fizikal seperti yang diperlukan untuk mengelakkan pendedahan, seperti perjalanan, menghadiri perjumpaan sosial atau massa yang besar, atau berada di dalam ruangan yang sesak atau kurang berventilasi tetapan. \ n "
+     - Orang-orang yang telah diminta atau dirujuk untuk diuji oleh penyedia penjagaan kesihatan mereka, atau negara, suku, ikon lokal, atau departemen kesihatan wilayah. "
+    </string>
 
+    <string name = "how_to_get_tested"> Bagaimana untuk diuji untuk jangkitan COVID-19 semasa? </string>
+    <string name = "contact_your"> Hubungi penyedia perkhidmatan kesihatan anda atau lawati laman web negeri, suku, ikon tempatan, dan jabatan kesihatan wilayah anda untuk mendapatkan maklumat terkini mengenai ujian. Jenis ujian COVID-19 virus yang ditawarkan mungkin berbeza mengikut lokasi. </string>
+
+    <string name = "how_to_use_results"> Bagaimana menggunakan hasil ujian virus? </string>
+    <string name = "if_you"> Sekiranya anda menguji positif, ketahui langkah perlindungan apa yang harus diambil untuk mengelakkan orang lain jatuh sakit. \ n- Sekiranya anda menguji negatif, anda mungkin tidak dijangkiti pada masa sampel anda dikumpulkan. Hasil ujian hanya bermaksud bahawa anda tidak mempunyai COVID-19 pada masa ujian. Terus ambil langkah untuk melindungi diri anda. </string>
+
+    <string name = "what_are"> Apakah jenis ujian Covid-19 yang berbeza? </string>
+    <string name = "polymerase_chain"> - Ujian tindak balas rantai polimerase (PCR) dihantar ke makmal untuk mendiagnosis penyakit \ n
+    - Ujian aliran lateral (LFT) dapat mendiagnosis Covid-19 di tempat, tetapi tidak tepat seperti ujian PCR \ n
+    - Ujian antibodi (atau serologi) tidak dapat mendiagnosis jangkitan aktif, tetapi ujian ini dapat membantu untuk mengetahui sama ada seseorang mempunyai kekebalan terhadap Covid-19
+    </string>
+
+    <string name = "what_is_PCR"> Apa itu ujian PCR? </string>
+    <string name = "pcr_tests"> Ujian PCR digunakan untuk menyaring secara langsung kehadiran RNA virus, yang akan dapat dikesan di dalam badan sebelum wujud antibodi atau gejala penyakit. Ini bermakna ujian dapat mengetahui sama ada seseorang menghidap virus itu pada awal penyakitnya. \ N
+    Dengan meningkatkan ujian PCR untuk menyaring sejumlah besar sampel sapu nasofaring dari dalam populasi, pegawai kesihatan awam dapat memperoleh gambaran yang lebih jelas mengenai penyebaran penyakit seperti Covid-19. \ N
+    Walau bagaimanapun, PCR masih mempunyai kehendaknya. Ujian Covid-19 jenis ini perlu dihantar ke makmal untuk dianalisis, yang bermaksud memerlukan beberapa hari bagi orang untuk mengetahui hasilnya.
+    </string>
+
+    <string name = "how_about_lateral"> mengenai ujian aliran lateral? </string>
+    <string name = "lft"> LFT serupa dengan ujian PCR, kerana kedua-dua jenis ini adalah ujian antigen, yang dirancang untuk mengambil jangkitan Covid-19 yang aktif dan bukannya antibodi terhadap penyakit ini. Dengan Covid-19 LFT, sampel nasofaring diletakkan pada pad penyerap kecil, yang kemudian ditarik di sepanjang pad melalui garis kapilari ke jalur yang dilapisi antibodi, yang mengikat protein SARS-Cov-2. Sekiranya protein ini ada, ini akan ditunjukkan sebagai garis berwarna pada ujian, yang menunjukkan jangkitan.
+    </string>
+
+    <string name = "what_is_antibody"> Apa itu ujian antibodi? </string>
+    <string name = "antibody_tests"> Ujian antibodi digunakan untuk menilai tindak balas imun pada orang yang telah divaksin terhadap Covid-19. Para penyelidik belum tahu berapa lama imuniti yang disebabkan oleh vaksin akan bertahan atau apakah tembakan penggalak diperlukan. Terdapat beberapa petunjuk bahawa varian Covid-19 menjadikan vaksin tertentu kurang berkesan, tetapi sejauh ini mereka masih memberikan perlindungan yang mencukupi untuk mencegah penyakit yang teruk atau maut.
+    </string>
 </resources>

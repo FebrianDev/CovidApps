@@ -5,7 +5,7 @@
     <string name = "hi_how_can_i_nhelp_you_today"> Kumusta, Paano ako makakatulong? </string>
     <string name = "countries_statistics"> Country Statistics </string>
     <string name = "deep_breathing_while_on_your_back"> Malalim na Paghinga Sa Iyong Likod </string>
-    <string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> Kasinungalingan sa iyong likod at yumuko iyong tuhod kaya na sa ilalim portion're nagpapahinga ang iyong mga paa sa itaas ng sopa. Ilagay ang iyong mga kamay sa iyong tiyan o balutin ito sa mga gilid ng iyong tiyan. a Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. Huminga sa pamamagitan ng iyong ilong at iguhit ang hangin sa iyong tiyan kung nasaan ang iyong mga kamay. Subukang ikalat ang iyong mga daliri gamit ang iyong hininga. Dahan-dahang huminga sa pamamagitan ng iyong ilong. Ulitin ang malalim na paghinga para sa isang minuto. </string>
+    <string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> Kasinungalingan sa iyong likod at yumuko iyong tuhod kaya na sa ilalim portionre nagpapahinga ang iyong mga paa sa itaas ng sopa. Ilagay ang iyong mga kamay sa iyong tiyan o balutin ito sa mga gilid ng iyong tiyan. a Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. Huminga sa pamamagitan ng iyong ilong at iguhit ang hangin sa iyong tiyan kung nasaan ang iyong mga kamay. Subukang ikalat ang iyong mga daliri gamit ang iyong hininga. Dahan-dahang huminga sa pamamagitan ng iyong ilong. Ulitin ang malalim na paghinga para sa isang minuto. </string>
     <string name = "close"> Isara </string>
     <string name = "whoops_something_went_wrong"> Naku, tila mayroong isang error! </string>
     <string name = "global_statistics"> Global Statistics </string>
@@ -42,5 +42,36 @@
     <string name = "provinsi_negara"> Rehiyon, Bansa </string>
     <string name = "last_updated_10_feb_2021"> Huling Nai-update: 10 Peb 2021 </string>
     <string name = "confirmed"> Napatunayan </string>
+    <string name = "who_should"> Sino ang dapat masubukan para sa kasalukuyang impeksyon? </string>
+    <string name = "people_who"> - Mga taong may sintomas ng COVID-19. \ n "
+     - Karamihan sa mga tao na nagkaroon ng malapit na pakikipag-ugnay (sa loob ng 6 talampakan para sa isang kabuuang 15 minuto o higit pa sa loob ng 24 na oras na panahon) sa isang taong nakumpirma na COVID-19. \ N "
+     - Ang mga hindi nabakunsyang tao na nakilahok sa mga aktibidad na inilalagay sa kanila sa mas mataas na peligro para sa COVID-19 sapagkat hindi sila maaaring malayo nang pisikal hanggat kinakailangan upang maiwasan ang pagkakalantad, tulad ng paglalakbay, pagdalo sa mga malalaking pagtitipon sa lipunan o masa, o nasa masikip o hindi maayos na bentilasyong panloob mga setting. \ n "
+     - Ang mga taong tinanong o tinukoy upang masubukan ng kanilang tagabigay ng pangangalaga ng kalusugan, o estado, tribo, lokal na panlabas na icon, o departamento ng kalusugan ng teritoryo. "
+    </string>
 
+    <string name = "how_to_get_tested"> Paano masubukan para sa kasalukuyang impeksyon sa COVID-19? </string>
+    <string name = "contact_your"> Makipag-ugnay sa iyong tagabigay ng pangangalaga ng kalusugan o bisitahin ang iyong estado, tribo, lokal na icon na panlabas, at website ng departamento ng kalusugan ng teritoryo upang hanapin ang pinakabagong lokal na impormasyon sa pagsubok. Ang uri ng inalok na viral na COVID-19 na pagsubok ay maaaring magkakaiba ayon sa lokasyon. </string>
+
+    <string name = "how_to_use_results"> Paano gamitin ang mga resulta ng mga pagsusuri sa viral? </string>
+    <string name = "if_you"> Kung nagpositibo ka, alamin kung anong mga hakbang na proteksiyon ang gagawin upang maiwasang magkasakit ang iba. \ n- Kung negatibo ang iyong pagsubok, malamang na hindi ka nahawahan sa oras na nakolekta ang iyong sample. Nangangahulugan lamang ang resulta ng pagsubok na wala kang COVID-19 sa oras ng pagsubok. Magpatuloy na gumawa ng mga hakbang upang maprotektahan ang iyong sarili. </string>
+
+    <string name = "what_are"> Ano ang ibat ibang uri ng pagsubok na Covid-19? </string>
+    <string name = "polymerase_chain"> - Ang mga pagsusuri sa polymerase chain reaction (PCR) ay ipinadala sa isang lab upang masuri ang sakit \ n
+    - Maaaring masuri ng mga lateral flow test (LFT) ang Covid-19 sa lugar, ngunit hindi tumpak tulad ng mga pagsubok sa PCR \ n
+    - Ang mga pagsusuri sa Antibody (o serology) ay hindi maaaring masuri ang aktibong impeksyon, ngunit makakatulong sila upang masabi kung ang isang tao ay may kaligtasan sa Covid-19
+    </string>
+
+    <string name = "what_is_PCR"> Ano ang pagsubok sa PCR? </string>
+    <string name = "pcr_tests"> Ginagamit ang mga pagsusuri sa PCR upang direktang i-screen para sa pagkakaroon ng viral RNA, na matutukoy sa katawan bago ang form ng mga antibodies o sintomas ng sakit. Nangangahulugan ito na masasabi ng mga pagsubok kung mayroon o mayroong isang virus nang maaga pa sa kanilang karamdaman. \ N
+    Sa pamamagitan ng pag-scale ng pagsubok sa PCR upang mai-screen ang malawak na mga swamp ng nasopharyngeal swab sample mula sa loob ng isang populasyon, ang mga opisyal ng kalusugan ng publiko ay maaaring makakuha ng isang mas malinaw na larawan ng pagkalat ng isang sakit tulad ng Covid-19. \ N
+    Gayunpaman, mayroon pa ring mga kaugalian ang PCR. Ang mga uri ng pagsubok na Covid-19 na ito ay kailangang maipadala sa isang laboratoryo para sa pagtatasa, nangangahulugang maaaring tumagal ng ilang araw upang malaman ng mga tao ang kanilang mga resulta.
+    </string>
+
+    <string name = "how_about_lateral"> mayroon tungkol sa isang pag-ilid na pagsubok sa daloy? </string>
+    <string name = "lft"> Ang mga LFT ay katulad ng mga pagsubok sa PCR, dahil pareho silang uri ng antigen test, na idinisenyo upang kunin ang aktibong impeksyon ng Covid-19 kaysa sa mga antibodies sa sakit. Sa isang Covid-19 LFT, isang sample ng nasopharyngeal ay inilalagay sa isang maliit na absorbent pad, na pagkatapos ay iginuhit kasama ng pad sa pamamagitan ng isang linya ng capillary sa isang strip na pinahiran ng mga antibodies, na nagbubuklod sa mga protina ng SARS-Cov-2. Kung ang mga protina na ito ay naroroon, ipapakita ito bilang isang may kulay na linya sa pagsubok, na nagpapahiwatig ng impeksyon.
+    </string>
+
+    <string name = "what_is_antibody"> Ano ang pagsubok sa antibody? </string>
+    <string name = "antibody_tests"> Ginagamit ang mga pagsusuri sa Antibody upang suriin ang mga tugon sa immune sa mga taong nabakunahan laban sa Covid-19. Hindi pa alam ng mga mananaliksik kung gaano katagal ang kaligtasan sa sakit na sapilitan ng bakuna ay magtatagal o kung kakailanganin ng booster shot. Mayroong ilang pahiwatig na ang mga variant ng Covid-19 ay ginagawang hindi gaanong epektibo ang ilang mga bakuna, ngunit hanggang ngayon ay lumilitaw pa rin silang sa pangkalahatan ay nagbibigay ng sapat na proteksyon upang bantayan laban sa malubha o nakamamatay na sakit.
+    </string>
 </ mapagkukunan>
