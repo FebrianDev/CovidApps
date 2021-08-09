@@ -19,7 +19,7 @@ class FoodActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = ListInfoAdapter(DataFood.getFood())
+        binding.rv.adapter = ListInfoAdapter(DataFood.getFood(applicationContext))
 
         binding.back.setOnClickListener { finish() }
     }

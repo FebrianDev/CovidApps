@@ -18,7 +18,7 @@ class PeopleAtRiskActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = DropdownInfoAdapter(DataPeopeAtRisk.getPeopleRisk())
+        binding.rv.adapter = DropdownInfoAdapter(DataPeopeAtRisk.getPeopleRisk(applicationContext))
 
         binding.back.setOnClickListener { finish() }
     }

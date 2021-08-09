@@ -19,7 +19,7 @@ class PreventionActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = ListInfoAdapter(DataPrevention.getPrevention())
+        binding.rv.adapter = ListInfoAdapter(DataPrevention.getPrevention(applicationContext))
 
         binding.back.setOnClickListener { finish() }
     }

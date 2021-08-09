@@ -19,7 +19,7 @@ class ExerciseActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = ListInfoAdapter(DataExercise.getExercise())
+        binding.rv.adapter = ListInfoAdapter(DataExercise.getExercise(applicationContext))
 
         binding.back.setOnClickListener { finish() }
     }

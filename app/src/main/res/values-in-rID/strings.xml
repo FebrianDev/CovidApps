@@ -74,4 +74,7 @@
     <string name = "what_is_antibody"> Apa itu tes antibodi? </string>
     <string name = "antibody_tests"> Tes antibodi digunakan untuk mengevaluasi respons imun pada orang yang telah divaksinasi terhadap Covid-19. Para peneliti belum tahu berapa lama kekebalan yang diinduksi vaksin akan bertahan atau apakah suntikan booster akan diperlukan. Ada beberapa indikasi bahwa varian Covid-19 membuat vaksin tertentu menjadi kurang efektif, tetapi sejauh ini tampaknya masih memberikan perlindungan yang cukup untuk mencegah penyakit parah atau fatal.
     </string>
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
+    <string name="total_case">Total Case</string>
 </resources>

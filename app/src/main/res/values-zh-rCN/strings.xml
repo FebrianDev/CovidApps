@@ -74,4 +74,7 @@
     <string name = "what_is_antibody">什么是抗体检测？</string>
     <string name = "antibody_tests"> 抗体测试用于评估已接种 Covid-19 疫苗的人的免疫反应。研究人员还不知道疫苗诱导的免疫力会持续多久，或者是否需要加强注射。有迹象表明，Covid-19 变体正在降低某些疫苗的有效性，但到目前为止，它们似乎仍能提供足够的保护来预防严重或致命的疾病。
     </string>
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
+    <string name="total_case">Total Case</string>
 </resources>

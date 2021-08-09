@@ -18,7 +18,7 @@ class CovidTestActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = DropdownInfoAdapter(DataCovidTest.getCovidTest())
+        binding.rv.adapter = DropdownInfoAdapter(DataCovidTest.getCovidTest(applicationContext))
 
         binding.back.setOnClickListener { finish() }
     }

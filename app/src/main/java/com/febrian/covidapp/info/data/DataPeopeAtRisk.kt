@@ -1,7 +1,9 @@
 package com.febrian.covidapp.info.data
 
+import android.content.Context
+
 object DataPeopeAtRisk {
-    fun getPeopleRisk() : ArrayList<Model> {
+    fun getPeopleRisk(context : Context) : ArrayList<Model> {
         val list = ArrayList<Model>()
 
         list.add(Model(

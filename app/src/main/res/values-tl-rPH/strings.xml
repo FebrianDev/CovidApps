@@ -12,7 +12,7 @@
     <string name = "realtime_maps"> Realtime Maps </string>
     <string name = "lokasi_sekarang"> Kasalukuyang Lokasyon </string>
     <string name = "open_maps"> Buksan ang Maps </string>
-    <string name = "today_s_statistics"> Statistics Ngayon </ string>
+    <string name = "today_s_statistics"> Statistics Ngayon </string>
     <string name = "weekly_statistics"> Lingguhang Istatistika </string>
     <string name = "general"> Pangkalahatan </string>
     <string name = "symptoms"> Mga Sintomas </string>
@@ -74,4 +74,7 @@
     <string name = "what_is_antibody"> Ano ang pagsubok sa antibody? </string>
     <string name = "antibody_tests"> Ginagamit ang mga pagsusuri sa Antibody upang suriin ang mga tugon sa immune sa mga taong nabakunahan laban sa Covid-19. Hindi pa alam ng mga mananaliksik kung gaano katagal ang kaligtasan sa sakit na sapilitan ng bakuna ay magtatagal o kung kakailanganin ng booster shot. Mayroong ilang pahiwatig na ang mga variant ng Covid-19 ay ginagawang hindi gaanong epektibo ang ilang mga bakuna, ngunit hanggang ngayon ay lumilitaw pa rin silang sa pangkalahatan ay nagbibigay ng sapat na proteksyon upang bantayan laban sa malubha o nakamamatay na sakit.
     </string>
-</ mapagkukunan>
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
+    <string name="total_case">Total Case</string>
+</resources>

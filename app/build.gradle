@@ -24,7 +24,7 @@ android {
     signingConfigs {
         release {
             // Signing certificate.
-            storeFile file("C:\\Users\\natan\\OneDrive\\Documents\\GitHub\\CovidApps\\keystore.jks")
+            storeFile file("F:\\AndroidProject\\keystore.jks")
             // KeyStore password.
             storePassword "Psjk1234"
             // Alias.
@@ -34,7 +34,7 @@ android {
             v2SigningEnabled true
         }
         config {
-            storeFile file('C:/Users/natan/OneDrive/Documents/GitHub/CovidApps/keystore.jks')
+            storeFile file('F:/AndroidProject/keystore.jks')
             storePassword 'Psjk1234'
             keyPassword 'Psjk1234'
             keyAlias 'keystore'
@@ -117,4 +117,5 @@ dependencies {
     implementation 'com.github.ismaeldivita:chip-navigation-bar:1.3.4'
 
     implementation 'com.huawei.hms:hianalytics:5.0.5.301'
+    implementation 'com.huawei.hms:push:5.3.0.304'
 }

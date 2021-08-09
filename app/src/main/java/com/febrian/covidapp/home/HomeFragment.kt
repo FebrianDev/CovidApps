@@ -2,21 +2,32 @@ package com.febrian.covidapp.home
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.res.Configuration
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.Typeface
 import android.net.ConnectivityManager
+import android.os.Build
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SearchView
+import androidx.core.app.NotificationCompat
+import androidx.core.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.startForegroundService
 import androidx.fragment.app.Fragment
+import com.febrian.covidapp.PushKitService
 import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.FragmentHomeBinding
@@ -28,12 +39,15 @@ import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.*
 import com.github.mikephil.charting.formatter.ValueFormatter
+import com.huawei.hms.aaid.HmsInstanceId
 import com.huawei.hms.analytics.HiAnalytics
 import com.huawei.hms.analytics.HiAnalyticsInstance
 import com.huawei.hms.analytics.HiAnalyticsTools
 import com.huawei.hms.analytics.type.HAEventType
 import com.huawei.hms.analytics.type.HAParamType
 import com.huawei.hms.analytics.type.ReportPolicy
+import com.huawei.hms.common.ApiException
+import com.huawei.hms.framework.common.ContextCompat.startService
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
@@ -43,23 +57,27 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.math.BigDecimal
+import java.sql.Timestamp
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
+import java.time.ZoneId
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashSet
 
 class HomeFragment : Fragment() {
-
     private lateinit var binding: FragmentHomeBinding
 
     companion object {
         private const val NOTIFICATION_ID = 1
         private const val CHANNEL_ID = "channel_01"
         private const val CHANNEL_NAME = "covid channel"
+        const val TAG = "Home Activity"
     }
 
-    val TAG = "Home Activity"
+
 
     val listConfirm: MutableList<Int> = ArrayList()
 
@@ -72,8 +90,12 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("NewApi")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        sendNotification()
+        getToken()
 
         HiAnalyticsTools.enableLog()
         val instance : HiAnalyticsInstance = HiAnalytics.getInstance(view.context)
@@ -112,7 +134,26 @@ class HomeFragment : Fragment() {
         }
     }
 
+    @SuppressLint("CommitPrefEdits")
+    private fun setLocale(s: String, lang : String, i : Int) {
+        val locale: Locale = Locale(s)
+        Locale.setDefault(locale)
+
+        val configuration = Configuration()
+        configuration.locale = locale
+        view?.context?.resources?.updateConfiguration(
+            configuration,
+            context?.resources?.displayMetrics
+        )
+    }
+
     internal fun main() {
+
+        val sharedPref = view?.context?.getSharedPreferences("Settings", Context.MODE_PRIVATE)
+        val lang = sharedPref?.getString("Language", "en")
+        val index = sharedPref?.getInt("Index", 0)
+        val value = sharedPref?.getString("Value", "English")
+        setLocale(lang.toString(), value.toString(), index!!)
 
         val location = view?.context?.resources?.configuration?.locale?.displayCountry
 
@@ -155,6 +196,7 @@ class HomeFragment : Fragment() {
                                 val recovered = body.recovered!!.toBigDecimal()
                                 val deaths = body.deaths!!.toBigDecimal()
                                 val confirmed = totalCase - (recovered + deaths)
+                                val updated = body.updated
 
                                 binding.confirmedValue.text =
                                     NumberFormat.getInstance().format(confirmed).toString()
@@ -485,8 +527,70 @@ class HomeFragment : Fragment() {
         super.onStop()
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     fun sendNotification(){
+        val jakartaZone = ZoneId.of("Asia/Jakarta")
+        val asiaJakartaCurrentDate = ZonedDateTime.now(jakartaZone)
+
+        val asiaJakarta = asiaJakartaCurrentDate.format(DateTimeFormatter.ofPattern("HH:mm"))
+
+        if(asiaJakarta == "13:22") {
+            Log.d("TEST", asiaJakarta.toString())
+            val mNotificationManager = context?.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            val mBuilder = view?.context?.let {
+                NotificationCompat.Builder(it, CHANNEL_ID)
+                    .setSmallIcon(R.drawable.ic_baseline_bookmark_24)
+                    .setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.ic_baseline_notifications_24))
+                    .setContentTitle("Data Updated!")
+                    .setContentText("Data Updated! 2")
+                    .setSubText("Data Updated! 3")
+                    .setAutoCancel(true)
+            }
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                /* Create or update. */
+                val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT)
+                channel.description = CHANNEL_NAME
+                mBuilder?.setChannelId(CHANNEL_ID)
+                mNotificationManager.createNotificationChannel(channel)
+            }
+
+            val notification = mBuilder?.build()
+            mNotificationManager.notify(NOTIFICATION_ID, notification)
+        }
 
     }
 
+    private fun getToken() {
+        // Create a thread.
+        object : Thread() {
+            override fun run() {
+                try {
+                    // Obtain the app ID from the agconnect-service.json file.
+                    val appId = "104531441"
+
+                    // Set tokenScope to HCM.
+                    val tokenScope = "HCM"
+                    val token = HmsInstanceId.getInstance(view?.context).getToken(appId, tokenScope)
+                    Log.i(TAG, "get token:$token")
+
+                    // Check whether the token is empty.
+                    if (!TextUtils.isEmpty(token)) {
+                        sendRegTokenToServer(token)
+                    }
+                } catch (e: ApiException) {
+                    Log.e(TAG, "get token failed, ${e.message}")
+                }
+            }
+        }.start()
+    }
+    private fun sendRegTokenToServer(token: String?) {
+        Log.i(TAG, "sending token to server. token:$token")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val mStartServiceIntent = Intent(view?.context, PushKitService::class.java)
+        view?.context?.startService(mStartServiceIntent)
+    }
 }

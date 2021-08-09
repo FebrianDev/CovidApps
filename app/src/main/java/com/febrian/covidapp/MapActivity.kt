@@ -3,6 +3,7 @@ package com.febrian.covidapp
 import android.Manifest.permission.ACCESS_FINE_LOCATION
 import android.Manifest.permission.ACCESS_WIFI_STATE
 import android.annotation.SuppressLint
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -17,6 +18,7 @@ import com.febrian.covidapp.global.response.Response
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.huawei.hms.maps.*
 import com.huawei.hms.maps.model.LatLng
+import com.huawei.hms.maps.model.MapStyleOptions
 import com.huawei.hms.maps.model.MarkerOptions
 import retrofit2.Call
 import retrofit2.Callback
@@ -31,7 +33,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     var hMap: HuaweiMap? = null
 
     val TAG = "Map Activity"
-
+    private lateinit var darkStyle: MapStyleOptions
     private lateinit var binding: ActivityMapBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +43,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         val mSupportMapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
 
         val searchView = findViewById<androidx.appcompat.widget.SearchView>(R.id.idSearchView)
+        darkStyle = MapStyleOptions.loadRawResourceStyle(applicationContext, R.raw.mapstyle_night)
+
 
         searchView.setOnQueryTextListener(object :
             androidx.appcompat.widget.SearchView.OnQueryTextListener {
@@ -94,12 +98,25 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         mSupportMapFragment?.getMapAsync(this)
     }
 
+    private fun isDarkModeOn(): Boolean {
+
+        return when (resources.configuration.uiMode.and(Configuration.UI_MODE_NIGHT_MASK)) {
+            Configuration.UI_MODE_NIGHT_YES -> true
+            Configuration.UI_MODE_NIGHT_NO -> false
+            Configuration.UI_MODE_NIGHT_UNDEFINED -> false
+            else -> false
+        }
+    }
+
 
     @SuppressLint("SupportAnnotationUsage")
     @RequiresPermission(ACCESS_FINE_LOCATION, allOf = arrayOf(ACCESS_WIFI_STATE))
     override fun onMapReady(map: HuaweiMap) {
         Log.d(TAG, "onMapReady: ")
         hMap = map
+
+        if (isDarkModeOn()) map.setMapStyle(darkStyle) else map.setMapStyle(null)
+
         hMap?.mapType = HuaweiMap.MAP_TYPE_NORMAL
 
         ApiService.instance.getConfirmed().enqueue(object : Callback<ArrayList<Response>> {

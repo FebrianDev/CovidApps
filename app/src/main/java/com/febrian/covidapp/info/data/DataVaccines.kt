@@ -1,7 +1,9 @@
 package com.febrian.covidapp.info.data
 
+import android.content.Context
+
 object DataVaccines {
-    fun getVaccines() : ArrayList<Model>{
+    fun getVaccines(context : Context) : ArrayList<Model>{
         val list : ArrayList<Model> = ArrayList()
 
         list.add(

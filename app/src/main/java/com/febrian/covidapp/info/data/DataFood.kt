@@ -1,9 +1,10 @@
 package com.febrian.covidapp.info.data
 
+import android.content.Context
 import com.febrian.covidapp.R
 
 object DataFood {
-    fun getFood() : ArrayList<ModelList>{
+    fun getFood(context : Context) : ArrayList<ModelList>{
         val list : ArrayList<ModelList> = ArrayList()
 
         list.add(

@@ -3,6 +3,7 @@ package com.febrian.covidapp.global
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.*
+import android.content.res.Configuration
 import android.graphics.Color
 import android.graphics.Typeface
 import android.location.Address
@@ -29,6 +30,7 @@ import com.huawei.hms.maps.HuaweiMap
 import com.huawei.hms.maps.OnMapReadyCallback
 import com.huawei.hms.maps.SupportMapFragment
 import com.huawei.hms.maps.model.LatLng
+import com.huawei.hms.maps.model.MapStyleOptions
 import com.huawei.hms.maps.model.MarkerOptions
 import retrofit2.Call
 import retrofit2.Callback
@@ -44,6 +46,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
     private lateinit var mMap: HuaweiMap
     private lateinit var binding: FragmentGlobalBinding
+    private lateinit var darkStyle: MapStyleOptions
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -65,6 +68,9 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
     }
 
     private fun main() {
+
+        darkStyle = MapStyleOptions.loadRawResourceStyle(view?.context, R.raw.mapstyle_night)
+
         val currentDate = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(Date())
 
         binding.tgl.text = currentDate
@@ -120,8 +126,21 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
     }
 
+    private fun isDarkModeOn(): Boolean {
+
+        return when (resources.configuration.uiMode.and(Configuration.UI_MODE_NIGHT_MASK)) {
+            Configuration.UI_MODE_NIGHT_YES -> true
+            Configuration.UI_MODE_NIGHT_NO -> false
+            Configuration.UI_MODE_NIGHT_UNDEFINED -> false
+            else -> false
+        }
+    }
+
     override fun onMapReady(googleMap: HuaweiMap) {
         mMap = googleMap
+
+        if (isDarkModeOn()) googleMap.setMapStyle(darkStyle) else googleMap.setMapStyle(null)
+
         mMap.uiSettings.isZoomControlsEnabled = false
         val location = view?.context?.resources?.configuration?.locale?.displayCountry
         binding.country.text = location

@@ -74,4 +74,7 @@
     <string name = "what_is_antibody"> Apa itu ujian antibodi? </string>
     <string name = "antibody_tests"> Ujian antibodi digunakan untuk menilai tindak balas imun pada orang yang telah divaksin terhadap Covid-19. Para penyelidik belum tahu berapa lama imuniti yang disebabkan oleh vaksin akan bertahan atau apakah tembakan penggalak diperlukan. Terdapat beberapa petunjuk bahawa varian Covid-19 menjadikan vaksin tertentu kurang berkesan, tetapi sejauh ini mereka masih memberikan perlindungan yang mencukupi untuk mencegah penyakit yang teruk atau maut.
     </string>
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
+    <string name="total_case">Total Case</string>
 </resources>

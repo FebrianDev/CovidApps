@@ -1,7 +1,9 @@
 package com.febrian.covidapp.info.data
 
+import android.content.Context
+
 object DataGeneral {
-    fun getDataGeneral(): ArrayList<Model> {
+    fun getDataGeneral(context : Context): ArrayList<Model> {
         val list: ArrayList<Model> = ArrayList()
         list.add(
             Model(

@@ -1,6 +1,9 @@
 package com.febrian.covidapp
 
+import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.content.Context
+import android.content.DialogInterface
 import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.net.wifi.WifiManager
@@ -13,9 +16,12 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.app.ActivityCompat.recreate
 import androidx.core.view.get
 import androidx.webkit.WebSettingsCompat
 import com.febrian.covidapp.databinding.FragmentSettingBinding
+import java.util.*
+import kotlin.collections.ArrayList
 
 class SettingFragment : Fragment() {
 
@@ -29,6 +35,7 @@ class SettingFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -45,7 +52,82 @@ class SettingFragment : Fragment() {
 //                }
 //            }
 
+        binding.info.setOnClickListener {
+            val builder = AlertDialog.Builder(view.context)
+            val l_view = LayoutInflater.from(view.context).inflate(R.layout.alert_dialog_about,null)
+            builder.setView(l_view)
 
+            val dialog = builder.create()
+            dialog.show()
+            dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+        }
+
+        val sharedPref = view.context?.getSharedPreferences("Settings", Context.MODE_PRIVATE)
+        val lang = sharedPref?.getString("Language", "en")
+        val index = sharedPref?.getInt("Index", 0)
+        val value = sharedPref?.getString("Value", "English")
+        setLocale(lang.toString(), value.toString(), index!!)
+
+        binding.languageValue.text = value
+        binding.language.setOnClickListener {
+
+            val index2 = sharedPref.getInt("Index", 0)
+            val lang2 = sharedPref?.getString("Language", "en")
+            val value2 = sharedPref?.getString("Value", "English")
+//            setLocale(lang2.toString(), value2.toString(), index2)
+            Log.d("INDEX", index2.toString())
+
+            val list = arrayOf("English", "Indonesia", "Malaysia", "Philippines", "Hindi", "China")
+            val builder = AlertDialog.Builder(view.context)
+            builder.setTitle("Choose Language...")
+            builder.setSingleChoiceItems(list, index2, DialogInterface.OnClickListener { dialog, which ->
+                if(which == 0){
+                    binding.languageValue.text = "English"
+                    setLocale("en", "English", 0)
+                }else if(which == 1){
+                    binding.languageValue.text = "Indonesia"
+                    setLocale("in", "Indonesia", 1)
+                }else if(which == 2){
+                    binding.languageValue.text = "Malaysia"
+                    setLocale("ms", "Malaysia", 2)
+                }else if(which == 3){
+                    binding.languageValue.text = "Philippines"
+                    setLocale("tl", "Philippines", 3)
+                }else if(which == 4){
+                    binding.languageValue.text = "Hindi"
+                    setLocale("th", "Hindi", 4)
+                }else if(which == 5){
+                    binding.languageValue.text = "China"
+                    setLocale("zh", "China", 5)
+                }
+
+
+                dialog.dismiss()
+            })
+
+            val dialog = builder.create()
+            dialog.window?.setBackgroundDrawableResource(R.color.bgColorPrimary)
+            dialog.window?.setTitleColor(R.color.colorPrimary)
+            dialog.show()
+
+        }
+
+    }
+
+    @SuppressLint("CommitPrefEdits")
+    private fun setLocale(s: String, lang : String, i : Int) {
+        val locale : Locale = Locale(s)
+        Locale.setDefault(locale)
+
+        val configuration = Configuration()
+        configuration.locale = locale
+        view?.context?.resources?.updateConfiguration(configuration, context?.resources?.displayMetrics)
+
+        val sharedPref = view?.context?.getSharedPreferences("Settings", Context.MODE_PRIVATE)?.edit()
+        sharedPref?.putString("Language", s)
+        sharedPref?.putString("Value", lang)
+        sharedPref?.putInt("Index", i)
+        sharedPref?.apply()
     }
 
     override fun onResume() {

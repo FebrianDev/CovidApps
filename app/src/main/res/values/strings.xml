@@ -44,6 +44,8 @@
     <string name="last_updated_10_feb_2021">Last Updated : 10 Feb 2021</string>
     <string name="confirmed">Confirmed</string>
 
+
+<!--    Covid Test -->
     <string name="who_should">Who should get tested for current infection?</string>
     <string name="people_who">- People who have symptoms of COVID-19.\n"
      - Most people who have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19.\n"
@@ -76,4 +78,11 @@
     <string name="what_is_antibody">What is antibody testing?</string>
     <string name="antibody_tests">Antibody tests are being used to evaluate the immune responses in people who have been vaccinated against Covid-19. Researchers don’t yet know how long vaccine-induced immunity will last or if booster shots will be needed. There has been some indication that Covid-19 variants are making certain vaccines less effective, but thus far they still appear to generally provide enough protection to guard against severe or fatal disease.
     </string>
+
+<!--    End Covid Test-->
+
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
+    <string name="total_case">Total Case</string>
+
 </resources>

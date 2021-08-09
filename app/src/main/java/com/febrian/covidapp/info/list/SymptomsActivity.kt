@@ -20,7 +20,7 @@ class SymptomsActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = ListInfoAdapter(DataSymptoms.getSymptoms())
+        binding.rv.adapter = ListInfoAdapter(DataSymptoms.getSymptoms(applicationContext))
 
         binding.back.setOnClickListener { finish() }
     }

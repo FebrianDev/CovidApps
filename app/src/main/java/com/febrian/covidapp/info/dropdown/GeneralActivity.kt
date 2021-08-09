@@ -21,7 +21,7 @@ class GeneralActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = DropdownInfoAdapter(DataGeneral.getDataGeneral())
+        binding.rv.adapter = DropdownInfoAdapter(DataGeneral.getDataGeneral(applicationContext))
 
         binding.back.setOnClickListener {
             finish()

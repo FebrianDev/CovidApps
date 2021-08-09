@@ -14,48 +14,57 @@
         <activity
             android:name=".info.DetailListInfoActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".info.list.FoodActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".info.list.ExerciseActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".info.list.PreventionActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".info.list.SymptomsActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".info.dropdown.PeopleAtRiskActivity"
             android:exported="true"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".info.dropdown.CovidTestActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".info.dropdown.VaccinesActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".info.dropdown.GeneralActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MapActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".news.BookmarkActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".news.DetailNewsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".global.GlobalActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".home.HomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".screen.OnboardingActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name=".screen.SplashScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".info.dropdown.CovidTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".info.dropdown.VaccinesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".info.dropdown.GeneralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".news.BookmarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".news.DetailNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".global.GlobalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen.OnboardingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".screen.SplashScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,41 +72,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lokal.CovidLocalActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".news.NewsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
-
+        <activity
+            android:name=".lokal.CovidLocalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".news.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
         <meta-data
             android:name="com.huawei.hms.client.channel.androidMarket"
             android:value="false" />
 
+        <meta-data
+            android:name="push_kit_auto_init_enabled"
+            android:value="true" />
+        <service
+            android:name=".PushKitService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+    </queries>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
 
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-permission-sdk-23 android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
 
     <uses-permission-sdk-23 android:name="android.permission.CHANGE_WIFI_STATE" />
-
-    <queries>
-        <intent>
-            <action android:name="com.huawei.hms.core.aidlservice" />
-        </intent>
-    </queries>
 
 </manifest>

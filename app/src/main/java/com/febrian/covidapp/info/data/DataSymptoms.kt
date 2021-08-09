@@ -1,9 +1,10 @@
 package com.febrian.covidapp.info.data
 
+import android.content.Context
 import com.febrian.covidapp.R
 
 object DataSymptoms {
-    fun getSymptoms(): ArrayList<ModelList> {
+    fun getSymptoms(context : Context): ArrayList<ModelList> {
         val list: ArrayList<ModelList> = ArrayList()
 
         list.add(

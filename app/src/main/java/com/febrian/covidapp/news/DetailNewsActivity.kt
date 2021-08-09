@@ -8,6 +8,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.content.res.Configuration
 import android.net.ConnectivityManager
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -187,23 +188,26 @@ class DetailNewsActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("WrongConstant", "RequiresFeature")
     override fun onResume() {
         super.onResume()
-        val sharedPref = applicationContext.getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
+        val sharedPref =
+            applicationContext.getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
         val value = sharedPref.getString("KEY", "Follow By System")
-        if(value == "Yes"){
-            WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_ON)
-        }else if(value == "No"){
-            WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_OFF)
-        }else{
-            val mode = applicationContext?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
-            if(mode == Configuration.UI_MODE_NIGHT_NO){
-                WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_OFF)
-            }else{
-                WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_ON)
-            }
-        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+//            if (value == "Yes") {
+//                WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_ON)
+//            } else if (value == "No") {
+//                WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_OFF)
+//            } else {
+//                val mode =
+//                    applicationContext?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
+//                if (mode == Configuration.UI_MODE_NIGHT_NO) {
+//                    WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_OFF)
+//                } else {
+//                    WebSettingsCompat.setForceDark(binding.web.settings, FORCE_DARK_ON)
+//                }
+//            }
+//        }
     }
 
     override fun onStart() {
