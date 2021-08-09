@@ -77,4 +77,302 @@
     <string name="recovered">Recovered</string>
     <string name="deceased">Deceased</string>
     <string name="total_case">Total Case</string>
+
+    <!--latihan data-->
+    <string name= "deep_breathing_stomach">Bernapas Dalam Saat Perut</string>
+    <string name= "deep_breathing_stomach_info">- Berbaring tengkurap dan sandarkan kepala pada tangan untuk memberi ruang untuk bernapas.\n
+    \n
+    - Tutup bibirmu dan letakkan lidahmu di langit-langit mulutmu.\n
+    \n
+    - Tarik napas melalui hidung dan tarik udara ke dalam perut. Cobalah untuk fokus pada perut Anda yang mendorong ke kasur saat Anda bernapas.\n
+    \n
+    - Buang napas perlahan melalui hidung.\n
+    \n
+    - Ulangi napas dalam-dalam selama satu menit.\n
+    </string>
+
+
+    <string name= "deep_breathing_standing">Bernapas Dalam Saat Berdiri</string>
+    <string name="deep_breathing_standing_info">- Berdiri tegak dan letakkan tangan Anda di sekitar sisi perut Anda.\n
+    \n
+    - Tutup bibirmu dan letakkan lidahmu di langit-langit mulutmu.\n
+    \n
+    - Tarik napas melalui hidung dan tarik udara ke dalam perut di tempat tangan Anda berada. Coba rentangkan jari Anda dengan napas.\n
+    \n
+    - Buang napas perlahan* melalui hidung.\n
+    \n
+    - Ulangi napas dalam-dalam selama satu menit.\n,
+    </string>
+    <!--Akhiri latihan data-->
+
+    <!-- Data makanan-->
+    <string name= "to_choose">Untuk Memilih</string>
+    <string name="to_choose_info">
+        - Mengkonsumsi lemak tak jenuh (misalnya ditemukan pada ikan, alpukat, kacang-kacangan, minyak zaitun, kedelai, canola, bunga matahari dan minyak jagung) daripada lemak jenuh (misalnya ditemukan dalam daging berlemak, mentega, minyak kelapa, krim, keju, ghee dan lemak babi) .\n
+    - Pilih daging putih (misalnya unggas) dan ikan, yang umumnya rendah lemak, daripada daging merah.\n
+    - Pilih buah-buahan segar daripada camilan manis seperti kue kering, kue, dan cokelat.\n
+    - Jika memungkinkan, pilih susu dan produk susu versi rendah lemak atau rendah lemak.\n
+    </string>
+
+
+    <string name= "to_avoid">Untuk Dihindari</string>
+    <string name="to_avoid_info">
+        - Hindari daging olahan karena tinggi lemak dan garam.\n
+    - Hindari lemak trans yang diproduksi secara industri. Ini sering ditemukan pada makanan olahan, makanan cepat saji, makanan ringan, gorengan, pizza beku, pai, kue kering, margarin, dan olesan.\n
+    - Saat memasak dan menyiapkan makanan, batasi jumlah garam dan bumbu bernatrium tinggi (misalnya kecap dan kecap ikan).\n
+    - Batasi asupan garam harian Anda hingga kurang dari 5 g (sekitar 1 sendok teh), dan gunakan garam beryodium.\n
+    - Hindari makanan (misalnya makanan ringan) yang tinggi garam dan gula.\n
+    - Batasi asupan minuman ringan atau soda dan minuman lain yang tinggi gula (misalnya jus buah, konsentrat dan sirup jus buah, susu beraroma, dan minuman yogurt).\n
+    \n
+    </string>
+
+    <!-- Mengakhiri makanan data -->
+
+    <!-- Data umum -->
+    <string name= "what_is_covid">
+    Apa itu COVID-19?
+    </string>
+    <string name="covid_is">
+        COVID-19 adalah penyakit yang disebabkan oleh virus corona baru yang disebut SARS-CoV-2.
+    WHO pertama kali mengetahui virus baru ini pada 31 Desember 2019, menyusul laporan sekelompok kasus
+    'virus pneumonia' di Wuhan, Republik Rakyat Cina.
+    </string>
+
+    <string name="what_happens">
+    Apa yang terjadi pada orang yang terkena COVID-19?
+    </string>
+    <string name="what_happens_info">
+        Di antara mereka yang mengalami gejala, sebagian besar (sekitar 80%) sembuh dari penyakit tanpa memerlukan perawatan di rumah sakit. Sekitar 15% menjadi sakit parah dan membutuhkan oksigen dan 5% menjadi sakit kritis dan membutuhkan perawatan intensif.
+    </string>
+
+    <string name= "are_there_treatments">
+    Apakah ada pengobatan untuk COVID-19?
+    </string>
+    <string name="scientists_around">
+        Para ilmuwan di seluruh dunia sedang bekerja untuk menemukan dan mengembangkan pengobatan untuk COVID-19.\n
+    \n
+    Perawatan suportif yang optimal mencakup oksigen untuk pasien yang sakit parah dan mereka yang berisiko terkena penyakit parah serta bantuan pernapasan yang lebih lanjut seperti ventilasi untuk pasien yang sakit kritis.\n
+    \n
+    WHO tidak merekomendasikan pengobatan sendiri dengan obat apa pun, termasuk antibiotik, sebagai pencegahan atau penyembuhan COVID-19. WHO mengoordinasikan upaya untuk mengembangkan perawatan untuk COVID-19 dan akan terus memberikan informasi baru saat tersedia.
+    </string>
+
+    <string name="are_there_long">
+    Apakah ada efek jangka panjang dari COVID-19?
+    </string>
+    <string name="some_people_who_have">
+        Beberapa orang yang telah terinfeksi COVID-19, baik yang memerlukan rawat inap maupun tidak, terus mengalami gejala, termasuk gejala kelelahan, pernapasan, dan neurologis.\n
+    \n
+    "WHO bekerja sama dengan Jaringan Teknis Global untuk Manajemen Klinis COVID-19 kami, para peneliti dan kelompok pasien di seluruh dunia untuk merancang dan melakukan studi pasien di luar perjalanan penyakit akut awal untuk memahami proporsi pasien yang memiliki efek jangka panjang. , berapa lama mereka bertahan, dan mengapa mereka terjadi. Studi ini akan digunakan untuk mengembangkan panduan lebih lanjut untuk perawatan pasien. \n
+    </string>
+
+    <string name="what_should_i_do">
+    Apa yang harus saya lakukan jika saya memiliki
+    id terkena seseorang yang memiliki COVID-19?
+    </string>
+    <string name="if_you_have_been">
+        Jika Anda telah terpapar seseorang dengan COVID-19, Anda mungkin terinfeksi, bahkan jika Anda merasa sehat. Setelah terpapar dengan seseorang yang memiliki COVID-19, lakukan hal berikut:\n
+    \n
+    - Hubungi penyedia layanan kesehatan atau hotline COVID-19 Anda untuk mengetahui di mana dan kapan harus melakukan tes.\n
+    - Bekerja sama dengan prosedur pelacakan kontak untuk menghentikan penyebaran virus.\n
+    - Jika pengujian tidak tersedia, tetap di rumah dan jauh dari orang lain selama 14 hari.\n
+    - Selama karantina, jangan pergi bekerja, ke sekolah atau ke tempat umum. Minta seseorang untuk membawakan Anda persediaan.\n
+    - Jaga jarak setidaknya 1 meter dari orang lain, bahkan dari anggota keluarga Anda.\n
+    - Kenakan masker medis untuk melindungi orang lain, termasuk jika/ketika Anda perlu mencari perawatan medis.\n
+    - Sering-seringlah membersihkan tangan.\n
+    - Tinggal di kamar yang terpisah dari anggota keluarga lainnya, dan jika tidak memungkinkan, kenakan masker medis.\n
+    - Jaga agar ruangan tetap berventilasi baik.\n
+    - Jika Anda berbagi kamar, tempatkan tempat tidur dengan jarak minimal 1 meter.\n
+    - Pantau diri Anda untuk gejala apa pun selama 14 hari. \n
+    - Tetap positif dengan tetap berhubungan dengan orang yang dicintai melalui telepon atau online, dan dengan berolahraga di rumah.
+    </string>
+
+    <string name="how_can_we">
+    Bagaimana kita bisa melindungi orang lain dan diri kita sendiri jika kita tidak tahu siapa yang terinfeksi?
+    </string>
+    <string name="stay_safe">Tetap aman dengan melakukan beberapa tindakan pencegahan sederhana, seperti menjaga jarak fisik, memakai masker, terutama ketika jarak tidak dapat dipertahankan, menjaga ruangan berventilasi baik, menghindari keramaian dan kontak dekat, membersihkan tangan secara teratur, dan batuk ke dalam siku atau tisu yang tertekuk. Periksa saran lokal di mana Anda tinggal dan bekerja. Lakukan semuanya!
+    </string>
+
+    <!--Mengakhiri data umum-->
+
+    <!-- Orang yang berisiko-->
+    <string name="who_is_at_risk">
+        Siapa yang berisiko terkena penyakit parah?
+    </string>
+    <string name="older_people">
+        Orang tua, dan orang-orang dari segala usia dengan kondisi medis yang sudah ada sebelumnya (seperti diabetes, tekanan darah tinggi, penyakit jantung, penyakit paru-paru, atau kanker) tampaknya lebih sering mengembangkan penyakit serius daripada yang lain.
+    </string>
+
+    <string name="what_precautions">
+        Tindakan pencegahan apa yang diperlukan saat mengunjungi seseorang di fasilitas kesehatan dan/atau perawatan jangka panjang?
+     - Jika Anda telah melakukan kontak dengan seseorang yang diduga atau dikonfirmasi dengan COVID-19, atau merasa tidak sehat, jangan mengunjungi fasilitas kesehatan atau perawatan jangka panjang apa pun.\n
+    \n
+     - Ikuti panduan fasilitas tentang persyaratan kunjungan apa pun, termasuk pemeriksaan dan pemakaian masker.\n
+    \n
+     - Bersihkan tangan sebelum masuk dan jaga jarak minimal 1 meter dari orang lain.\n
+    \n
+     - Jika Anda berusia 60 tahun atau lebih, atau memiliki kondisi kronis seperti penyakit jantung, lakukan tindakan pencegahan ekstra dengan mengenakan masker medis selama kunjungan Anda.
+    </string>
+
+    <!-- Mengakhiri orang-orang yang berisiko-->
+
+    <!-- Pencegahan -->
+    <string name ="wash_your_hand">
+    Cuci tanganmu
+    </string>
+    <string name="wet">
+         Basah\n
+    Basahi tangan dengan air bersih yang mengalir (hangat atau dingin), matikan keran, dan gunakan sabun.\n
+    \n
+    Busa\n
+    Busakan punggung tangan, sela-sela jari, dan di bawah kuku.\n
+    \n
+    Gosok\n
+    Gosok tangan Anda setidaknya selama 20 detik. Butuh pengatur waktu? Nyanyikan lagu “Selamat Ulang Tahun” dua kali.\n
+    \n
+    Bilas \n
+    Bilas tangan Anda dengan baik di bawah air bersih yang mengalir.\n
+    \n
+    Kering\n
+    Keringkan tangan Anda menggunakan handuk bersih atau keringkan dengan udara.\n
+    </string>
+
+
+    <string name ="use_a_mask">
+    Gunakan Masker yang…
+    </string>
+    <string name="have_two">
+          Memiliki dua atau lebih lapisan kain yang dapat dicuci dan bernapas\n
+    \n
+    Tutupi hidung dan mulutmu sepenuhnya\n
+    \n
+    Pas di sisi wajah Anda dan tidak ada celah\n
+    \n
+    Sediakan kawat hidung untuk mencegah udara bocor dari bagian atas masker\n
+    \n
+    </string>
+
+    <string name= "social_distancing">
+    Jarak sosial
+    </string>
+    <string name="social_distancing_is">
+        Jarak sosial digunakan untuk memperkuat perlunya menjaga jarak setidaknya 6 kaki dari orang lain, serta mengenakan masker wajah.\n
+    \n
+    Keluar hanya untuk kegiatan yang diperlukan (belanja, bekerja, dll)\n
+    \n
+    Jauhi keramaian\n
+    \n
+    </string>
+    <!-- akhiri pencegahan data-->
+    \
+    <!-- gejala data-->
+    <string name="fever">
+    Demam
+    </string>
+    <string name="fever_info">
+        Demam adalah gejala umum COVID-19, tetapi masih belum jelas seberapa umum. Sebuah tinjauan tahun 2020 di PLOS One dengan data dari hampir 25.000 orang dewasa menemukan bahwa demam adalah gejala yang paling umum.\n
+    \n
+    Sebuah penelitian di China menemukan bahwa hanya 44% orang yang tinggal di rumah sakit karena COVID-19 mengalami demam saat masuk. Namun, hanya di bawah 89% yang mengalami demam selama dirawat di rumah sakit.\n
+    \n
+    Gejala COVID-19 biasanya berkembang 2–14 hari setelah terpapar virus SARS-CoV-2\n
+    </string>
+
+    <string name ="dry_cough">
+        Batuk kering
+    </string>
+    <string name="dry_cough_info">
+          60–70% orang yang mengalami gejala COVID-19 mengalami batuk kering sebagai gejala awal.\n
+    Jika Anda mengalami batuk kering, cobalah untuk:\n
+    tetap terhidrasi – teguk sedikit minuman ringan, satu demi satu. Cobalah untuk tidak meneguk banyak.\n
+    menghirup uap – tuangkan air panas ke dalam mangkuk, lalu letakkan kepala Anda di atas mangkuk. Jika nyaman, tutupi kepala dan mangkuk Anda dengan handuk\n
+    minum minuman hangat, seperti madu dan lemon, karena dapat melegakan tenggorokan\n
+    menelan berulang kali jika Anda tidak memiliki minuman di dekat Anda. Ini dapat bekerja dengan cara yang mirip dengan menyeruput air.\n
+    </string>
+
+    <string name="fatigue">
+    Kelelahan
+    </string>
+    <string name="fatigue_info">
+         Menjadi tidak sehat dan pulih dari penyakit mungkin membuat Anda merasa lelah. Kelelahan adalah rasa lelah sepanjang waktu dan tidak berkurang dengan tidur dan istirahat.\n
+    \n
+    Saat pulih dari COVID-19 (virus corona), Anda mungkin merasa perlu tidur lebih banyak atau merasa lelah setelah hanya berjalan-jalan sebentar.\n
+    \n
+    Bahkan hal-hal sederhana, seperti mencuci dan berpakaian, bisa melelahkan.\n
+    \n
+    Saat Anda sakit, otot Anda mungkin tidak perlu melakukan pekerjaan apa pun untuk sementara waktu. Mereka perlu waktu untuk membangun kekuatan lagi.\n
+    </string>
+
+    <string name ="shortness_of_breath">
+    Sesak napas
+    </string>
+    <string name="shortness_of_breath_info">
+        "Sesak napas bisa membuat Anda sulit bernapas. Ini bisa membuat Anda terengah-engah.\n
+    \n
+    Dada Anda mungkin terasa terlalu sesak untuk menarik atau menghembuskan napas sepenuhnya. Setiap napas dangkal membutuhkan usaha yang lebih besar dan membuat Anda merasa terengah-engah. Rasanya seperti Anda bernapas melalui sedotan.\n
+    \n
+    Ini mungkin terjadi saat Anda aktif atau beristirahat. Itu bisa datang secara bertahap atau tiba-tiba.\n
+    \n
+    Pusat Pengendalian dan Pencegahan Penyakit (CDC) melaporkan bahwa 31 hingga 40 persen orang dengan kasus COVID-19 yang dikonfirmasi telah mengalami sesak napas.\n
+    </string>
+
+    <string name="loss_of_appetite">
+    Kehilangan selera makan
+    </string>
+    <string name="losing_your_appetite">
+        Kehilangan nafsu makan adalah tanda awal COVID-19. Untuk orang dewasa di atas 35, itu berlangsung selama rata-rata empat hari tetapi bisa memakan waktu seminggu atau lebih untuk berlalu. Pada mereka yang berusia di bawah 35 tahun, kondisi ini cenderung hanya bertahan dua hingga tiga hari dan membaik dalam waktu seminggu.\n
+    \n
+    Melewatkan makan dapat terjadi bersamaan dengan sejumlah gejala yang berbeda. Hilangnya nafsu makan disertai demam cenderung menjadi tanda kasus ringan COVID-19. Sedangkan, orang dengan kasus yang lebih parah akan kehilangan nafsu makan disertai kebingungan, atau berkelompok dengan sesak napas, diare, dan sakit perut. \n
+    </string>
+
+    <string name ="loss_of">
+        Hilangnya Penciuman / Rasa
+    </string>
+    <string name="smell_dysfunction">
+        Disfungsi penciuman adalah umum dan seringkali merupakan gejala pertama dari infeksi COVID-19. Karena itu, Anda harus mengisolasi diri dan menjalani tes COVID-19 jika memungkinkan. Hal ini juga umum terjadi pada penyakit saluran pernapasan atas akibat virus lainnya, seperti flu biasa, tetapi jarang merupakan satu-satunya atau gejala pertama dalam kasus tersebut.\n
+    \n
+    Dalam kebanyakan kasus, disfungsi penciuman pulih dengan cepat. Namun, itu bisa memakan waktu berbulan-bulan. Dalam sebagian kecil kasus, pemulihan bisa tidak lengkap dengan gangguan yang berlangsung lama. Meskipun tidak ada pengobatan yang terbukti tersedia, pelatihan penciuman dianjurkan. Semprotan kortikosteroid topikal juga sering digunakan dalam pengobatan jangka pendek, tetapi tidak mungkin membantu di luar periode penyakit akut. Jelas, pengobatan terbaik adalah pencegahan, seperti memakai masker, mempraktikkan jarak sosial, dan mendapatkan vaksinasi untuk COVID-19.\n
+    </string>
+
+    <!--akhiri gejala data-->
+
+    <!--vaksin data -->
+    <string name="is_there_a_vaccine">
+    Apakah ada vaksin untuk COVID-19?
+    </string>
+    <string name="yes">
+    Ya. Program vaksinasi massal pertama dimulai pada awal Desember 2020 dan jumlah dosis vaksinasi yang diberikan diperbarui setiap hari di sini. Setidaknya 13 vaksin yang berbeda (di 4 platform) telah diberikan. Kampanye telah dimulai di 206 negara.
+    </string>
+    <string name ="will_covid_vaccines">
+    Akankah vaksin COVID-19 memberikan perlindungan jangka panjang?
+    </string>
+    <string name="because_covid_vaccines">
+    Karena vaksin COVID baru dikembangkan dalam beberapa bulan terakhir, masih terlalu dini untuk mengetahui durasi perlindungan vaksin COVID-19. Penelitian sedang berlangsung untuk menjawab pertanyaan ini. Namun, data yang tersedia menunjukkan bahwa sebagian besar orang yang pulih dari COVID-19 mengembangkan respons kekebalan yang memberikan setidaknya beberapa periode perlindungan terhadap infeksi ulang – meskipun kami masih mempelajari seberapa kuat perlindungan ini, dan berapa lama bertahan.
+    </string>
+    <string name="what_are_the_benefits">
+        Apa manfaat mendapatkan vaksinasi?
+    </string>
+    <string name="the_covid_vaccines_produce">
+    Vaksin COVID-19 menghasilkan perlindungan terhadap penyakit, sebagai akibat darimengembangkan respon imun terhadap virus SARS-Cov-2. Mengembangkan kekebalan melalui vaksinasi berarti ada pengurangan risiko mengembangkan penyakit dan konsekuensinya. Kekebalan ini membantu Anda melawan virus jika terpapar. Mendapatkan vaksinasi juga dapat melindungi orang-orang di sekitar Anda, karena jika Anda terlindungi dari infeksi dan penyakit, Anda cenderung tidak menulari orang lain. Hal ini sangat penting untuk melindungi orang-orang yang berisiko tinggi terkena penyakit parah akibat COVID-19, seperti penyedia layanan kesehatan, orang dewasa yang lebih tua atau lanjut usia, dan orang-orang dengan kondisi medis lainnya.
+    </string>
+    <string name="who_should_get">
+        Siapa yang harus mendapatkan vaksin COVID-19?
+    </string>
+
+    <string name="the_covid_vaccines">
+         Vaksin COVID-19 aman untuk kebanyakan orang berusia 18 tahun ke atas, termasuk mereka yang memiliki kondisi apa pun yang sudah ada sebelumnya, termasuk gangguan auto-imun. Kondisi tersebut antara lain: hipertensi, diabetes, asma, penyakit paru-paru, hati dan ginjal, serta infeksi kronis yang stabil dan terkontrol. \n
+    Jika persediaan terbatas di wilayah Anda, diskusikan situasi Anda dengan penyedia layanan jika Anda:\n
+     - Memiliki sistem kekebalan yang terganggu\n
+     - Sedang hamil atau menyusui bayi Anda\n
+     - Memiliki riwayat alergi parah, terutama terhadap vaksin (atau salah satu bahan dalam vaksin)\n
+     - Sangat rapuh
+    </string>
+
+    <string name ="can_i">
+        Dapatkah saya mendapatkan dosis kedua dengan vaksin yang berbeda dari dosis pertama?
+    </string>
+    <string name="clinical_trials">
+    Uji klinis di beberapa negara melihat apakah Anda dapat mendapatkan dosis pertama dari satu vaksin dan dosis kedua dari vaksin yang berbeda. Data belum cukup untuk merekomendasikan jenis kombinasi ini.
+    </string>
+
+    <!-- akhir vaksin data-->
+
 </resources>

@@ -85,4 +85,300 @@
     <string name="deceased">Deceased</string>
     <string name="total_case">Total Case</string>
 
+    <!--data exercise-->
+    <string name= "deep_breathing_stomach">Deep Breathing While on Your Stomach</string>
+    <string name= "deep_breathing_stomach_info">- Lie on your stomach and rest your head on your hands to allow room to breathe.\n
+    \n
+    - Close your lips and place your tongue on the roof of your mouth.\n
+    \n
+    - Breathe in through your nose and pull air down into your stomach. Try to focus on your stomach pushing into the mattress as you breathe.\n
+    \n
+    - Slowly exhale your breath through your nose.\n
+    \n
+    - Repeat deep breaths for one minute.\n
+    </string>
+
+
+    <string name= "deep_breathing_standing">Deep Breathing While Standing</string>
+    <string name="deep_breathing_standing_info">- Stand upright and place your hands around the sides of your stomach.\n
+    \n
+    - Close your lips and place your tongue on the roof of your mouth.\n
+    \n
+    - Breathe in through your nose and pull air down into your stomach where your hands are. Try to spread your fingers apart with your breath.\n
+    \n
+    - Slowly exhale your breath* through your nose.\n
+    \n
+    - Repeat deep breaths for one minute.\n,
+    </string>
+    <!--End data exercise-->
+
+    <!-- Data food-->
+    <string name= "to_choose">To Choose</string>
+    <string name="to_choose_info">
+        - Consume unsaturated fats (e.g. found in fish, avocado, nuts, olive oil, soy, canola, sunflower and corn oils) rather than saturated fats (e.g. found in fatty meat, butter, coconut oil, cream, cheese, ghee and lard).\n
+    - Choose white meat (e.g. poultry) and fish, which are generally low in fat, rather than red meat.\n
+    - Choose fresh fruits instead of sweet snacks such as cookies, cakes and chocolate.\n
+    - Where possible, opt for low-fat or reduced-fat versions of milk and dairy products.\n
+    </string>
+
+
+    <string name= "to_avoid">To Avoid</string>
+    <string name="to_avoid_info">
+        - Avoid processed meats because they are high in fat and salt.\n
+    - Avoid industrially produced trans fats. These are often found in processed food, fast food, snack food, fried food, frozen pizza, pies, cookies, margarines and spreads.\n
+    - When cooking and preparing food, limit the amount of salt and high-sodium condiments (e.g. soy sauce and fish sauce).\n
+    - Limit your daily salt intake to less than 5 g (approximately 1 teaspoon), and use iodized salt.\n
+    - Avoid foods (e.g. snacks) that are high in salt and sugar.\n
+    - Limit your intake of soft drinks or sodas and other drinks that are high in sugar (e.g. fruit juices, fruit juice concentrates and syrups, flavoured milks and yogurt drinks).\n
+    \n
+    </string>
+
+    <!-- End data food -->
+
+    <!-- Data general -->
+    <string name= "what_is_covid">
+    What is COVID-19?
+    </string>
+    <string name="covid_is">
+        COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.
+    WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of
+    ‘viral pneumonia’ in Wuhan, People’s Republic of China.
+    </string>
+
+    <string name="what_happens">
+    What happens to people who get COVID-19?
+    </string>
+    <string name="what_happens_info">
+        Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.
+    </string>
+
+    <string name= "are_there_treatments">
+    Are there treatments for COVID-19?
+    </string>
+    <string name="scientists_around">
+        Scientists around the world are working to find and develop treatments for COVID-19.\n
+    \n
+    Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill.\n
+    \n
+    WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. WHO is coordinating efforts to develop treatments for COVID-19 and will continue to provide new information as it becomes available.
+    </string>
+
+    <string name="are_there_long">
+    Are there long-term effects of COVID-19?
+    </string>
+    <string name="some_people_who_have">
+        Some people who have had COVID-19, whether they have needed hospitalization or not, continue to experience symptoms, including fatigue, respiratory and neurological symptoms.\n
+    \n
+    "WHO is working with our Global Technical Network for Clinical Management of COVID-19, researchers and patient groups around the world to design and carry out studies of patients beyond the initial acute course of illness to understand the proportion of patients who have long term effects, how long they persist, and why they occur.  These studies will be used to develop further guidance for patient care.  \n
+    </string>
+
+    <string name="what_should_i_do">
+    What should I do if I have been exposed to someone who has COVID-19?
+    </string>
+    <string name="if_you_have_been">
+        If you have been exposed to someone with COVID-19, you may become infected, even if you feel well. After exposure to someone who has COVID-19, do the following:\n
+    \n
+    - Call your health care provider or COVID-19 hotline to find out where and when to get a test.\n
+    - Cooperate with contact-tracing procedures to stop the spread of the virus.\n
+    - If testing is not available, stay home and away from others for 14 days.\n
+    - While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies.\n
+    - Keep at least a 1-metre distance from others, even from your family members.\n
+    - Wear a medical mask to protect others, including if/when you need to seek medical care.\n
+    - Clean your hands frequently.\n
+    - Stay in a separate room from other family members, and if not possible, wear a medical mask.\n
+    - Keep the room well-ventilated.\n
+    - If you share a room, place beds at least 1 metre apart.\n
+    - Monitor yourself for any symptoms for 14 days. \n
+    - Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.
+    </string>
+
+    <string name="how_can_we">
+    How can we protect others and ourselves if we dont know who is infected?
+    </string>
+    <string name="stay_safe">Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, especially when distancing cannot be maintained, keeping rooms well ventilated, avoiding crowds and close contact, regularly cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work. Do it all!
+    </string>
+
+    <!--End data general-->
+
+    <!-- People at risk-->
+    <string name="who_is_at_risk">
+        Who is at risk of developing severe disease?
+    </string>
+    <string name="older_people">
+        Older people, and people of all ages with pre-existing medical conditions (such as diabetes, high blood pressure, heart disease, lung disease, or cancer) appear to develop serious illness more often than others.
+    </string>
+
+    <string name="what_precautions">
+        What precautions are necessary when visiting someone in a health and/or long-term care facility?
+     - If you have been in contact with someone suspected or confirmed with COVID-19, or are feeling unwell, do not visit any health or long-term care facility.\n
+    \n
+     - Follow the facility guidelines on any visit requirements, including screening and wearing a mask.\n
+    \n
+     - Clean your hands before entering and try to keep at least a 1 metre distance from others.\n
+    \n
+     - If you are 60 or over, or have a chronic condition like heart disease, take extra precautions by wearing a medical mask during your visit.
+    </string>
+
+    <!-- End people at risk-->
+
+    <!-- Prevention -->
+    <string name ="wash_your_hand">
+    Wash Your Hand
+    </string>
+    <string name="wet">
+         Wet\n
+    Wet your hands with clean, running water (warm or cold), turn off the tap, and apply soap.\n
+    \n
+    Lather\n
+    Lather the backs of your hands, between your fingers, and under your nails.\n
+    \n
+    Scrub\n
+    Scrub your hands for at least 20 seconds. Need a timer? Hum the “Happy Birthday” song twice.\n
+    \n
+    Rinse \n
+    Rinse your hands well under clean, running water.\n
+    \n
+    Dry\n
+    Dry your hands using a clean towel or air dry them.\n
+    </string>
+
+
+    <string name ="use_a_mask">
+    Use a Mask that…
+    </string>
+    <string name="have_two">
+          Have two or more layers of washable, breathable fabric\n
+    \n
+    Completely cover your nose and mouth\n
+    \n
+    Fit snugly against the sides of your face and don’t have gaps\n
+    \n
+    Have a nose wire to prevent air from leaking out of the top of the mask\n
+    \n
+    </string>
+
+    <string name= "social_distancing">
+    Social Distancing
+    </string>
+    <string name="social_distancing_is">
+        Social distancing is being used to reinforce the need to stay at least 6 feet from others, as well as wearing face masks.\n
+    \n
+    Go out only for necessary activities (shopping, working, etc)\n
+    \n
+    Stay away from crowds\n
+    \n
+    </string>
+    <!-- end data prevention-->
+    \
+    <!-- data symptoms-->
+    <string name ="fever">
+    Fever
+    </string>
+    <string name="fever_info">
+        Fever is a common symptom of COVID-19, but it remains unclear exactly how common. A 2020 review in PLOS One with data from almost 25,000 adults found that fever was the most common symptom.\n
+    \n
+    A study in China found that only 44% of people who stayed in the hospital for COVID-19 had fever upon admission. However, just under 89% experienced fever at some point during the hospitalization.\n
+    \n
+    The symptoms of COVID-19 usually develop 2–14 daysTrusted Source after exposure to the SARS-CoV-2 virus\n
+    </string>
+
+    <string name ="dry_cough">
+    Dry Cough
+    </string>
+    <string name="dry_cough_info">
+          60–70% people who develop COVID-19 symptoms experience a dry cough as an initial symptom.\n
+    If you have a dry cough, try to:\n
+    stay hydrated – take small sips of a soft drink, one after the other. Try not to take large sips.\n
+    inhale steam – pour hot water into a bowl, then put your head over the bowl. If comfortable, cover your head and bowl with a towel\n
+    drink a warm drink, such as honey and lemon, as this can soothe your throat\n
+    swallow repeatedly if you don’t have a drink near you. This can work in a similar way to sipping water.\n
+    </string>
+
+    <string name ="fatigue">
+    Fatigue
+    </string>
+    <string name="fatigue_info">
+         Being unwell and recovering from an illness may make you feel tired. Fatigue is feeling tired all the time and is not relieved by sleep and rest.\n
+    \n
+    When recovering from COVID-19 (coronavirus), you may feel you need to sleep more or feel exhausted after only taking a short walk.\n
+    \n
+    Even simple things, like washing and dressing, can be exhausting.\n
+    \n
+    While you were ill, your muscles may not have had to do any work for a while. They need time to build their strength again.\n
+    </string>
+
+    <string name ="shortness_of_breath">
+    Shortness of Breath
+    </string>
+    <string name="shortness_of_breath_info">
+        "Shortness of breath can make it hard to breathe. It can leave you gasping for air.\n
+    \n
+    Your chest may feel too tight to inhale or exhale fully. Each shallow breath takes greater effort and leaves you feeling winded. It can feel like you’re breathing through a straw.\n
+    \n
+    It may happen when you’re active or resting. It can come on gradually or suddenly.\n
+    \n
+    The Centers for Disease Control and Prevention (CDC)Trusted Source reports that 31 to 40 percent of people with confirmed cases of COVID-19 have experienced shortness of breath.\n
+    </string>
+
+    <string name ="loss_of_appetite">
+    Loss of Appetite
+    </string>
+    <string name="losing_your_appetite">
+        Losing your appetite is an early sign of COVID-19. For adults over 35, it lasts for an average of four days but can take a week or more to pass. In those younger than 35, it tends to only last two to three days and gets better within a week.\n
+    \n
+    Skipping meals can occur alongside a number of different clusters of symptoms. A loss of appetite alongside fever tends to be a sign of a mild case of COVID-19. Whereas, people with more severe cases will have a loss of appetite alongside confusion, or clustered with shortness of breath, diarrhoea and abdominal pain. \n
+    </string>
+
+    <string name ="loss_of">
+    Loss of Smell / Taste
+    </string>
+    <string name="smell_dysfunction">
+        Smell dysfunction is common and often the first symptom of a COVID-19 infection. Therefore, you should self-isolate and get tested for COVID-19 when you can. It is also common in other viral upper respiratory illness, such as the common cold, but rarely is it the only or first symptom in those cases.\n
+    \n
+    In most cases, smell dysfunction recovers quickly. However, it can take months. In a minority of cases, recovery can be incomplete with lasting impairment. While no proven treatment is available, olfactory training is recommended. Topical corticosteroid sprays also are often used in short-term treatment, but they are unlikely to help outside of the acute illness period. Clearly, the best treatment is prevention, such as wearing a mask, practicing social distancing and getting vaccinated for COVID-19.\n
+    </string>
+
+    <!--end data symptoms-->
+
+    <!--data vaccines -->
+    <string name="is_there_a_vaccine">
+    Is there a vaccine for COVID-19?
+    </string>
+    <string name="yes">
+    Yes. The first mass vaccination programme started in early December 2020 and the number of vaccination doses administered is updated on a daily basis here. At least 13 different vaccines (across 4 platforms) have been administered. Campaigns have started in 206 economies.
+    </string>
+    <string name ="will_covid_vaccines">
+    Will COVID-19 vaccines provide long-term protection?
+    </string>
+    <string name="because_covid_vaccines">
+    Because COVID vaccines have only been developed in the past months, it’s too early to know the duration of protection of COVID-19 vaccines. Research is ongoing to answer this question. However, it’s encouraging that available data suggest that most people who recover from COVID-19 develop an immune response that provides at least some period of protection against reinfection – although we’re still learning how strong this protection is, and how long it lasts.
+    </string>
+    <string name="what_are_the_benefits">
+        What are the benefits of getting vaccinated?
+    </string>
+    <string name="the_covid_vaccines_produce">
+    The COVID-19 vaccines produce protection against the disease, as a result of developing an immune response to the SARS-Cov-2 virus.  Developing immunity through vaccination means there is a reduced risk of developing the  illness and its consequences. This immunity helps you fight the virus if exposed. Getting vaccinated may also protect people around you, because if you are protected from getting infected and from disease, you are less likely to infect someone else. This is particularly important to protect people at increased risk for severe illness from COVID-19, such as healthcare providers, older or elderly adults, and people with other medical conditions.
+    </string>
+    <string name="who_should_get">
+        Who should get the COVID-19 vaccines?
+    </string>
+
+    <string name="the_covid_vaccines">
+         The COVID-19 vaccines are safe for most people 18 years and older, including those with pre-existing conditions of any kind, including auto-immune disorders. These conditions include: hypertension, diabetes, asthma, pulmonary, liver and kidney disease, as well as chronic infections that are stable and controlled. \n
+    If supplies are limited in your area, discuss your situation with your care provider if you:\n
+     - Have a compromised immune system\n
+     - Are pregnant or nursing your baby\n
+     - Have a history of severe allergies, particularly to a vaccine (or any of the ingredients in the vaccine)\n
+     - Are severely frail
+    </string>
+
+    <string name ="can_i">
+    Can I have the second dose with a different vaccine than the first dose?
+    </string>
+    <string name="clinical_trials">
+    Clinical trials in some countries are looking at whether you can have a first dose from one vaccine and a second dose from a different vaccine. There isn't enough data yet to recommend this type of combination.
+    </string>
+
+    <!-- end of data vaccines-->
+
 </resources>
