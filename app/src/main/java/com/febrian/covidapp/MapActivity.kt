@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.annotation.RequiresPermission
 import androidx.appcompat.app.AppCompatActivity
 import com.febrian.covidapp.api.ApiService
@@ -81,7 +82,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                     }
 
                     override fun onFailure(call: Call<ArrayList<Response>>, t: Throwable) {
-
+                        Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
                     }
 
                 })
@@ -170,7 +171,20 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                                 val date = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(
                                     Date(stamp.time)
                                 )
-                                bottomSheetView.findViewById<TextView>(R.id.last_update).text = "Last Update $date"
+
+                                val lastUpdate = applicationContext.resources.getString(R.string.last_update)
+
+                                bottomSheetView.findViewById<TextView>(R.id.last_update).text = "$lastUpdate $date"
+
+                                if(list[j].active == null)
+                                    list[j].active = 0
+                                if (list[j].confirmed == null)
+                                    list[j].confirmed = 0
+                                if (list[j].deaths == null)
+                                    list[j].deaths = 0
+                                if(list[j].recovered == null)
+                                    list[j].recovered = 0
+
                                 bottomSheetView.findViewById<TextView>(R.id.text_confirmed).text =
                                     list[j].active.toString()
                                 bottomSheetView.findViewById<TextView>(R.id.text_deceased).text =
@@ -191,8 +205,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
             override fun onFailure(call: Call<ArrayList<Response>>, t: Throwable) {
                 Log.d("Error", t.message.toString())
+                Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
             }
-
         })
 
     }

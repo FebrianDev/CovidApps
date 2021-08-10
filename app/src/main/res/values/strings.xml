@@ -45,7 +45,7 @@
     <string name="confirmed">Confirmed</string>
 
 
-<!--    Covid Test -->
+    <!--    Covid Test -->
     <string name="who_should">Who should get tested for current infection?</string>
     <string name="people_who">- People who have symptoms of COVID-19.\n"
      - Most people who have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19.\n"
@@ -79,15 +79,15 @@
     <string name="antibody_tests">Antibody tests are being used to evaluate the immune responses in people who have been vaccinated against Covid-19. Researchers don’t yet know how long vaccine-induced immunity will last or if booster shots will be needed. There has been some indication that Covid-19 variants are making certain vaccines less effective, but thus far they still appear to generally provide enough protection to guard against severe or fatal disease.
     </string>
 
-<!--    End Covid Test-->
+    <!--    End Covid Test-->
 
     <string name="recovered">Recovered</string>
     <string name="deceased">Deceased</string>
     <string name="total_case">Total Case</string>
 
     <!--data exercise-->
-    <string name= "deep_breathing_stomach">Deep Breathing While on Your Stomach</string>
-    <string name= "deep_breathing_stomach_info">- Lie on your stomach and rest your head on your hands to allow room to breathe.\n
+    <string name="deep_breathing_stomach">Deep Breathing While on Your Stomach</string>
+    <string name="deep_breathing_stomach_info">- Lie on your stomach and rest your head on your hands to allow room to breathe.\n
     \n
     - Close your lips and place your tongue on the roof of your mouth.\n
     \n
@@ -99,7 +99,7 @@
     </string>
 
 
-    <string name= "deep_breathing_standing">Deep Breathing While Standing</string>
+    <string name="deep_breathing_standing">Deep Breathing While Standing</string>
     <string name="deep_breathing_standing_info">- Stand upright and place your hands around the sides of your stomach.\n
     \n
     - Close your lips and place your tongue on the roof of your mouth.\n
@@ -113,7 +113,7 @@
     <!--End data exercise-->
 
     <!-- Data food-->
-    <string name= "to_choose">To Choose</string>
+    <string name="to_choose">To Choose</string>
     <string name="to_choose_info">
         - Consume unsaturated fats (e.g. found in fish, avocado, nuts, olive oil, soy, canola, sunflower and corn oils) rather than saturated fats (e.g. found in fatty meat, butter, coconut oil, cream, cheese, ghee and lard).\n
     - Choose white meat (e.g. poultry) and fish, which are generally low in fat, rather than red meat.\n
@@ -122,7 +122,7 @@
     </string>
 
 
-    <string name= "to_avoid">To Avoid</string>
+    <string name="to_avoid">To Avoid</string>
     <string name="to_avoid_info">
         - Avoid processed meats because they are high in fat and salt.\n
     - Avoid industrially produced trans fats. These are often found in processed food, fast food, snack food, fried food, frozen pizza, pies, cookies, margarines and spreads.\n
@@ -136,9 +136,7 @@
     <!-- End data food -->
 
     <!-- Data general -->
-    <string name= "what_is_covid">
-    What is COVID-19?
-    </string>
+    <string name="what_is_covid">What is COVID-19?</string>
     <string name="covid_is">
         COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.
     WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of
@@ -146,13 +144,12 @@
     </string>
 
     <string name="what_happens">
-    What happens to people who get COVID-19?
+        What happens to people who get COVID-19?
     </string>
-    <string name="what_happens_info">
-        Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.
+    <string name="what_happens_info" formatted="false">Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.
     </string>
 
-    <string name= "are_there_treatments">
+    <string name="are_there_treatments">
     Are there treatments for COVID-19?
     </string>
     <string name="scientists_around">
@@ -210,6 +207,8 @@
 
     <string name="what_precautions">
         What precautions are necessary when visiting someone in a health and/or long-term care facility?
+    </string>
+    <string name="if_you_have_been_in_contract">
      - If you have been in contact with someone suspected or confirmed with COVID-19, or are feeling unwell, do not visit any health or long-term care facility.\n
     \n
      - Follow the facility guidelines on any visit requirements, including screening and wearing a mask.\n
@@ -222,7 +221,7 @@
     <!-- End people at risk-->
 
     <!-- Prevention -->
-    <string name ="wash_your_hand">
+    <string name="wash_your_hand">
     Wash Your Hand
     </string>
     <string name="wet">
@@ -243,7 +242,7 @@
     </string>
 
 
-    <string name ="use_a_mask">
+    <string name="use_a_mask">
     Use a Mask that…
     </string>
     <string name="have_two">
@@ -257,7 +256,7 @@
     \n
     </string>
 
-    <string name= "social_distancing">
+    <string name="social_distancing">
     Social Distancing
     </string>
     <string name="social_distancing_is">
@@ -271,10 +270,10 @@
     <!-- end data prevention-->
     \
     <!-- data symptoms-->
-    <string name ="fever">
-    Fever
+    <string name="fever">
+        Fever
     </string>
-    <string name="fever_info">
+    <string name="fever_info" formatted="false">
         Fever is a common symptom of COVID-19, but it remains unclear exactly how common. A 2020 review in PLOS One with data from almost 25,000 adults found that fever was the most common symptom.\n
     \n
     A study in China found that only 44% of people who stayed in the hospital for COVID-19 had fever upon admission. However, just under 89% experienced fever at some point during the hospitalization.\n
@@ -282,7 +281,7 @@
     The symptoms of COVID-19 usually develop 2–14 daysTrusted Source after exposure to the SARS-CoV-2 virus\n
     </string>
 
-    <string name ="dry_cough">
+    <string name="dry_cough">
     Dry Cough
     </string>
     <string name="dry_cough_info">
@@ -294,7 +293,7 @@
     swallow repeatedly if you don’t have a drink near you. This can work in a similar way to sipping water.\n
     </string>
 
-    <string name ="fatigue">
+    <string name="fatigue">
     Fatigue
     </string>
     <string name="fatigue_info">
@@ -307,20 +306,20 @@
     While you were ill, your muscles may not have had to do any work for a while. They need time to build their strength again.\n
     </string>
 
-    <string name ="shortness_of_breath">
+    <string name="shortness_of_breath">
     Shortness of Breath
     </string>
     <string name="shortness_of_breath_info">
         "Shortness of breath can make it hard to breathe. It can leave you gasping for air.\n
     \n
-    Your chest may feel too tight to inhale or exhale fully. Each shallow breath takes greater effort and leaves you feeling winded. It can feel like you’re breathing through a straw.\n
+    Your chest may feel too tight to inhale or exhale fully. Each shallow breath takes greater effort and leaves you feeling winded. It can feel like you’\tre breathing through a straw.\n
     \n
     It may happen when you’re active or resting. It can come on gradually or suddenly.\n
     \n
     The Centers for Disease Control and Prevention (CDC)Trusted Source reports that 31 to 40 percent of people with confirmed cases of COVID-19 have experienced shortness of breath.\n
     </string>
 
-    <string name ="loss_of_appetite">
+    <string name="loss_of_appetite">
     Loss of Appetite
     </string>
     <string name="losing_your_appetite">
@@ -329,7 +328,7 @@
     Skipping meals can occur alongside a number of different clusters of symptoms. A loss of appetite alongside fever tends to be a sign of a mild case of COVID-19. Whereas, people with more severe cases will have a loss of appetite alongside confusion, or clustered with shortness of breath, diarrhoea and abdominal pain. \n
     </string>
 
-    <string name ="loss_of">
+    <string name="loss_of">
     Loss of Smell / Taste
     </string>
     <string name="smell_dysfunction">
@@ -347,7 +346,7 @@
     <string name="yes">
     Yes. The first mass vaccination programme started in early December 2020 and the number of vaccination doses administered is updated on a daily basis here. At least 13 different vaccines (across 4 platforms) have been administered. Campaigns have started in 206 economies.
     </string>
-    <string name ="will_covid_vaccines">
+    <string name="will_covid_vaccines">
     Will COVID-19 vaccines provide long-term protection?
     </string>
     <string name="because_covid_vaccines">
@@ -372,13 +371,15 @@
      - Are severely frail
     </string>
 
-    <string name ="can_i">
+    <string name="can_i">
     Can I have the second dose with a different vaccine than the first dose?
     </string>
     <string name="clinical_trials">
-    Clinical trials in some countries are looking at whether you can have a first dose from one vaccine and a second dose from a different vaccine. There isn't enough data yet to recommend this type of combination.
+    Clinical trials in some countries are looking at whether you can have a first dose from one vaccine and a second dose from a different vaccine. There isn\'t enough data yet to recommend this type of combination.
     </string>
 
     <!-- end of data vaccines-->
+
+    <string name="last_update">Last Update</string>
 
 </resources>

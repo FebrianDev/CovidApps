@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name = "app_name"> CovidApp </string>
-    <string name = "how_can_i_help_nyou_today"> Paano ako makakatulong? </string>
-    <string name = "hi_how_can_i_nhelp_you_today"> Kumusta, Paano ako makakatulong? </string>
-    <string name = "countries_statistics"> Country Statistics </string>
-    <string name = "deep_breathing_while_on_your_back"> Malalim na Paghinga Sa Iyong Likod </string>
-    <string name = "lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> Kasinungalingan sa iyong likod at yumuko iyong tuhod kaya na sa ilalim portionre nagpapahinga ang iyong mga paa sa itaas ng sopa. Ilagay ang iyong mga kamay sa iyong tiyan o balutin ito sa mga gilid ng iyong tiyan. a Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. Huminga sa pamamagitan ng iyong ilong at iguhit ang hangin sa iyong tiyan kung nasaan ang iyong mga kamay. Subukang ikalat ang iyong mga daliri gamit ang iyong hininga. Dahan-dahang huminga sa pamamagitan ng iyong ilong. Ulitin ang malalim na paghinga para sa isang minuto. </string>
-    <string name = "close"> Isara </string>
-    <string name = "whoops_something_went_wrong"> Naku, tila mayroong isang error! </string>
-    <string name = "global_statistics"> Global Statistics </string>
-    <string name = "realtime_maps"> Realtime Maps </string>
-    <string name = "lokasi_sekarang"> Kasalukuyang Lokasyon </string>
-    <string name = "open_maps"> Buksan ang Maps </string>
-    <string name = "today_s_statistics"> Statistics Ngayon </string>
-    <string name = "weekly_statistics"> Lingguhang Istatistika </string>
-    <string name = "general"> Pangkalahatan </string>
-    <string name = "symptoms"> Mga Sintomas </string>
-    <string name = "prevention"> Pag-iwas </string>
-    <string name = "covid_test"> Covid test </string>
-    <string name = "exercise"> Palakasan </string>
-    <string name = "food"> Pagkain </string>
-    <string name = "people_at_risk"> Mga taong nasa peligro </string>
-    <string name = "covid_19_news"> Balitang Covid-19 </string>
-    <string name = "trending_news"> Trending News </string>
-    <string name = "you_can_also"> Maaari mo ring </string>
-    <string name = "see_covid_stats_for_any_country"> Tingnan ang mga istatistika ng Covid ng ibang mga bansa </string>
-    <string name = "hi_welcome_to_the_international_covid_center"> Kumusta, Maligayang Pagdating sa International Covid Center! </string>
-    <string name = "here_you_can_see_the_covid_19_cases_update_globally"> Maaari mong makita ang Covid-19 kaso ng mga istatistika sa buong mundo </string>
-    <string name = "did_we_mention_about"> Nabanggit ba nito na ... </string>
-    <string name = "you_can_get_covid_related_news_per_country"> Maaari mo bang basahin ang balita ng Covid ayon sa bansa? </string>
-    <string name = "and_of_course"> At syempre ... </string>
-    <string name = "you_can_learn_covid_19_related_information_from_the_best_sources"> Maaari kang makakuha ng impormasyon tungkol sa Covid-19 mula sa mga pinagkakatiwalaang mapagkukunan </string>
-    <string name = "are_you_ready"> Handa ka na ba? </string>
-    <string name = "start"> Start </string>
-    <string name = "settings"> Mga setting </string>
-    <string name = "language"> Wika </string>
-    <string name = "english"> Indonesian </string>
-    <string name = "darkmode"> Dark Mode </string>
-    <string name = "notification"> Mga Notification </string>
-    <string name = "about"> About </string>
-    <string name = "provinsi_negara"> Rehiyon, Bansa </string>
-    <string name = "last_updated_10_feb_2021"> Huling Nai-update: 10 Peb 2021 </string>
-    <string name = "confirmed"> Napatunayan </string>
-    <string name = "who_should"> Sino ang dapat masubukan para sa kasalukuyang impeksyon? </string>
-    <string name = "people_who"> - Mga taong may sintomas ng COVID-19. \ n "
+    <string name="app_name"> CovidApp </string>
+    <string name="how_can_i_help_nyou_today"> Paano ako makakatulong? </string>
+    <string name="hi_how_can_i_nhelp_you_today"> Kumusta, Paano ako makakatulong? </string>
+    <string name="countries_statistics"> Country Statistics </string>
+    <string name="deep_breathing_while_on_your_back"> Malalim na Paghinga Sa Iyong Likod </string>
+    <string name="lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"> Kasinungalingan sa iyong likod at yumuko iyong tuhod kaya na sa ilalim portionre nagpapahinga ang iyong mga paa sa itaas ng sopa. Ilagay ang iyong mga kamay sa iyong tiyan o balutin ito sa mga gilid ng iyong tiyan. a Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. Huminga sa pamamagitan ng iyong ilong at iguhit ang hangin sa iyong tiyan kung nasaan ang iyong mga kamay. Subukang ikalat ang iyong mga daliri gamit ang iyong hininga. Dahan-dahang huminga sa pamamagitan ng iyong ilong. Ulitin ang malalim na paghinga para sa isang minuto. </string>
+    <string name="close"> Isara </string>
+    <string name="whoops_something_went_wrong"> Naku, tila mayroong isang error! </string>
+    <string name="global_statistics"> Global Statistics </string>
+    <string name="realtime_maps"> Realtime Maps </string>
+    <string name="lokasi_sekarang"> Kasalukuyang Lokasyon </string>
+    <string name="open_maps"> Buksan ang Maps </string>
+    <string name="today_s_statistics"> Statistics Ngayon </string>
+    <string name="weekly_statistics"> Lingguhang Istatistika </string>
+    <string name="general"> Pangkalahatan </string>
+    <string name="symptoms"> Mga Sintomas </string>
+    <string name="prevention"> Pag-iwas </string>
+    <string name="covid_test"> Covid test </string>
+    <string name="exercise"> Palakasan </string>
+    <string name="food"> Pagkain </string>
+    <string name="people_at_risk"> Mga taong nasa peligro </string>
+    <string name="covid_19_news"> Balitang Covid-19 </string>
+    <string name="trending_news"> Trending News </string>
+    <string name="you_can_also"> Maaari mo ring </string>
+    <string name="see_covid_stats_for_any_country"> Tingnan ang mga istatistika ng Covid ng ibang mga bansa </string>
+    <string name="hi_welcome_to_the_international_covid_center"> Kumusta, Maligayang Pagdating sa International Covid Center! </string>
+    <string name="here_you_can_see_the_covid_19_cases_update_globally"> Maaari mong makita ang Covid-19 kaso ng mga istatistika sa buong mundo </string>
+    <string name="did_we_mention_about"> Nabanggit ba nito na ... </string>
+    <string name="you_can_get_covid_related_news_per_country"> Maaari mo bang basahin ang balita ng Covid ayon sa bansa? </string>
+    <string name="and_of_course"> At syempre ... </string>
+    <string name="you_can_learn_covid_19_related_information_from_the_best_sources"> Maaari kang makakuha ng impormasyon tungkol sa Covid-19 mula sa mga pinagkakatiwalaang mapagkukunan </string>
+    <string name="are_you_ready"> Handa ka na ba? </string>
+    <string name="start"> Start </string>
+    <string name="settings"> Mga setting </string>
+    <string name="language"> Wika </string>
+    <string name="english"> Indonesian </string>
+    <string name="darkmode"> Dark Mode </string>
+    <string name="notification"> Mga Notification </string>
+    <string name="about"> About </string>
+    <string name="provinsi_negara"> Rehiyon, Bansa </string>
+    <string name="last_updated_10_feb_2021"> Huling Nai-update: 10 Peb 2021 </string>
+    <string name="confirmed"> Napatunayan </string>
+    <string name="who_should"> Sino ang dapat masubukan para sa kasalukuyang impeksyon? </string>
+    <string name="people_who"> - Mga taong may sintomas ng COVID-19. \ n "
      - Karamihan sa mga tao na nagkaroon ng malapit na pakikipag-ugnay (sa loob ng 6 talampakan para sa isang kabuuang 15 minuto o higit pa sa loob ng 24 na oras na panahon) sa isang taong nakumpirma na COVID-19. \ N "
      - Ang mga hindi nabakunsyang tao na nakilahok sa mga aktibidad na inilalagay sa kanila sa mas mataas na peligro para sa COVID-19 sapagkat hindi sila maaaring malayo nang pisikal hanggat kinakailangan upang maiwasan ang pagkakalantad, tulad ng paglalakbay, pagdalo sa mga malalaking pagtitipon sa lipunan o masa, o nasa masikip o hindi maayos na bentilasyong panloob mga setting. \ n "
      - Ang mga taong tinanong o tinukoy upang masubukan ng kanilang tagabigay ng pangangalaga ng kalusugan, o estado, tribo, lokal na panlabas na icon, o departamento ng kalusugan ng teritoryo. "
     </string>
 
-    <string name = "how_to_get_tested"> Paano masubukan para sa kasalukuyang impeksyon sa COVID-19? </string>
-    <string name = "contact_your"> Makipag-ugnay sa iyong tagabigay ng pangangalaga ng kalusugan o bisitahin ang iyong estado, tribo, lokal na icon na panlabas, at website ng departamento ng kalusugan ng teritoryo upang hanapin ang pinakabagong lokal na impormasyon sa pagsubok. Ang uri ng inalok na viral na COVID-19 na pagsubok ay maaaring magkakaiba ayon sa lokasyon. </string>
+    <string name="how_to_get_tested"> Paano masubukan para sa kasalukuyang impeksyon sa COVID-19? </string>
+    <string name="contact_your"> Makipag-ugnay sa iyong tagabigay ng pangangalaga ng kalusugan o bisitahin ang iyong estado, tribo, lokal na icon na panlabas, at website ng departamento ng kalusugan ng teritoryo upang hanapin ang pinakabagong lokal na impormasyon sa pagsubok. Ang uri ng inalok na viral na COVID-19 na pagsubok ay maaaring magkakaiba ayon sa lokasyon. </string>
 
-    <string name = "how_to_use_results"> Paano gamitin ang mga resulta ng mga pagsusuri sa viral? </string>
-    <string name = "if_you"> Kung nagpositibo ka, alamin kung anong mga hakbang na proteksiyon ang gagawin upang maiwasang magkasakit ang iba. \ n- Kung negatibo ang iyong pagsubok, malamang na hindi ka nahawahan sa oras na nakolekta ang iyong sample. Nangangahulugan lamang ang resulta ng pagsubok na wala kang COVID-19 sa oras ng pagsubok. Magpatuloy na gumawa ng mga hakbang upang maprotektahan ang iyong sarili. </string>
+    <string name="how_to_use_results"> Paano gamitin ang mga resulta ng mga pagsusuri sa viral? </string>
+    <string name="if_you"> Kung nagpositibo ka, alamin kung anong mga hakbang na proteksiyon ang gagawin upang maiwasang magkasakit ang iba. \ n- Kung negatibo ang iyong pagsubok, malamang na hindi ka nahawahan sa oras na nakolekta ang iyong sample. Nangangahulugan lamang ang resulta ng pagsubok na wala kang COVID-19 sa oras ng pagsubok. Magpatuloy na gumawa ng mga hakbang upang maprotektahan ang iyong sarili. </string>
 
-    <string name = "what_are"> Ano ang ibat ibang uri ng pagsubok na Covid-19? </string>
-    <string name = "polymerase_chain"> - Ang mga pagsusuri sa polymerase chain reaction (PCR) ay ipinadala sa isang lab upang masuri ang sakit \ n
+    <string name="what_are"> Ano ang ibat ibang uri ng pagsubok na Covid-19? </string>
+    <string name="polymerase_chain"> - Ang mga pagsusuri sa polymerase chain reaction (PCR) ay ipinadala sa isang lab upang masuri ang sakit \ n
     - Maaaring masuri ng mga lateral flow test (LFT) ang Covid-19 sa lugar, ngunit hindi tumpak tulad ng mga pagsubok sa PCR \ n
     - Ang mga pagsusuri sa Antibody (o serology) ay hindi maaaring masuri ang aktibong impeksyon, ngunit makakatulong sila upang masabi kung ang isang tao ay may kaligtasan sa Covid-19
     </string>
 
-    <string name = "what_is_PCR"> Ano ang pagsubok sa PCR? </string>
-    <string name = "pcr_tests"> Ginagamit ang mga pagsusuri sa PCR upang direktang i-screen para sa pagkakaroon ng viral RNA, na matutukoy sa katawan bago ang form ng mga antibodies o sintomas ng sakit. Nangangahulugan ito na masasabi ng mga pagsubok kung mayroon o mayroong isang virus nang maaga pa sa kanilang karamdaman. \ N
+    <string name="what_is_PCR"> Ano ang pagsubok sa PCR? </string>
+    <string name="pcr_tests"> Ginagamit ang mga pagsusuri sa PCR upang direktang i-screen para sa pagkakaroon ng viral RNA, na matutukoy sa katawan bago ang form ng mga antibodies o sintomas ng sakit. Nangangahulugan ito na masasabi ng mga pagsubok kung mayroon o mayroong isang virus nang maaga pa sa kanilang karamdaman. \ N
     Sa pamamagitan ng pag-scale ng pagsubok sa PCR upang mai-screen ang malawak na mga swamp ng nasopharyngeal swab sample mula sa loob ng isang populasyon, ang mga opisyal ng kalusugan ng publiko ay maaaring makakuha ng isang mas malinaw na larawan ng pagkalat ng isang sakit tulad ng Covid-19. \ N
     Gayunpaman, mayroon pa ring mga kaugalian ang PCR. Ang mga uri ng pagsubok na Covid-19 na ito ay kailangang maipadala sa isang laboratoryo para sa pagtatasa, nangangahulugang maaaring tumagal ng ilang araw upang malaman ng mga tao ang kanilang mga resulta.
     </string>
 
-    <string name = "how_about_lateral"> mayroon tungkol sa isang pag-ilid na pagsubok sa daloy? </string>
-    <string name = "lft"> Ang mga LFT ay katulad ng mga pagsubok sa PCR, dahil pareho silang uri ng antigen test, na idinisenyo upang kunin ang aktibong impeksyon ng Covid-19 kaysa sa mga antibodies sa sakit. Sa isang Covid-19 LFT, isang sample ng nasopharyngeal ay inilalagay sa isang maliit na absorbent pad, na pagkatapos ay iginuhit kasama ng pad sa pamamagitan ng isang linya ng capillary sa isang strip na pinahiran ng mga antibodies, na nagbubuklod sa mga protina ng SARS-Cov-2. Kung ang mga protina na ito ay naroroon, ipapakita ito bilang isang may kulay na linya sa pagsubok, na nagpapahiwatig ng impeksyon.
+    <string name="how_about_lateral"> mayroon tungkol sa isang pag-ilid na pagsubok sa daloy? </string>
+    <string name="lft"> Ang mga LFT ay katulad ng mga pagsubok sa PCR, dahil pareho silang uri ng antigen test, na idinisenyo upang kunin ang aktibong impeksyon ng Covid-19 kaysa sa mga antibodies sa sakit. Sa isang Covid-19 LFT, isang sample ng nasopharyngeal ay inilalagay sa isang maliit na absorbent pad, na pagkatapos ay iginuhit kasama ng pad sa pamamagitan ng isang linya ng capillary sa isang strip na pinahiran ng mga antibodies, na nagbubuklod sa mga protina ng SARS-Cov-2. Kung ang mga protina na ito ay naroroon, ipapakita ito bilang isang may kulay na linya sa pagsubok, na nagpapahiwatig ng impeksyon.
     </string>
 
-    <string name = "what_is_antibody"> Ano ang pagsubok sa antibody? </string>
-    <string name = "antibody_tests"> Ginagamit ang mga pagsusuri sa Antibody upang suriin ang mga tugon sa immune sa mga taong nabakunahan laban sa Covid-19. Hindi pa alam ng mga mananaliksik kung gaano katagal ang kaligtasan sa sakit na sapilitan ng bakuna ay magtatagal o kung kakailanganin ng booster shot. Mayroong ilang pahiwatig na ang mga variant ng Covid-19 ay ginagawang hindi gaanong epektibo ang ilang mga bakuna, ngunit hanggang ngayon ay lumilitaw pa rin silang sa pangkalahatan ay nagbibigay ng sapat na proteksyon upang bantayan laban sa malubha o nakamamatay na sakit.
+    <string name="what_is_antibody"> Ano ang pagsubok sa antibody? </string>
+    <string name="antibody_tests"> Ginagamit ang mga pagsusuri sa Antibody upang suriin ang mga tugon sa immune sa mga taong nabakunahan laban sa Covid-19. Hindi pa alam ng mga mananaliksik kung gaano katagal ang kaligtasan sa sakit na sapilitan ng bakuna ay magtatagal o kung kakailanganin ng booster shot. Mayroong ilang pahiwatig na ang mga variant ng Covid-19 ay ginagawang hindi gaanong epektibo ang ilang mga bakuna, ngunit hanggang ngayon ay lumilitaw pa rin silang sa pangkalahatan ay nagbibigay ng sapat na proteksyon upang bantayan laban sa malubha o nakamamatay na sakit.
     </string>
     <string name="recovered">Recovered</string>
     <string name="deceased">Deceased</string>
     <string name="total_case">Total Case</string>
 
     <!-- ehersisyo sa data -->
-    <string name = "deep_breathing_stomach"> Malalim na Paghinga Habang nasa Iyong Sining </string>
-    <string name = "deep_breathing_stomach_info"> - Humiga sa iyong tiyan at ipatong ang iyong ulo sa iyong mga kamay upang payagan ang paghinga. \n
+    <string name="deep_breathing_stomach"> Malalim na Paghinga Habang nasa Iyong Sining </string>
+    <string name="deep_breathing_stomach_info"> - Humiga sa iyong tiyan at ipatong ang iyong ulo sa iyong mga kamay upang payagan ang paghinga. \n
     \n
     - Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. \n
     \n
@@ -92,8 +92,8 @@
     </string>
 
 
-    <string name = "deep_breathing_standing"> Malalim na Paghinga Habang Nakatayo </string>
-    <string name = "deep_breathing_standing_info"> - Tumayo nang patayo at ilagay ang iyong mga kamay sa mga gilid ng iyong tiyan. \ n
+    <string name="deep_breathing_standing"> Malalim na Paghinga Habang Nakatayo </string>
+    <string name="deep_breathing_standing_info"> - Tumayo nang patayo at ilagay ang iyong mga kamay sa mga gilid ng iyong tiyan. \ n
     \n
     - Isara ang iyong mga labi at ilagay ang iyong dila sa bubong ng iyong bibig. \n
     \n
@@ -106,8 +106,8 @@
     <!-- Tapusin ang pag-eehersisyo ng data -->
 
     <!-- Data food -->
-    <string name = "to_choose"> Upang Pumili </string>
-    <string name = "to_choose_info">
+    <string name="to_choose"> Upang Pumili </string>
+    <string name="to_choose_info">
         - Ubusin ang mga hindi nabubuong taba (hal. Matatagpuan sa isda, abukado, mani, langis ng oliba, toyo, canola, mirasol at langis ng mais) kaysa sa puspos na mga taba (hal. Matatagpuan sa mataba na karne, mantikilya, langis ng niyog, cream, keso, ghee at mantika) . \n
     - Pumili ng puting karne (hal. Manok) at isda, na sa pangkalahatan ay mababa sa taba, kaysa sa pulang karne. \n
     - Pumili ng mga sariwang prutas sa halip na matamis na meryenda tulad ng cookies, cake at tsokolate. \n
@@ -115,8 +115,8 @@
     </string>
 
 
-    <string name = "to_avoid"> Upang maiwasan ang </string>
-    <string name = "to_avoid_info">
+    <string name="to_avoid"> Upang maiwasan ang </string>
+    <string name="to_avoid_info">
         - Iwasan ang mga naprosesong karne sapagkat ang mga ito ay mataas sa taba at asin. \n
     - Iwasan ang mga gawa sa pang-industriya na trans fats. Madalas itong matatagpuan sa naproseso na pagkain, fast food, meryenda, pritong pagkain, nakapirming pizza, mga pie, cookies, margarine at kumakalat. \n
     - Kapag nagluluto at naghahanda ng pagkain, limitahan ang dami ng mga pampalasa ng asin at mataas na sosa (hal. Toyo at sarsa ng isda). \n
@@ -129,26 +129,23 @@
     <!-- Tapusin ang pagkain ng data -->
 
     <!-- Pangkalahatan ng data -->
-    <string name = "what_is_covid">
-    Ano ang COVID-19?
-    </string>
-    <string name = "covid_is">
-        Ang COVID-19 ay ang sakit na sanhi ng isang bagong coronavirus na tinatawag na SARS-CoV-2.
+    <string name="what_is_covid">Ano ang COVID-19?</string>
+    <string name="covid_is">Ang COVID-19 ay ang sakit na sanhi ng isang bagong coronavirus na tinatawag na SARS-CoV-2.
     Una nang nalaman ng WHO ang bagong virus na ito noong Disyembre 31, 2019, kasunod ng isang ulat ng isang kumpol ng mga kaso ng
-    'Viral pneumonia' sa Wuhan, People's Republic of China.
+    Viral pneumonia sa Wuhan, Peoples Republic of China.
     </string>
 
-    <string name = "what_happens">
+    <string name="what_happens">
     Ano ang nangyayari sa mga taong nakakakuha ng COVID-19?
     </string>
-    <string name = "what_happens_info">
+    <string name="what_happens_info" formatted="false">
         Kabilang sa mga nagkakaroon ng mga sintomas, karamihan (halos 80%) ay nakakagaling mula sa sakit nang hindi nangangailangan ng paggamot sa ospital. Halos 15% ang nagkakasakit nang malubha at nangangailangan ng oxygen at 5% ay nagkakasakit nang kritikal at nangangailangan ng masidhing pangangalaga.
     </string>
 
-    <string name = "are_there_treatments">
+    <string name="are_there_treatments">
     Mayroon bang paggamot para sa COVID-19?
     </string>
-    <string name = "scientists_around">
+    <string name="scientists_around">
         Ang mga siyentista sa buong mundo ay nagtatrabaho upang maghanap at bumuo ng mga paggamot para sa COVID-19. \n
     \n
     Kasama sa pinakamainam na pangangalaga sa pangangalaga ng oxygen para sa mga pasyente na may malubhang sakit at mga nasa peligro para sa matinding sakit at mas advanced na suporta sa paghinga tulad ng bentilasyon para sa mga pasyente na kritikal na may sakit. \ N
@@ -156,19 +153,19 @@
     Hindi inirerekumenda ng WHO ang self-medication sa anumang mga gamot, kabilang ang mga antibiotics, bilang pag-iwas o lunas para sa COVID-19. Ang koordinasyon ng mga pagsisikap upang bumuo ng mga paggamot para sa COVID-19 at magpapatuloy na magbigay ng bagong impormasyon kapag ito ay magagamit.
     </string>
 
-    <string name = "are_there_long">
+    <string name="are_there_long">
     Mayroon bang pangmatagalang epekto ng COVID-19?
     </string>
-    <string name = "some_people_who_have">
+    <string name="some_people_who_have">
         Ang ilang mga tao na nagkaroon ng COVID-19, kung kailangan nila man sa ospital o hindi, ay patuloy na nakakaranas ng mga sintomas, kasama na ang pagkapagod, respiratory at sintomas ng neurological. \ N
     \n
     Ang WHO ay nagtatrabaho sa aming Global Technical Network para sa Clinical Management ng COVID-19, mga mananaliksik at mga pangkat ng pasyente sa buong mundo upang mag-disenyo at magsagawa ng mga pag-aaral ng mga pasyente na lampas sa paunang matinding kurso ng sakit upang maunawaan ang proporsyon ng mga pasyente na may pangmatagalang epekto , kung gaano katagal sila nagpumilit, at kung bakit nangyari ang mga ito. Ang mga pag-aaral na ito ay gagamitin upang makabuo ng karagdagang patnubay para sa pangangalaga ng pasyente. \n
     </string>
 
-    <string name = "what_should_i_do">
+    <string name="what_should_i_do">
     Ano ang dapat kong gawin kung mayroon akotl nakalantad sa isang taong mayroong COVID-19?
     </string>
-    <string name = "if_you_have_been">
+    <string name="if_you_have_been">
         Kung nahantad ka sa isang taong may COVID-19, maaari kang mahawahan, kahit na nasa mabuti ang iyong pakiramdam. Pagkatapos ng pagkakalantad sa isang tao na mayroong COVID-19, gawin ang sumusunod: \n
     \n
     - Tumawag sa iyong tagabigay ng pangangalagang pangkalusugan o hotline ng COVID-19 upang malaman kung saan at kailan makakakuha ng isang pagsubok. \n
@@ -185,25 +182,27 @@
     - Manatiling positibo sa pamamagitan ng pakikipag-ugnay sa mga mahal sa buhay sa pamamagitan ng telepono o online, at sa pamamagitan ng pag-eehersisyo sa bahay.
     </string>
 
-    <string name = "how_can_we">
+    <string name="how_can_we">
     Paano natin mapoprotektahan ang iba at ang ating sarili kung hindi natin alam kung sino ang nahawahan?
     </string>
-    <string name = "stay_safe"> Manatiling ligtas sa pamamagitan ng pag-iingat ng ilang simpleng pag-iingat, tulad ng paglayo ng pisikal, pagsusuot ng maskara, lalo na kung hindi mapapanatili ang distansya, pinapanatili ang maaliwalas na silid, pag-iwas sa maraming tao at malapit na pakikipag-ugnay, regular na paglilinis ng iyong mga kamay, at pag-ubo sa isang baluktot na siko o tisyu. Suriin ang lokal na payo kung saan ka nakatira at nagtatrabaho. Gawin ang lahat!
+    <string name="stay_safe"> Manatiling ligtas sa pamamagitan ng pag-iingat ng ilang simpleng pag-iingat, tulad ng paglayo ng pisikal, pagsusuot ng maskara, lalo na kung hindi mapapanatili ang distansya, pinapanatili ang maaliwalas na silid, pag-iwas sa maraming tao at malapit na pakikipag-ugnay, regular na paglilinis ng iyong mga kamay, at pag-ubo sa isang baluktot na siko o tisyu. Suriin ang lokal na payo kung saan ka nakatira at nagtatrabaho. Gawin ang lahat!
     </string>
 
     <!-- Tapusin ang pangkalahatang data -->
 
     <!-- Ang mga taong nasa peligro -->
-    <string name = "who_is_at_risk">
+    <string name="who_is_at_risk">
         Sino ang nanganganib na magkaroon ng matinding karamdaman?
     </string>
-    <string name = "older_people">
+    <string name="older_people">
         Ang mga matatandang tao, at mga tao sa lahat ng edad na may paunang mayroon nang mga kondisyong medikal (tulad ng diabetes, mataas na presyon ng dugo, sakit sa puso, sakit sa baga, o cancer) ay lilitaw na madalas na nagkakaroon ng malubhang karamdaman kaysa sa iba.
     </string>
 
-    <string name = "what_precautions">
+    <string name="what_precautions">
         Anong pag-iingat ang kinakailangan kapag bumibisita sa sinumang nasa isang pasilidad sa kalusugan at / o pangmatagalang pangangalaga?
-     - Kung nakipag-ugnay ka sa isang taong pinaghihinalaan o nakumpirma na may COVID-19, o pakiramdam mo ay hindi mabuti, huwag bisitahin ang anumang kalusugan o pangmatagalang pasilidad sa pangangalaga. \ N
+    </string>
+    <string name="if_you_have_been_in_contract">
+        - Kung nakipag-ugnay ka sa isang taong pinaghihinalaan o nakumpirma na may COVID-19, o pakiramdam mo ay hindi mabuti, huwag bisitahin ang anumang kalusugan o pangmatagalang pasilidad sa pangangalaga. \ N
     \ n
      - Sundin ang mga alituntunin sa pasilidad sa anumang mga kinakailangan sa pagbisita, kabilang ang pag-screen at pagsusuot ng maskara. \ N
     \ n
@@ -215,10 +214,10 @@
     <!-- Tapusin ang mga taong nasa peligro -->
 
     <!-- Pag-iwas -->
-    <string name = "wash_your_hand">
+    <string name="wash_your_hand">
     Hugasan ang iyong Kamay
     </string>
-    <string name = "wet">
+    <string name="wet">
          Basa \n
     Basain ang iyong mga kamay ng malinis, umaagos na tubig (mainit o malamig), patayin ang gripo, at maglagay ng sabon. \n
     \n
@@ -236,10 +235,10 @@
     </string>
 
 
-    <string name = "use_a_mask">
+    <string name="use_a_mask">
     Gumamit ng isang Mask na ...
     </string>
-    <string name = "have_two">
+    <string name="have_two">
           Magkaroon ng dalawa o higit pang mga layer ng puwedeng hugasan, humihinga na tela \n
     \n
     Ganap na takpan ang iyong ilong at bibig \n
@@ -250,10 +249,10 @@
     \n
     </string>
 
-    <string name = "social_distancing">
+    <string name="social_distancing">
     Pagpapanatili ng pagitan mula sa kapwa-tao
     </string>
-    <string name = "social_distancing_is">
+    <string name="social_distancing_is">
         Ginagamit ang social distancing upang mapalakas ang pangangailangan na manatili ng kahit 6 na talampakan mula sa iba, pati na rin ang pagsusuot ng mga maskara sa mukha. \ N
     \n
     Lumabas lamang para sa mga kinakailangang aktibidad (pamimili, pagtatrabaho, atbp) \n
@@ -264,10 +263,10 @@
     <!-- pagtigil sa pag-iwas sa data -->
     \
     <!-- mga sintomas ng data -->
-    <string name = "fever">
+    <string name="fever">
     Lagnat
     </string>
-    <string name = "fever_info">
+    <string name="fever_info" formatted="false">
         Ang lagnat ay isang karaniwang sintomas ng COVID-19, ngunit nananatili itong hindi malinaw eksakto kung gaano ito karaniwan. Isang pagsusuri sa 2020 sa PLOS One na may data mula sa halos 25,000 matanda na natagpuan na ang lagnat ang pinaka-karaniwang sintomas. \n
     \n
     Ang isang pag-aaral sa Tsina ay natagpuan na ang 44% lamang ng mga tao na nanatili sa ospital para sa COVID-19 ay may lagnat sa pagpasok. Gayunpaman, sa ilalim lamang ng 89% nakaranas ng lagnat sa ilang mga punto sa panahon ng pagpapaospital. \n
@@ -275,10 +274,10 @@
     Ang mga sintomas ng COVID-19 ay karaniwang nagkakaroon ng 2-14 araw Pinagkatiwalaang Pinagmulan pagkatapos na mailantad ang SARS-CoV-2 na virus \ n
     </string>
 
-    <string name = "dry_cough">
+    <string name="dry_cough">
     Tuyong ubo
     </string>
-    <string name = "dry_cough_info">
+    <string name="dry_cough_info">
           60-70% ang mga taong nagkakaroon ng mga sintomas ng COVID-19 ay nakakaranas ng tuyong ubo bilang paunang sintomas. \n
     Kung mayroon kang tuyong ubo, subukang: \n
     manatiling hydrated - kumuha ng maliliit na paghigop ng isang softdrink, sunod-sunod. Subukang huwag kumuha ng malalaking sips. \n
@@ -287,10 +286,10 @@
     lunukin nang paulit-ulit kung wala kang maiinom malapit sa iyo. Maaari itong gumana sa katulad na paraan sa paghigop ng tubig. \n
     </string>
 
-    <string name = "fatigue">
+    <string name="fatigue">
     Pagkapagod
     </string>
-    <string name = "fatigue_info">
+    <string name="fatigue_info">
          Ang pagiging hindi maayos at paggaling mula sa isang karamdaman ay maaaring magpagod sa iyo. Ang pagkahapo ay pakiramdam ng pagod sa lahat ng oras at hindi mapagaan ng tulog at pahinga. \n
     \n
     Kapag nakakagaling mula sa COVID-19 (coronavirus), maaari mong maramdaman na kailangan mong matulog nang higit pa o pakiramdam ng pagod pagkatapos lamang ng isang lakad lamang. \n
@@ -300,10 +299,10 @@
     Habang ikaw ay may sakit, ang iyong mga kalamnan ay maaaring hindi na gumawa ng anumang trabaho para sa isang sandali. Kailangan nila ng oras upang buuin muli ang kanilang lakas. \n
     </string>
 
-    <string name = "shortness_of_breath">
+    <string name="shortness_of_breath">
     Kakulangan ng Paghinga
     </string>
-    <string name = "shortness_of_breath_info">
+    <string name="shortness_of_breath_info">
         "Ang paghinga ng hininga ay maaaring maging mahirap na huminga. Maaari ka nitong iwanan nang hinihingal. \n
     \n
     Ang iyong dibdib ay maaaring pakiramdam masyadong masikip upang lumanghap o ganap na huminga nang palabas. Ang bawat mababaw na hininga ay tumatagal ng mas higit na pagsisikap at iniiwan ang pakiramdam mo ng mahangin. Maaari mong pakiramdam na humihinga ka sa pamamagitan ng isang dayami. \n
@@ -313,19 +312,19 @@
     Iniulat ng Centers for Disease Control and Prevention (CDC) Pinagkakatiwalaang Pinagmulan na 31 hanggang 40 porsyento ng mga taong may kumpirmadong mga kaso ng COVID-19 ay nakaranas ng paghinga. \n
     </string>
 
-    <string name = "loss_of_appetite">
+    <string name="loss_of_appetite">
     Walang gana kumain
     </string>
-    <string name = "losing_your_appetite">
-        Ang pagkawala ng gana sa pagkain ay isang maagang pag-sign ng COVID-19. Para sa mga matatanda na higit sa 35, tumatagal ito ng isang average ng apat na araw ngunit maaaring tumagal ng isang linggo o higit pa upang makapasa. Sa mga mas bata sa 35, malamang na magtatagal lamang ng dalawa hanggang tatlong araw at magiging mas mahusay sa loob ng isang linggo. \ N
+    <string name="losing_your_appetite" formatted="false">
+        Ang pagkawala ng gana sa pagkain ay isang maagang pag-sign ng COVID-19. Para sa mga matatanda na higit sa 35, tumatagal ito ng isang average ng apat na araw ngunit maaaring tumagal ng isang linggo o higit pa upang makapasa. Sa mga mas bata sa 35, malamang na magtatagal lamang ng dalawa hanggang tatlong araw at magiging mas mahusay sa loob ng isang linggo. \n
     \n
-    Ang paglaktaw ng mga pagkain ay maaaring mangyari sa tabi ng isang bilang ng iba't ibang mga kumpol ng mga sintomas. Ang pagkawala ng gana sa tabi ng lagnat ay may posibilidad na maging isang tanda ng isang banayad na kaso ng COVID-19. Samakatuwid, ang mga taong may mas malubhang kaso ay mawawalan ng gana sa tabi ng pagkalito, o clustered na may igsi ng paghinga, pagtatae at sakit ng tiyan. \ n
+    Ang paglaktaw ng mga pagkain ay maaaring mangyari sa tabi ng isang bilang ng iba t ibang mga kumpol ng mga sintomas. Ang pagkawala ng gana sa tabi ng lagnat ay may posibilidad na maging isang tanda ng isang banayad na kaso ng COVID-19. Samakatuwid, ang mga taong may mas malubhang kaso ay mawawalan ng gana sa tabi ng pagkalito, o clustered na may igsi ng paghinga, pagtatae at sakit ng tiyan. \n
     </string>
 
-    <string name = "loss_of">
+    <string name="loss_of">
     Pagkawala ng Amoy / Tikman
     </string>
-    <string name = "smell_dysfunction">
+    <string name="smell_dysfunction">
         Karaniwan ang disfungsi ng amoy at madalas ang unang sintomas ng impeksyon sa COVID-19. Samakatuwid, dapat mong ihiwalay ang sarili at masubukan para sa COVID-19 kung maaari. Karaniwan din ito sa iba pang viral sa itaas na sakit sa paghinga, tulad ng karaniwang sipon, ngunit bihirang ito lamang ang unang o unang sintomas sa mga kasong iyon. \ N
     \n
     Sa karamihan ng mga kaso, mabilis na gumagaling ang disfungsi ng amoy. Gayunpaman, maaari itong tumagal ng buwan. Sa isang minorya ng mga kaso, ang pagbawi ay maaaring hindi kumpleto sa pangmatagalang pagkasira. Habang walang napatunayan na paggamot na magagamit, inirerekumenda ang pagsasanay sa olpaktoryo. Ang mga pangkasalukuyan na spray ng corticosteroid ay madalas ding ginagamit sa panandaliang paggamot, ngunit malamang na hindi sila makakatulong sa labas ng panahon ng matinding karamdaman. Malinaw na, ang pinakamahusay na paggamot ay ang pag-iwas, tulad ng pagsusuot ng maskara, pagsasanay ng distansya sa lipunan at pagbabakuna para sa COVID-19. \ N
@@ -334,29 +333,29 @@
     <!-- pagtatapos ng mga sintomas ng data -->
 
     <!-- mga bakuna sa data -->
-    <string name = "is_there_a_vaccine">
+    <string name="is_there_a_vaccine">
     Mayroon bang bakuna para sa COVID-19?
     </string>
-    <string name = "yes">
+    <string name="yes">
     Oo Ang unang programa ng pagbabakuna ng masa ay nagsimula noong unang bahagi ng Disyembre 2020 at ang bilang ng mga dosis ng pagbabakuna na ibinibigay ay na-update araw-araw dito. Hindi bababa sa 13 magkakaibang mga bakuna (sa buong 4 na platform) ang naibigay. Ang mga kampanya ay nagsimula sa 206 ekonomiya.
     </string>
-    <string name = "will_covid_vaccines">
+    <string name="will_covid_vaccines">
     Magbibigay ba ang mga bakuna sa COVID-19 ng pangmatagalang proteksyon?
     </string>
-    <string name = "because_covid_vaccines">
+    <string name="because_covid_vaccines">
     Dahil ang mga bakuna sa COVID ay nabuo lamang sa mga nakaraang buwan, masyadong maaga upang malaman ang tagal ng proteksyon ng mga bakuna sa COVID-19. Nagpapatuloy ang pananaliksik upang sagutin ang katanungang ito. Gayunpaman, nakasisigla na ang magagamit na data ay nagmumungkahi na ang karamihan sa mga tao na nakabawi mula sa COVID-19 ay nagkakaroon ng isang tugon sa immune na nagbibigay ng hindi bababa sa ilang panahon ng proteksyon laban sa muling pagdidikit - kahit na natututunan pa rin natin kung gaano kalakas ang proteksyon na ito, at kung gaano ito tumatagal.
     </string>
-    <string name = "what_are_the_benefits">
+    <string name="what_are_the_benefits">
         Ano ang mga pakinabang ng pagbabakuna?
     </string>
-    <string name = "the_covid_vaccines_produce">
+    <string name="the_covid_vaccines_produce">
     Ang mga bakuna sa COVID-19 ay gumagawa ng proteksyon laban sa sakit, bilang resulta ng depagbuo ng isang immune tugon sa SARS-Cov-2 virus. Ang pagbuo ng kaligtasan sa sakit sa pamamagitan ng pagbabakuna ay nangangahulugang mayroong isang mabawasan na peligro na magkaroon ng sakit at mga kahihinatnan nito. Ang kaligtasan sa sakit na ito ay tumutulong sa iyo na labanan ang virus kung malantad. Ang pagbabakuna ay maaari ring protektahan ang mga tao sa paligid mo, dahil kung protektado ka mula sa pagkakaroon ng impeksyon at mula sa sakit, mas malamang na mahawahan ka ng iba. Partikular itong mahalaga upang maprotektahan ang mga taong may mas mataas na peligro para sa matinding karamdaman mula sa COVID-19, tulad ng mga tagabigay ng pangangalaga ng kalusugan, mas matanda o matatandang matatanda, at mga taong may iba pang mga kondisyong medikal.
     </string>
-    <string name = "who_should_get">
+    <string name="who_should_get">
         Sino ang dapat makakuha ng mga bakuna sa COVID-19?
     </string>
 
-    <string name = "the_covid_vaccines">
+    <string name="the_covid_vaccines">
          Ang mga bakuna sa COVID-19 ay ligtas para sa karamihan sa mga taong 18 taong gulang pataas, kabilang ang mga mayroon nang dati nang mga kundisyon ng anumang uri, kabilang ang mga karamdaman na auto-immune. Kasama sa mga kundisyong ito ang: hypertension, diabetes, hika, pulmonary, sakit sa atay at bato, pati na rin ang mga talamak na impeksyon na matatag at kontrolado. \ n
     Kung ang mga suplay ay limitado sa iyong lugar, talakayin ang iyong sitwasyon sa iyong tagapagbigay ng pangangalaga kung ikaw: \ n
      - Magkompromiso sa immune system \ n
@@ -365,12 +364,14 @@
      - Malubhang mahina
     </string>
 
-    <string name = "can_i">
+    <string name="can_i">
     Maaari ba akong magkaroon ng pangalawang dosis na may ibang bakuna kaysa sa unang dosis?
     </string>
-    <string name = "clinical_trials">
+    <string name="clinical_trials">
     Tinitingnan ng mga klinikal na pagsubok sa ilang mga bansa kung maaari kang magkaroon ng unang dosis mula sa isang bakuna at isang pangalawang dosis mula sa ibang bakuna. Wala pang sapat na data upang magrekomenda ng ganitong uri ng kombinasyon.
     </string>
 
     <!-- pagtatapos ng mga bakuna sa data -->
+
+    <string name="last_update">huling pag-update</string>
 </resources>

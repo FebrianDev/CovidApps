@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">CovidApp</string>
     <string name="how_can_i_help_nyou_today">Bagaimana saya\nbisamembantu?</string>
-    <string name="hi_how_can_i_nhelp_you_today">Hi, Bagaimana saya\nbisamembantu?</string>
+    <string name="hi_how_can_i_nhelp_you_today">Hi, Bagaimana saya\nbisa membantu?</string>
     <string name="countries_statistics">Statistik Negara</string>
     <string name="deep_breathing_while_on_your_back">Deep Breathing While On Your Back</string>
     <string name="lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute">Lie on your back and bend your knees so that the bottom of your feet are resting on the bed. Place your hands on top of your stomach or wrap them around the sides of your stomach. a Close your lips and place your tongue on the roof of your mouth. Breathe in through the nose and pull air down into your stomach where your hands are. Try to spread your fingers apart with your breath. Slowly exhale your breath through the nose. Repeat deep breaths for one minute.</string>
@@ -24,7 +24,7 @@
     <string name="covid_19_news">Berita Covid-19</string>
     <string name="trending_news">Berita Trending</string>
     <string name="you_can_also">Kamu juga bisa</string>
-    <string name="see_covid_stats_for_any_country">Smelihat statistik Covid negara lain</string>
+    <string name="see_covid_stats_for_any_country">Melihat statistik Covid negara lain</string>
     <string name="hi_welcome_to_the_international_covid_center">Hi, Selamat datang di International Covid Center!</string>
     <string name="here_you_can_see_the_covid_19_cases_update_globally">Kamu bisa melihat statistik kasus Covid-19 secara global</string>
     <string name="did_we_mention_about">Apakah sudah disebutkan kalau...</string>
@@ -42,45 +42,45 @@
     <string name="provinsi_negara">Provinsi, Negara</string>
     <string name="last_updated_10_feb_2021">Terakhir Update : 10 Feb 2021</string>
     <string name="confirmed">Terkonfirmasi</string>
-    <string name = "who_should"> Siapa yang harus dites untuk infeksi saat ini? </string>
+    <string name="who_should"> Siapa yang harus dites untuk infeksi saat ini? </string>
     <string name="people_who"> - Orang yang memiliki gejala COVID-19. \ n "
      - Kebanyakan orang yang pernah melakukan kontak dekat (dalam jarak 6 kaki selama total 15 menit atau lebih selama periode 24 jam) dengan seseorang yang terkonfirmasi COVID-19. \ N "
      - Orang yang tidak divaksinasi yang telah mengambil bagian dalam kegiatan yang menempatkan mereka pada risiko lebih tinggi untuk COVID-19 karena mereka tidak dapat secara fisik menjaga jarak yang diperlukan untuk menghindari paparan, seperti bepergian, menghadiri pertemuan sosial atau massal yang besar, atau berada di dalam ruangan yang ramai atau berventilasi buruk pengaturan. \ n "
      - Orang yang telah diminta atau dirujuk untuk dites oleh penyedia layanan kesehatan mereka, atau negara bagian, suku, ikon eksternal lokal, atau departemen kesehatan teritorial."
     </string>
 
-    <string name = "how_to_get_tested"> Bagaimana cara dites untuk infeksi COVID-19 saat ini? </string>
-    <string name = "contact_your"> Hubungi penyedia layanan kesehatan Anda atau kunjungi situs web negara bagian, suku, ikon eksternal lokal, dan departemen kesehatan teritorial Anda untuk menemukan informasi lokal terbaru tentang pengujian. Jenis tes virus COVID-19 yang ditawarkan mungkin berbeda menurut lokasi. </string>
+    <string name="how_to_get_tested"> Bagaimana cara dites untuk infeksi COVID-19 saat ini? </string>
+    <string name="contact_your"> Hubungi penyedia layanan kesehatan Anda atau kunjungi situs web negara bagian, suku, ikon eksternal lokal, dan departemen kesehatan teritorial Anda untuk menemukan informasi lokal terbaru tentang pengujian. Jenis tes virus COVID-19 yang ditawarkan mungkin berbeda menurut lokasi. </string>
 
-    <string name = "how_to_use_results"> Bagaimana cara menggunakan hasil tes virus? </string>
-    <string name = "if_you"> Jika hasil tes Anda positif, ketahui langkah perlindungan apa yang harus diambil untuk mencegah orang lain jatuh sakit. \ n- Jika hasil tes Anda negatif, Anda mungkin tidak terinfeksi pada saat sampel Anda dikumpulkan. Hasil tes hanya berarti Anda tidak memiliki COVID-19 pada saat pengujian. Lanjutkan untuk mengambil langkah-langkah untuk melindungi diri Anda sendiri. </string>
+    <string name="how_to_use_results"> Bagaimana cara menggunakan hasil tes virus? </string>
+    <string name="if_you"> Jika hasil tes Anda positif, ketahui langkah perlindungan apa yang harus diambil untuk mencegah orang lain jatuh sakit. \ n- Jika hasil tes Anda negatif, Anda mungkin tidak terinfeksi pada saat sampel Anda dikumpulkan. Hasil tes hanya berarti Anda tidak memiliki COVID-19 pada saat pengujian. Lanjutkan untuk mengambil langkah-langkah untuk melindungi diri Anda sendiri. </string>
 
-    <string name = "what_are"> Apa saja jenis tes Covid-19? </string>
-    <string name = "polymerase_chain"> - Tes reaksi berantai polimerase (PCR) dikirim ke laboratorium untuk mendiagnosis penyakit \ n
+    <string name="what_are"> Apa saja jenis tes Covid-19? </string>
+    <string name="polymerase_chain"> - Tes reaksi berantai polimerase (PCR) dikirim ke laboratorium untuk mendiagnosis penyakit \ n
     - Tes aliran lateral (LFT) dapat mendiagnosis Covid-19 di tempat, tetapi tidak seakurat tes PCR \ n
     - Tes antibodi (atau serologi) tidak dapat mendiagnosis infeksi aktif, tetapi dapat membantu mengetahui apakah seseorang memiliki kekebalan terhadap Covid-19
     </string>
 
-    <string name = "what_is_PCR"> Apa itu tes PCR? </string>
-    <string name = "pcr_tests"> Tes PCR digunakan untuk menyaring secara langsung keberadaan RNA virus, yang akan dapat dideteksi di dalam tubuh sebelum bentuk antibodi atau gejala penyakit muncul. Ini berarti tes dapat mengetahui apakah seseorang memiliki virus sejak awal penyakitnya. \ N
+    <string name="what_is_PCR"> Apa itu tes PCR? </string>
+    <string name="pcr_tests"> Tes PCR digunakan untuk menyaring secara langsung keberadaan RNA virus, yang akan dapat dideteksi di dalam tubuh sebelum bentuk antibodi atau gejala penyakit muncul. Ini berarti tes dapat mengetahui apakah seseorang memiliki virus sejak awal penyakitnya. \ N
     Dengan menskalakan pengujian PCR untuk menyaring sebagian besar sampel usap nasofaring dari dalam suatu populasi, pejabat kesehatan masyarakat dapat memperoleh gambaran yang lebih jelas tentang penyebaran penyakit seperti Covid-19. \ N
     Namun, PCR masih memiliki peringatan. Jenis tes Covid-19 ini perlu dikirim ke laboratorium untuk dianalisis, yang berarti perlu waktu berhari-hari bagi orang untuk mengetahui hasilnya.
     </string>
 
-    <string name = "how_about_lateral"> bagaimana tentang tes aliran lateral? </string>
-    <string name = "lft"> LFT mirip dengan tes PCR, karena keduanya adalah jenis tes antigen, yang dirancang untuk mendeteksi infeksi Covid-19 aktif, bukan antibodi terhadap penyakit. Dengan LFT Covid-19, sampel nasofaring ditempatkan pada bantalan penyerap kecil, yang kemudian ditarik di sepanjang bantalan melalui garis kapiler ke strip yang dilapisi antibodi, yang mengikat protein SARS-Cov-2. Jika protein ini ada, ini akan terlihat sebagai garis berwarna pada tes, yang menunjukkan infeksi.
+    <string name="how_about_lateral"> bagaimana tentang tes aliran lateral? </string>
+    <string name="lft"> LFT mirip dengan tes PCR, karena keduanya adalah jenis tes antigen, yang dirancang untuk mendeteksi infeksi Covid-19 aktif, bukan antibodi terhadap penyakit. Dengan LFT Covid-19, sampel nasofaring ditempatkan pada bantalan penyerap kecil, yang kemudian ditarik di sepanjang bantalan melalui garis kapiler ke strip yang dilapisi antibodi, yang mengikat protein SARS-Cov-2. Jika protein ini ada, ini akan terlihat sebagai garis berwarna pada tes, yang menunjukkan infeksi.
     </string>
 
-    <string name = "what_is_antibody"> Apa itu tes antibodi? </string>
-    <string name = "antibody_tests"> Tes antibodi digunakan untuk mengevaluasi respons imun pada orang yang telah divaksinasi terhadap Covid-19. Para peneliti belum tahu berapa lama kekebalan yang diinduksi vaksin akan bertahan atau apakah suntikan booster akan diperlukan. Ada beberapa indikasi bahwa varian Covid-19 membuat vaksin tertentu menjadi kurang efektif, tetapi sejauh ini tampaknya masih memberikan perlindungan yang cukup untuk mencegah penyakit parah atau fatal.
+    <string name="what_is_antibody"> Apa itu tes antibodi? </string>
+    <string name="antibody_tests"> Tes antibodi digunakan untuk mengevaluasi respons imun pada orang yang telah divaksinasi terhadap Covid-19. Para peneliti belum tahu berapa lama kekebalan yang diinduksi vaksin akan bertahan atau apakah suntikan booster akan diperlukan. Ada beberapa indikasi bahwa varian Covid-19 membuat vaksin tertentu menjadi kurang efektif, tetapi sejauh ini tampaknya masih memberikan perlindungan yang cukup untuk mencegah penyakit parah atau fatal.
     </string>
-    <string name="recovered">Recovered</string>
-    <string name="deceased">Deceased</string>
-    <string name="total_case">Total Case</string>
+    <string name="recovered">Sembuh</string>
+    <string name="deceased">Meninggal</string>
+    <string name="total_case">Total Kasus</string>
 
     <!--latihan data-->
-    <string name= "deep_breathing_stomach">Bernapas Dalam Saat Perut</string>
-    <string name= "deep_breathing_stomach_info">- Berbaring tengkurap dan sandarkan kepala pada tangan untuk memberi ruang untuk bernapas.\n
+    <string name="deep_breathing_stomach">Bernapas Dalam Saat Perut</string>
+    <string name="deep_breathing_stomach_info">- Berbaring tengkurap dan sandarkan kepala pada tangan untuk memberi ruang untuk bernapas.\n
     \n
     - Tutup bibirmu dan letakkan lidahmu di langit-langit mulutmu.\n
     \n
@@ -92,7 +92,7 @@
     </string>
 
 
-    <string name= "deep_breathing_standing">Bernapas Dalam Saat Berdiri</string>
+    <string name="deep_breathing_standing">Bernapas Dalam Saat Berdiri</string>
     <string name="deep_breathing_standing_info">- Berdiri tegak dan letakkan tangan Anda di sekitar sisi perut Anda.\n
     \n
     - Tutup bibirmu dan letakkan lidahmu di langit-langit mulutmu.\n
@@ -106,7 +106,7 @@
     <!--Akhiri latihan data-->
 
     <!-- Data makanan-->
-    <string name= "to_choose">Untuk Memilih</string>
+    <string name="to_choose">Untuk Memilih</string>
     <string name="to_choose_info">
         - Mengkonsumsi lemak tak jenuh (misalnya ditemukan pada ikan, alpukat, kacang-kacangan, minyak zaitun, kedelai, canola, bunga matahari dan minyak jagung) daripada lemak jenuh (misalnya ditemukan dalam daging berlemak, mentega, minyak kelapa, krim, keju, ghee dan lemak babi) .\n
     - Pilih daging putih (misalnya unggas) dan ikan, yang umumnya rendah lemak, daripada daging merah.\n
@@ -115,7 +115,7 @@
     </string>
 
 
-    <string name= "to_avoid">Untuk Dihindari</string>
+    <string name="to_avoid">Untuk Dihindari</string>
     <string name="to_avoid_info">
         - Hindari daging olahan karena tinggi lemak dan garam.\n
     - Hindari lemak trans yang diproduksi secara industri. Ini sering ditemukan pada makanan olahan, makanan cepat saji, makanan ringan, gorengan, pizza beku, pai, kue kering, margarin, dan olesan.\n
@@ -129,13 +129,10 @@
     <!-- Mengakhiri makanan data -->
 
     <!-- Data umum -->
-    <string name= "what_is_covid">
-    Apa itu COVID-19?
-    </string>
-    <string name="covid_is">
-        COVID-19 adalah penyakit yang disebabkan oleh virus corona baru yang disebut SARS-CoV-2.
+    <string name="what_is_covid">Apa itu COVID-19?</string>
+    <string name="covid_is">COVID-19 adalah penyakit yang disebabkan oleh virus corona baru yang disebut SARS-CoV-2.
     WHO pertama kali mengetahui virus baru ini pada 31 Desember 2019, menyusul laporan sekelompok kasus
-    'virus pneumonia' di Wuhan, Republik Rakyat Cina.
+    virus pneumonia di Wuhan, Republik Rakyat Cina.
     </string>
 
     <string name="what_happens">
@@ -145,7 +142,7 @@
         Di antara mereka yang mengalami gejala, sebagian besar (sekitar 80%) sembuh dari penyakit tanpa memerlukan perawatan di rumah sakit. Sekitar 15% menjadi sakit parah dan membutuhkan oksigen dan 5% menjadi sakit kritis dan membutuhkan perawatan intensif.
     </string>
 
-    <string name= "are_there_treatments">
+    <string name="are_there_treatments">
     Apakah ada pengobatan untuk COVID-19?
     </string>
     <string name="scientists_around">
@@ -204,6 +201,8 @@
 
     <string name="what_precautions">
         Tindakan pencegahan apa yang diperlukan saat mengunjungi seseorang di fasilitas kesehatan dan/atau perawatan jangka panjang?
+    </string>
+    <string name="if_you_have_been_in_contract">
      - Jika Anda telah melakukan kontak dengan seseorang yang diduga atau dikonfirmasi dengan COVID-19, atau merasa tidak sehat, jangan mengunjungi fasilitas kesehatan atau perawatan jangka panjang apa pun.\n
     \n
      - Ikuti panduan fasilitas tentang persyaratan kunjungan apa pun, termasuk pemeriksaan dan pemakaian masker.\n
@@ -216,7 +215,7 @@
     <!-- Mengakhiri orang-orang yang berisiko-->
 
     <!-- Pencegahan -->
-    <string name ="wash_your_hand">
+    <string name="wash_your_hand">
     Cuci tanganmu
     </string>
     <string name="wet">
@@ -237,7 +236,7 @@
     </string>
 
 
-    <string name ="use_a_mask">
+    <string name="use_a_mask">
     Gunakan Masker yang…
     </string>
     <string name="have_two">
@@ -251,7 +250,7 @@
     \n
     </string>
 
-    <string name= "social_distancing">
+    <string name="social_distancing">
     Jarak sosial
     </string>
     <string name="social_distancing_is">
@@ -276,7 +275,7 @@
     Gejala COVID-19 biasanya berkembang 2–14 hari setelah terpapar virus SARS-CoV-2\n
     </string>
 
-    <string name ="dry_cough">
+    <string name="dry_cough">
         Batuk kering
     </string>
     <string name="dry_cough_info">
@@ -301,7 +300,7 @@
     Saat Anda sakit, otot Anda mungkin tidak perlu melakukan pekerjaan apa pun untuk sementara waktu. Mereka perlu waktu untuk membangun kekuatan lagi.\n
     </string>
 
-    <string name ="shortness_of_breath">
+    <string name="shortness_of_breath">
     Sesak napas
     </string>
     <string name="shortness_of_breath_info">
@@ -323,7 +322,7 @@
     Melewatkan makan dapat terjadi bersamaan dengan sejumlah gejala yang berbeda. Hilangnya nafsu makan disertai demam cenderung menjadi tanda kasus ringan COVID-19. Sedangkan, orang dengan kasus yang lebih parah akan kehilangan nafsu makan disertai kebingungan, atau berkelompok dengan sesak napas, diare, dan sakit perut. \n
     </string>
 
-    <string name ="loss_of">
+    <string name="loss_of">
         Hilangnya Penciuman / Rasa
     </string>
     <string name="smell_dysfunction">
@@ -341,7 +340,7 @@
     <string name="yes">
     Ya. Program vaksinasi massal pertama dimulai pada awal Desember 2020 dan jumlah dosis vaksinasi yang diberikan diperbarui setiap hari di sini. Setidaknya 13 vaksin yang berbeda (di 4 platform) telah diberikan. Kampanye telah dimulai di 206 negara.
     </string>
-    <string name ="will_covid_vaccines">
+    <string name="will_covid_vaccines">
     Akankah vaksin COVID-19 memberikan perlindungan jangka panjang?
     </string>
     <string name="because_covid_vaccines">
@@ -366,7 +365,7 @@
      - Sangat rapuh
     </string>
 
-    <string name ="can_i">
+    <string name="can_i">
         Dapatkah saya mendapatkan dosis kedua dengan vaksin yang berbeda dari dosis pertama?
     </string>
     <string name="clinical_trials">
@@ -374,5 +373,5 @@
     </string>
 
     <!-- akhir vaksin data-->
-
+<string name="last_update">Terakhir Update</string>
 </resources>

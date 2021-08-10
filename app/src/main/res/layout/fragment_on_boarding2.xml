@@ -23,6 +23,7 @@
             android:background="@drawable/onb2_2"/>
 
         <TextView
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/you_can_also"
@@ -37,6 +38,7 @@
             android:text="@string/see_covid_stats_for_any_country"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
+            android:layout_gravity="center"
             android:textSize="16sp"
             android:fontFamily="@font/montserrat_medium"/>
 

@@ -74,9 +74,9 @@
     <string name = "what_is_antibody"> Apa itu ujian antibodi? </string>
     <string name = "antibody_tests"> Ujian antibodi digunakan untuk menilai tindak balas imun pada orang yang telah divaksin terhadap Covid-19. Para penyelidik belum tahu berapa lama imuniti yang disebabkan oleh vaksin akan bertahan atau apakah tembakan penggalak diperlukan. Terdapat beberapa petunjuk bahawa varian Covid-19 menjadikan vaksin tertentu kurang berkesan, tetapi sejauh ini mereka masih memberikan perlindungan yang mencukupi untuk mencegah penyakit yang teruk atau maut.
     </string>
-    <string name="recovered">Recovered</string>
-    <string name="deceased">Deceased</string>
-    <string name="total_case">Total Case</string>
+    <string name="recovered">Pulih</string>
+    <string name="deceased">Meninggal</string>
+    <string name="total_case">Jumlah Kes</string>
 
     <!-- latihan data -->
     <string name = "deep_breathing_stomach"> Nafas Dalam Semasa Perut Anda </string>
@@ -129,9 +129,7 @@
     <!-- Makanan data akhir -->
 
     <!-- Umum data -->
-    <string name = "what_is_covid">
-    Apa itu COVID-19?
-    </string>
+    <string name = "what_is_covid">Apa itu COVID-19?</string>
     <string name = "covid_is">
         COVID-19 adalah penyakit yang disebabkan oleh coronavirus baru yang disebut SARS-CoV-2.
     WHO pertama kali mengetahui mengenai virus baru ini pada 31 Disember 2019, berikutan laporan sekumpulan kes
@@ -203,6 +201,8 @@
 
     <string name = "what_precautions">
         Langkah berjaga-jaga apa yang diperlukan semasa melawat seseorang di kemudahan rawatan kesihatan dan / atau jangka panjang?
+    </string>
+    <string name="if_you_have_been_in_contract">
      - Sekiranya anda berhubung dengan seseorang yang disyaki atau disahkan menghidap COVID-19, atau merasa tidak sihat, jangan kunjungi kemudahan kesihatan atau rawatan jangka panjang. \ N
     \n
      - Ikuti panduan kemudahan mengenai sebarang keperluan lawatan, termasuk pemeriksaan dan memakai topeng. \n
@@ -373,4 +373,6 @@
     </string>
 
     <!-- akhir vaksin data -->
+
+    <string name="last_update">Kemaskini Terakhir</string>
 </resources>
