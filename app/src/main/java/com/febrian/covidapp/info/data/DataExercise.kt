@@ -16,31 +16,15 @@ object DataExercise {
 
         list.add(
             ModelList(
-            "Deep Breathing While on Your Stomach",
-                " - Lie on your stomach and rest your head on your hands to allow room to breathe.\n" +
-                        "\n" +
-                        " - Close your lips and place your tongue on the roof of your mouth.\n" +
-                        "\n" +
-                        " - Breathe in through your nose and pull air down into your stomach. Try to focus on your stomach pushing into the mattress as you breathe.\n" +
-                        "\n" +
-                        " - Slowly exhale your breath through your nose.\n" +
-                        "\n" +
-                        " - Repeat deep breaths for one minute.\n",
+                context.resources.getString(R.string.deep_breathing_stomach),
+                context.resources.getString(R.string.deep_breathing_stomach_info),
                 R.drawable.laying_down
         ))
 
         list.add(
             ModelList(
-            "Deep Breathing While Standing",
-                " - Stand upright and place your hands around the sides of your stomach.\n" +
-                        "\n" +
-                        " - Close your lips and place your tongue on the roof of your mouth.\n" +
-                        "\n" +
-                        " - Breathe in through your nose and pull air down into your stomach where your hands are. Try to spread your fingers apart with your breath.\n" +
-                        "\n" +
-                        " - Slowly exhale your breath* through your nose.\n" +
-                        "\n" +
-                        " - Repeat deep breaths for one minute.\n",
+                context.resources.getString(R.string.deep_breathing_standing),
+                context.resources.getString(R.string.deep_breathing_standing_info),
                 R.drawable.standing
         ))
 

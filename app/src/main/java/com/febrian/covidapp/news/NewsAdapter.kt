@@ -138,7 +138,10 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
     }
 
     override fun getItemCount(): Int {
-        return myListNews.size
+        if(myListNews.size > 15)
+            return 15
+        else
+            return myListNews.size
     }
 
 }

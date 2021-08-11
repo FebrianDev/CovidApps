@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
@@ -59,7 +60,6 @@ class NewsFragment : Fragment() {
                 return true
             }
             override fun onQueryTextChange(newText: String): Boolean {
-
                 showRecycleview(newText)
                 return true
             }
@@ -141,6 +141,8 @@ class NewsFragment : Fragment() {
                 binding.dataHeadline.visibility = View.VISIBLE
 
                 binding.refreshLayout.isRefreshing = false
+
+                Toast.makeText(view?.context, t.message, Toast.LENGTH_LONG).show()
             }
 
         })
@@ -236,7 +238,6 @@ class NewsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-
         main()
     }
 }

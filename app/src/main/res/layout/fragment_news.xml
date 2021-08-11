@@ -210,10 +210,6 @@
                         android:visibility="visible"
                         android:orientation="horizontal">
                         <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
                     </LinearLayout>
                 </com.facebook.shimmer.ShimmerFrameLayout>
 
@@ -249,18 +245,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
-
-                        <include layout="@layout/shimmer_item_news" />
 
                         <include layout="@layout/shimmer_item_news" />
 

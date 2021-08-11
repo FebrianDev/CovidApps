@@ -13,6 +13,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import com.febrian.covidapp.MapActivity
@@ -75,26 +76,6 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
         binding.tgl.text = currentDate
 
-//        ApiService.globalDataCovid.getGlobalData().enqueue(object : Callback<CountryResponse> {
-//            override fun onResponse(
-//                call: Call<CountryResponse>,
-//                response: Response<CountryResponse>
-//            ) {
-//                if (response.isSuccessful) {
-//
-//                    val body = response.body()
-//                    if (body != null) {
-//                        setGlobalData(body)
-//                    }
-//
-//                    binding.refreshLayout.isRefreshing = false
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<CountryResponse>, t: Throwable) {
-//
-//            }
-    //})
         ApiService.newService.getGlobalDataV2().enqueue(object : Callback<GlobalResponse>{
             override fun onResponse(
                 call: Call<GlobalResponse>,
@@ -111,7 +92,8 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
             }
 
             override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
-                TODO("Not yet implemented")
+                binding.refreshLayout.isRefreshing = false
+                Toast.makeText(view?.context, t.message, Toast.LENGTH_LONG).show()
             }
 
         })
@@ -142,26 +124,27 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         if (isDarkModeOn()) googleMap.setMapStyle(darkStyle) else googleMap.setMapStyle(null)
 
         mMap.uiSettings.isZoomControlsEnabled = false
-        val location = view?.context?.resources?.configuration?.locale?.displayCountry
+
+        var location = view?.context?.resources?.configuration?.locale?.displayCountry
+
+        if(location == "" || location == null)
+            location = "Indonesia"
+
         binding.country.text = location
         var addressList : List<Address>? = null
         var latLng : LatLng? = null
         val geocoder = Geocoder(view?.context)
         var address : Address? = null
         try {
-
             addressList = geocoder.getFromLocationName(location, 1)
             address = addressList!![0]
             latLng = LatLng(address!!.latitude, address.longitude)
             mMap.addMarker(MarkerOptions().position(latLng).title(location.toString()))
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(address.latitude, address.longitude), 3f))
         } catch (e: IOException) {
-            println(e.message)
+            Toast.makeText(view?.context, e.message, Toast.LENGTH_LONG).show()
             e.printStackTrace()
         }
-        // on below line we are getting the location
-        // from our list a first position.
-        //  val address: Address = addressList!![0]
 
     }
 

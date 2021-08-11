@@ -128,9 +128,7 @@
     <!-- 结束数据食物-->
 
     <!-- 数据一般 -->
-    <string name="what_is_covid">
-    什么是 COVID-19？
-    </string>
+    <string name="what_is_covid">什么是 COVID-19？</string>
     <string name="covid_is">
         COVID-19 是由一种名为 SARS-CoV-2 的新型冠状病毒引起的疾病。
     世卫组织于 2019 年 12 月 31 日首次了解到这种新病毒，此前报告了一系列病例
@@ -140,7 +138,7 @@
     <string name="what_happens">
     感染 COVID-19 的人会怎样？
     </string>
-    <string name="what_happens_info">
+    <string name="what_happens_info" formatted="false">
         在出现症状的人中，大多数（约 80%）无需住院治疗即可从疾病中康复。大约 15% 的人病重并需要吸氧，5% 的人病危并需要重症监护。
     </string>
 
@@ -202,6 +200,8 @@
 
     <string name="what_precautions">
         在健康和/或长期护理机构探望某人时需要采取哪些预防措施？
+    </string>
+    <string name="if_you_have_been_in_contract">
      - 如果您曾与疑似或确诊感染 COVID-19 的人有过接触，或者感觉不适，请不要前往任何医疗机构或长期护理机构。\n
     \n
      - 遵守有关任何访问要求的设施指南，包括筛查和戴口罩。\n
@@ -266,7 +266,7 @@
 <string name="fever">
     发热
     </string>
-<string name="fever_info">
+<string name="fever_info" formatted="false">
         发烧是 COVID-19 的常见症状，但目前尚不清楚究竟有多常见。 PLOS One 2020 年对近 25,000 名成年人的数据进行的一项审查发现，发烧是最常见的症状。\n
     \n
     中国的一项研究发现，因 COVID-19 而住院的人中只有 44% 在入院时发烧。然而，只有不到 89% 的人在住院期间的某个时候发烧。\n
@@ -302,7 +302,7 @@
 <string name ="shortness_of_breath">
     呼吸急促
     </string>
-<string name="shortness_of_breath_info">
+<string name="shortness_of_breath_info" formatted="false">
         “呼吸急促会使呼吸困难。它会让你喘不过气来。\n
     \n
     您的胸部可能会感觉太紧而无法完全吸气或呼气。每一次浅呼吸都需要更大的努力，让你感到喘不过气来。感觉就像是在用吸管呼吸。\n
@@ -370,6 +370,7 @@
 <string name="clinical_trials">
     一些国家/地区的临床试验正在研究是否可以接种一种疫苗的第一剂疫苗和另一种疫苗的第二剂疫苗。目前还没有足够的数据来推荐这种类型的组合。
 </string>
-
     <!-- 数据疫苗结束-->
+
+    <string name="last_update">最后更新</string>
 </resources>

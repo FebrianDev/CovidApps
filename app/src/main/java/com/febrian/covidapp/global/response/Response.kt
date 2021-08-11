@@ -4,9 +4,9 @@ data class Response(
     val lastUpdate : Long?,
     val lat : Double?,
     val long : Double?,
-    val confirmed : Int?,
-    val recovered : Int?,
-    val deaths : Int?,
-    val active : Int?,
+    var confirmed : Int?,
+    var recovered : Int?,
+    var deaths : Int?,
+    var active : Int?,
     val combinedKey : String?
 )

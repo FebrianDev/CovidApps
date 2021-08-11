@@ -23,6 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/hi_welcome_to_the_international_covid_center"
             android:textSize="28sp"
             android:textColor="@color/colorPrimary"
@@ -32,6 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/here_you_can_see_the_covid_19_cases_update_globally"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
