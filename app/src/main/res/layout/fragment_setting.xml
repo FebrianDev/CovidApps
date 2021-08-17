@@ -11,18 +11,39 @@
         android:layout_height="match_parent"
         >
 
-    <TextView
-        android:id="@+id/text_title"
-        style="@style/TextPrimary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="@string/settings"
-        android:textSize="24sp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/card_bg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/bg_card_info"
+            android:gravity=""
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_gravity="center_vertical|start"
+                android:id="@+id/title_info"
+                android:layout_marginHorizontal="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Settings App"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-28dp"
+                android:src="@drawable/setting" />
+
+        </LinearLayout>
 
 
         <ImageView
@@ -73,9 +94,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_notifications_24"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/card_bg"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="32dp"/>
         <TextView
             android:id="@+id/notification"
             android:layout_width="wrap_content"
@@ -84,9 +105,9 @@
             android:fontFamily="@font/montserrat_semibold"
             android:textSize="16sp"
             android:textColor="@color/colorPrimary"
-            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/card_bg"
             app:layout_constraintStart_toEndOf="@+id/icon2"
-            android:layout_marginVertical="20dp"
+            android:layout_marginTop="32dp"
             android:layout_marginStart="8dp"/>
 
         <androidx.appcompat.widget.AppCompatSpinner
