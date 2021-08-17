@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -23,6 +24,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SearchView
 import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
+import com.febrian.covidapp.MainActivity
 import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.FragmentHomeBinding
@@ -59,12 +61,19 @@ class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
     companion object {
-        private const val NOTIFICATION_ID = 1
-        private const val CHANNEL_ID = "channel_01"
-        private const val CHANNEL_NAME = "covid channel"
+        const val NOTIFICATION_ID = 1
+        const val CHANNEL_ID = "channel_01"
+        const val CHANNEL_NAME = "covid channel"
         const val TAG = "Home Activity"
     }
 
+    private lateinit var c : Context
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        
+        c = context
+    }
 
     val listConfirm: MutableList<Int> = ArrayList()
 
@@ -107,7 +116,7 @@ class HomeFragment : Fragment() {
 
     internal fun main() {
 
-        var location = view?.context?.resources?.configuration?.locale?.displayCountry
+        var location = c.resources?.configuration?.locale?.displayCountry
 
         if (location == "" || location == null)
             location = "Indonesia"
@@ -115,7 +124,7 @@ class HomeFragment : Fragment() {
         showStatistic(location.toString())
         showTotalCase(location.toString())
 
-        val currentDate = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(Date())
+        val currentDate = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(Date())
 
         binding.tgl.text = currentDate
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -164,14 +173,14 @@ class HomeFragment : Fragment() {
                             binding.swiperefresh.isRefreshing = false
                         } catch (e: Exception) {
                             binding.swiperefresh.isRefreshing = false
-                            Toast.makeText(view?.context, e.message, Toast.LENGTH_LONG).show()
+                            Toast.makeText(c, e.message.toString(), Toast.LENGTH_LONG).show()
                         }
                     }
                 }
 
                 override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
                     binding.swiperefresh.isRefreshing = false
-                    Toast.makeText(view?.context, t.message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(c.applicationContext, t.message.toString(), Toast.LENGTH_LONG).show()
                 }
 
             })
@@ -182,8 +191,8 @@ class HomeFragment : Fragment() {
         override fun onReceive(context: Context, intent: Intent) {
             if (!InternetConnection.isConnected(context)) {
 
-                val builder = AlertDialog.Builder(view?.context)
-                val l_view = LayoutInflater.from(view?.context)
+                val builder = AlertDialog.Builder(c)
+                val l_view = LayoutInflater.from(c)
                     .inflate(R.layout.alert_dialog_no_internet, null)
                 builder.setView(l_view)
 
@@ -279,7 +288,7 @@ class HomeFragment : Fragment() {
                     binding.swiperefresh.isRefreshing = false
 
                 } catch (e: java.lang.Exception) {
-                    Toast.makeText(view?.context, e.message, Toast.LENGTH_LONG).show()
+                    Toast.makeText(c, e.message.toString(), Toast.LENGTH_LONG).show()
                     binding.swiperefresh.isRefreshing = false
                 }
             }
@@ -290,7 +299,7 @@ class HomeFragment : Fragment() {
                 responseBody: ByteArray?,
                 error: Throwable?
             ) {
-                Toast.makeText(view?.context, error?.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(c, error?.message.toString(), Toast.LENGTH_LONG).show()
                 binding.swiperefresh.isRefreshing = false
             }
 
@@ -387,7 +396,7 @@ class HomeFragment : Fragment() {
         binding.pieChart.centerText = countryName.capitalize()
         binding.pieChart.setCenterTextColor(resources.getColor(R.color.colorPrimary))
         binding.pieChart.setCenterTextSize(22f)
-        // val myFont = Typeface.createFromAsset(view?.context?.assets, "font/montserrat_black.ttf")
+        // val myFont = Typeface.createFromAsset(c?.assets, "font/montserrat_black.ttf")
         binding.pieChart.setCenterTextTypeface(Typeface.DEFAULT_BOLD)
 
         binding.pieChart.legend.isEnabled = false // hide tags labels
@@ -489,57 +498,13 @@ class HomeFragment : Fragment() {
 
     override fun onStart() {
         val intent = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
-        view?.context?.registerReceiver(broadcastReceiver, intent)
+        c.registerReceiver(broadcastReceiver, intent)
         super.onStart()
     }
 
     override fun onStop() {
-        view?.context?.unregisterReceiver(broadcastReceiver)
+        c.unregisterReceiver(broadcastReceiver)
         super.onStop()
-    }
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    fun sendNotification() {
-        val jakartaZone = ZoneId.of("Asia/Jakarta")
-        val asiaJakartaCurrentDate = ZonedDateTime.now(jakartaZone)
-
-        val asiaJakarta = asiaJakartaCurrentDate.format(DateTimeFormatter.ofPattern("HH:mm"))
-
-        if (asiaJakarta == "13:22") {
-            Log.d("TEST", asiaJakarta.toString())
-            val mNotificationManager =
-                context?.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            val mBuilder = view?.context?.let {
-                NotificationCompat.Builder(it, CHANNEL_ID)
-                    .setSmallIcon(R.drawable.ic_baseline_bookmark_24)
-                    .setLargeIcon(
-                        BitmapFactory.decodeResource(
-                            resources,
-                            R.drawable.ic_baseline_notifications_24
-                        )
-                    )
-                    .setContentTitle("Data Updated!")
-                    .setContentText("Data Updated! 2")
-                    .setSubText("Data Updated! 3")
-                    .setAutoCancel(true)
-            }
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                /* Create or update. */
-                val channel = NotificationChannel(
-                    CHANNEL_ID,
-                    CHANNEL_NAME,
-                    NotificationManager.IMPORTANCE_DEFAULT
-                )
-                channel.description = CHANNEL_NAME
-                mBuilder?.setChannelId(CHANNEL_ID)
-                mNotificationManager.createNotificationChannel(channel)
-            }
-
-            val notification = mBuilder?.build()
-            mNotificationManager.notify(NOTIFICATION_ID, notification)
-        }
-
     }
 
 }

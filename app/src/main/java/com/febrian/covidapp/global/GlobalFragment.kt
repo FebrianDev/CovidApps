@@ -48,6 +48,14 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
     private lateinit var mMap: HuaweiMap
     private lateinit var binding: FragmentGlobalBinding
     private lateinit var darkStyle: MapStyleOptions
+    
+    private lateinit var c : Context
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        
+        c = context
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,9 +78,9 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
     private fun main() {
 
-        darkStyle = MapStyleOptions.loadRawResourceStyle(view?.context, R.raw.mapstyle_night)
+        darkStyle = MapStyleOptions.loadRawResourceStyle(c, R.raw.mapstyle_night)
 
-        val currentDate = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(Date())
+        val currentDate = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(Date())
 
         binding.tgl.text = currentDate
 
@@ -93,7 +101,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
             override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
                 binding.refreshLayout.isRefreshing = false
-                Toast.makeText(view?.context, t.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(c, t.message, Toast.LENGTH_LONG).show()
             }
 
         })
@@ -102,7 +110,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
             .findFragmentById(R.id.mapHome) as SupportMapFragment
 
         binding.btnMaps.setOnClickListener {
-            startActivity(Intent(view?.context, MapActivity::class.java))
+            startActivity(Intent(c, MapActivity::class.java))
         }
 
         mapFragment.getMapAsync(this)
@@ -125,7 +133,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
         mMap.uiSettings.isZoomControlsEnabled = false
 
-        var location = view?.context?.resources?.configuration?.locale?.displayCountry
+        var location = c?.resources?.configuration?.locale?.displayCountry
 
         if(location == "" || location == null)
             location = "Indonesia"
@@ -133,7 +141,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         binding.country.text = location
         var addressList : List<Address>? = null
         var latLng : LatLng? = null
-        val geocoder = Geocoder(view?.context)
+        val geocoder = Geocoder(c)
         var address : Address? = null
         try {
             addressList = geocoder.getFromLocationName(location, 1)
@@ -142,7 +150,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
             mMap.addMarker(MarkerOptions().position(latLng).title(location.toString()))
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(address.latitude, address.longitude), 3f))
         } catch (e: IOException) {
-            Toast.makeText(view?.context, e.message, Toast.LENGTH_LONG).show()
+            Toast.makeText(c, e.message, Toast.LENGTH_LONG).show()
             e.printStackTrace()
         }
 
@@ -172,18 +180,18 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         val listColors = ArrayList<Int>()
 
         listPie.add(PieEntry(confirmed.toFloat()))
-        view?.context?.resources?.getColor(R.color.yellow_primary)?.let { listColors.add(it) }
+        c?.resources?.getColor(R.color.yellow_primary)?.let { listColors.add(it) }
         listPie.add(PieEntry(recovered.toFloat()))
-        view?.context?.resources?.getColor(R.color.green_custom)?.let { listColors.add(it) }
+        c?.resources?.getColor(R.color.green_custom)?.let { listColors.add(it) }
         listPie.add(PieEntry(death.toFloat()))
-        view?.context?.resources?.getColor(R.color.red_custom)?.let { listColors.add(it) }
+        c?.resources?.getColor(R.color.red_custom)?.let { listColors.add(it) }
 
         val pieDataSet = PieDataSet(listPie, "")
         pieDataSet.colors = listColors
 
         val pieData = PieData(pieDataSet)
         pieData.setValueTextSize(0f)
-        view?.context?.resources?.getColor(android.R.color.transparent)?.let {
+        c?.resources?.getColor(android.R.color.transparent)?.let {
             pieData.setValueTextColor(
                 it
             )
@@ -214,8 +222,8 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         override fun onReceive(context: Context, intent: Intent) {
             if (!InternetConnection.isConnected(context)) {
 
-                val builder = AlertDialog.Builder(view?.context)
-                val l_view = LayoutInflater.from(view?.context).inflate(R.layout.alert_dialog_no_internet,null)
+                val builder = AlertDialog.Builder(c)
+                val l_view = LayoutInflater.from(c).inflate(R.layout.alert_dialog_no_internet,null)
                 builder.setView(l_view)
 
                 val dialog = builder.create()
@@ -235,12 +243,12 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
     override fun onStart() {
         val intent = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
-        view?.context?.registerReceiver(broadcastReceiver, intent)
+        c?.registerReceiver(broadcastReceiver, intent)
         super.onStart()
     }
 
     override fun onStop() {
-        view?.context?.unregisterReceiver(broadcastReceiver)
+        c?.unregisterReceiver(broadcastReceiver)
         super.onStop()
     }
 

@@ -30,6 +30,14 @@ class NewsFragment : Fragment() {
 
     private lateinit var binding : FragmentNewsBinding
     private val listNews : ArrayList<NewsDataResponse> = ArrayList<NewsDataResponse>()
+    
+    private lateinit var c : Context
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        
+        c = context 
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -66,7 +74,7 @@ class NewsFragment : Fragment() {
         })
 
         binding.btnBookmarks.setOnClickListener {
-            val intent = Intent(view?.context, BookmarkActivity::class.java)
+            val intent = Intent(c, BookmarkActivity::class.java)
             startActivity(intent)
         }
     }
@@ -74,7 +82,7 @@ class NewsFragment : Fragment() {
     private fun showRecycleview(q:String){
         listNews.clear()
 
-        val mRoomDatabase = NewsRoomDatabase.getDatabase(view?.context!!).newsDao()
+        val mRoomDatabase = NewsRoomDatabase.getDatabase(c).newsDao()
 
         binding.shimmerFrameLayout.startShimmer()
         binding.shimmerFrameLayout.visibility = View.VISIBLE
@@ -122,7 +130,7 @@ class NewsFragment : Fragment() {
                         }
 
                         binding.rvNews.setHasFixedSize(true)
-                        binding.rvNews.layoutManager = LinearLayoutManager(view?.context)
+                        binding.rvNews.layoutManager = LinearLayoutManager(c)
                         binding.rvNews.adapter = adapter
                         binding.refreshLayout.isRefreshing = false
                     }
@@ -142,7 +150,7 @@ class NewsFragment : Fragment() {
 
                 binding.refreshLayout.isRefreshing = false
 
-                Toast.makeText(view?.context, t.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(c, t.message, Toast.LENGTH_LONG).show()
             }
 
         })
@@ -154,7 +162,7 @@ class NewsFragment : Fragment() {
             binding.titleNews2.text = listNews[1].title.toString()
             binding.titleNews3.text = listNews[2].title.toString()
 
-            view?.context?.applicationContext?.let {
+            c?.applicationContext?.let {
                 Glide.with(it)
                     .load(listNews[0].urlToImage)
                     .apply(
@@ -163,7 +171,7 @@ class NewsFragment : Fragment() {
                     )
                     .into(binding.imageNews1)
             }
-            view?.context?.applicationContext?.let {
+            c?.applicationContext?.let {
                 Glide.with(it)
                     .load(listNews[1].urlToImage)
                     .apply(
@@ -172,7 +180,7 @@ class NewsFragment : Fragment() {
                     )
                     .into(binding.imageNews2)
             }
-            view?.context?.applicationContext?.let {
+            c?.applicationContext?.let {
                 Glide.with(it)
                     .load(listNews[2].urlToImage)
                     .apply(
@@ -183,19 +191,19 @@ class NewsFragment : Fragment() {
             }
 
             binding.headlineNews1.setOnClickListener {
-                val intent = Intent(view?.context, DetailNewsActivity::class.java)
+                val intent = Intent(c, DetailNewsActivity::class.java)
                 intent.putExtra(NewsAdapter.KEY_URL, listNews[0].url.toString())
                 startActivity(intent)
             }
 
             binding.headlineNews2.setOnClickListener {
-                val intent = Intent(view?.context, DetailNewsActivity::class.java)
+                val intent = Intent(c, DetailNewsActivity::class.java)
                 intent.putExtra(NewsAdapter.KEY_URL, listNews[1].url.toString())
                 startActivity(intent)
             }
 
             binding.headlineNews3.setOnClickListener {
-                val intent = Intent(view?.context, DetailNewsActivity::class.java)
+                val intent = Intent(c, DetailNewsActivity::class.java)
                 intent.putExtra(NewsAdapter.KEY_URL, listNews[2].url.toString())
                 startActivity(intent)
             }
@@ -206,8 +214,8 @@ class NewsFragment : Fragment() {
         override fun onReceive(context: Context, intent: Intent) {
             if (!InternetConnection.isConnected(context)) {
 
-                val builder = AlertDialog.Builder(view?.context)
-                val l_view = LayoutInflater.from(view?.context).inflate(R.layout.alert_dialog_no_internet,null)
+                val builder = AlertDialog.Builder(c)
+                val l_view = LayoutInflater.from(c).inflate(R.layout.alert_dialog_no_internet,null)
                 builder.setView(l_view)
 
                 val dialog = builder.create()
@@ -227,12 +235,12 @@ class NewsFragment : Fragment() {
 
     override fun onStart() {
         val intent = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
-        view?.context?.registerReceiver(broadcastReceiver, intent)
+        c.registerReceiver(broadcastReceiver, intent)
         super.onStart()
     }
 
     override fun onStop() {
-        view?.context?.unregisterReceiver(broadcastReceiver)
+        c.unregisterReceiver(broadcastReceiver)
         super.onStop()
     }
 

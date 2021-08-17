@@ -20,12 +20,25 @@ import androidx.core.app.ActivityCompat.recreate
 import androidx.core.view.get
 import androidx.webkit.WebSettingsCompat
 import com.febrian.covidapp.databinding.FragmentSettingBinding
+import com.febrian.covidapp.news.utils.SendNotification
 import java.util.*
 import kotlin.collections.ArrayList
 
 class SettingFragment : Fragment() {
 
     private lateinit var binding: FragmentSettingBinding
+
+    private lateinit var c : Context
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+
+        c = context
+    }
+    
+    companion object{
+        const val NOTIFICATION = "Notification"
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,8 +53,8 @@ class SettingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.info.setOnClickListener {
-            val builder = AlertDialog.Builder(view.context)
-            val l_view = LayoutInflater.from(view.context).inflate(R.layout.alert_dialog_about,null)
+            val builder = AlertDialog.Builder(c)
+            val l_view = LayoutInflater.from(c).inflate(R.layout.alert_dialog_about,null)
             builder.setView(l_view)
 
             val dialog = builder.create()
@@ -49,6 +62,16 @@ class SettingFragment : Fragment() {
             dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
 
         }
+
+        val sharedPreferences = c.getSharedPreferences(NOTIFICATION, Context.MODE_PRIVATE)
+        val check = sharedPreferences.getBoolean(NOTIFICATION, false)
+        binding.notificationActive.isChecked = check
+        binding.notificationActive.setOnCheckedChangeListener { buttonView, isChecked ->
+            sharedPreferences.edit().putBoolean(NOTIFICATION, isChecked).apply()
+        }
+
+        if(true)
+            SendNotification(c.resources).setRepeat(c)
 
     }
 
@@ -102,16 +125,6 @@ class SettingFragment : Fragment() {
                 }
 
             }
-
-//        val mode = context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
-//        when(mode){
-//            Configuration.UI_MODE_NIGHT_YES -> {
-//                binding.darkmodeActive.isChecked = true
-//            }
-//            Configuration.UI_MODE_NIGHT_NO -> {
-//                binding.darkmodeActive.isChecked = false
-//            }
-//        }
     }
 
 }

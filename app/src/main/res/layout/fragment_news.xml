@@ -60,7 +60,7 @@
                     android:elevation="4dp"
                     android:background="@drawable/bg_seacrh"
                     app:iconifiedByDefault="false"
-                    app:defaultQueryHint="Search Here"
+                    app:defaultQueryHint="Search News"
                     app:queryHint="Search Here"
                     app:searchHintIcon="@drawable/ic_baseline_search_24"
                     app:searchIcon="@drawable/ic_baseline_search_24" />

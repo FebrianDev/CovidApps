@@ -15,7 +15,7 @@ object DateUtils {
 
     fun getDateStatistic(minus: Int): String {
         val calendar = Calendar.getInstance()
-        val dateFormat = SimpleDateFormat("d\nMMM")
+        val dateFormat = SimpleDateFormat("d-M")
         calendar.add(Calendar.DATE, minus)
 
         return dateFormat.format(calendar.time)

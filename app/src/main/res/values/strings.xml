@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CovidApp</string>
+    <string name="app_name">ICC</string>
     <string name="how_can_i_help_nyou_today">How can I help\n
         you today?</string>
     <string name="hi_how_can_i_nhelp_you_today">Hi, How Can I \nHelp You Today?</string>
@@ -47,10 +47,10 @@
 
     <!--    Covid Test -->
     <string name="who_should">Who should get tested for current infection?</string>
-    <string name="people_who">- People who have symptoms of COVID-19.\n"
-     - Most people who have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19.\n"
-     - Unvaccinated people who have taken part in activities that put them at higher risk for COVID-19 because they cannot physically distance as needed to avoid exposure, such as travel, attending large social or mass gatherings, or being in crowded or poorly-ventilated indoor settings.\n"
-     - People who have been asked or referred to get tested by their healthcare provider, or state, tribal, localexternal icon, or territorial health department."
+    <string name="people_who">- People who have symptoms of COVID-19.\n
+        - Most people who have had close contact (within 6 feet for a total of 15 minutes or more over a 24-hour period) with someone with confirmed COVID-19.\n
+        - Unvaccinated people who have taken part in activities that put them at higher risk for COVID-19 because they cannot physically distance as needed to avoid exposure, such as travel, attending large social or mass gatherings, or being in crowded or poorly-ventilated indoor settings.\n
+        - People who have been asked or referred to get tested by their healthcare provider, or state, tribal, localexternal icon, or territorial health department.
     </string>
 
     <string name="how_to_get_tested">How to get tested for current COVID-19 infection?</string>
