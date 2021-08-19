@@ -1,5 +1,6 @@
 package com.febrian.covidapp.info
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,17 +9,32 @@ import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
 import com.febrian.covidapp.R
 import com.febrian.covidapp.databinding.ItemDropdownInfoBinding
-import com.febrian.covidapp.info.data.DataGeneral
 import com.febrian.covidapp.info.data.Model
+import com.huawei.hms.api.bean.HwAudioPlayItem
 
-class DropdownInfoAdapter(listData : ArrayList<Model>) : RecyclerView.Adapter<DropdownInfoAdapter.ViewHolder>() {
+
+class DropdownInfoAdapter(listData : ArrayList<Model>, context : Context) : RecyclerView.Adapter<DropdownInfoAdapter.ViewHolder>() {
 
     val list : ArrayList<Model> = listData
 
-    class ViewHolder(private val binding : ItemDropdownInfoBinding) : RecyclerView.ViewHolder(binding.root) {
+    private fun getOnlinePlaylist(): List<HwAudioPlayItem> {
+        val playItemList: MutableList<HwAudioPlayItem> = ArrayList()
+        val audioPlayItem1 = HwAudioPlayItem()
+        audioPlayItem1.audioId = "1000"
+        audioPlayItem1.singer = "Taoge"
+        audioPlayItem1.onlinePath = "https://developer.huawei.com/config/file/HMSCore/AudioKit/Taoge-chengshilvren.mp3"
+        audioPlayItem1.setOnline(1)
+        audioPlayItem1.audioTitle = "chengshilvren"
+        playItemList.add(audioPlayItem1)
+
+        return playItemList
+    }
+
+    inner class ViewHolder(private val binding : ItemDropdownInfoBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(m : Model)
         {
             with(binding){
+
                 binding.titleItem.text = m.title.toString()
                 binding.descriptionItem.text = m.description.toString()
 
@@ -31,7 +47,6 @@ class DropdownInfoAdapter(listData : ArrayList<Model>) : RecyclerView.Adapter<Dr
                 }
             }
         }
-
 
         private fun act(binding: ItemDropdownInfoBinding){
             if (binding.detailExpand.visibility == View.VISIBLE) {

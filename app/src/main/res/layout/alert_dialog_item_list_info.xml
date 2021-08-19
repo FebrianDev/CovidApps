@@ -8,35 +8,44 @@
     android:backgroundTint="@color/bgColorPrimary"
     app:cardElevation="4dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:padding="24dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        >
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginHorizontal="24dp"
-        android:src="@drawable/exercise"/>
+        />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/title"
-            android:text="@string/deep_breathing_while_on_your_back"
+            android:gravity="center_vertical"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_semibold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lie_on_your_back_and_bend_your_knees_so_that_the_bottom_of_your_feet_are_resting_on_the_bed_place_your_hands_on_top_of_your_stomach_or_wrap_them_around_the_sides_of_your_stomach_a_close_your_lips_and_place_your_tongue_on_the_roof_of_your_mouth_breathe_in_through_the_nose_and_pull_air_down_into_your_stomach_where_your_hands_are_try_to_spread_your_fingers_apart_with_your_breath_slowly_exhale_your_breath_through_the_nose_repeat_deep_breaths_for_one_minute"
+            android:text=""
             android:textSize="12sp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/montserrat_regular"
             android:id="@+id/description"/>
@@ -46,10 +55,13 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="@string/close"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description"
             android:textColor="@color/bgColorPrimary"
             android:background="@drawable/bg_btn_error"
             android:layout_marginTop="16dp"
             android:layout_gravity="center_horizontal"/>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

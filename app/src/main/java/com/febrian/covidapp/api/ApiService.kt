@@ -4,14 +4,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiService {
-    val dataCovid: ApiEndPoint by lazy {
-        val retrofit = Retrofit.Builder()
-            .baseUrl(Constant.BASE_URL_DATA_COVID)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        retrofit.create(ApiEndPoint::class.java)
-    }
 
     val newsCovid : ApiEndPoint by lazy {
         val retrofit = Retrofit.Builder()

@@ -2,7 +2,10 @@ package com.febrian.covidapp.global
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.content.res.Configuration
 import android.graphics.Color
 import android.graphics.Typeface
@@ -20,12 +23,15 @@ import com.febrian.covidapp.MapActivity
 import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.FragmentGlobalBinding
-import com.febrian.covidapp.home.response.CountryResponse
 import com.febrian.covidapp.news.utils.InternetConnection
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
+import com.huawei.hms.analytics.HiAnalytics
+import com.huawei.hms.analytics.HiAnalyticsInstance
+import com.huawei.hms.analytics.HiAnalyticsTools
+import com.huawei.hms.analytics.type.ReportPolicy
 import com.huawei.hms.maps.CameraUpdateFactory
 import com.huawei.hms.maps.HuaweiMap
 import com.huawei.hms.maps.OnMapReadyCallback
@@ -68,6 +74,23 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        HiAnalyticsTools.enableLog()
+        val instance: HiAnalyticsInstance = HiAnalytics.getInstance(c)
+        instance.setAnalyticsEnabled(true)
+        instance.setUserProfile("userKey", "value")
+        instance.setAutoCollectionEnabled(true)
+        instance.regHmsSvcEvent()
+        val launch: ReportPolicy = ReportPolicy.ON_APP_LAUNCH_POLICY
+        val report: MutableSet<ReportPolicy> = HashSet<ReportPolicy>()
+
+        report.add(launch)
+
+        instance.setReportPolicies(report)
+
+        val bundle = Bundle()
+        bundle.putString("Global", "Global")
+        instance.onEvent("Global", bundle)
 
         main()
 
@@ -133,7 +156,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
         mMap.uiSettings.isZoomControlsEnabled = false
 
-        var location = c?.resources?.configuration?.locale?.displayCountry
+        var location = c.resources?.configuration?.locale?.displayCountry
 
         if(location == "" || location == null)
             location = "Indonesia"

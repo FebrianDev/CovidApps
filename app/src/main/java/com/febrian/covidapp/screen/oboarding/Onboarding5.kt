@@ -7,10 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.febrian.covidapp.MainActivity
-import com.febrian.covidapp.R
 import com.febrian.covidapp.databinding.FragmentOnboarding5Binding
-import com.febrian.covidapp.global.GlobalActivity
-import com.febrian.covidapp.home.HomeActivity
 
 
 class Onboarding5 : Fragment() {

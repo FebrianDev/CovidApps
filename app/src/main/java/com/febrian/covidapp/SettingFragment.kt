@@ -21,6 +21,10 @@ import androidx.core.view.get
 import androidx.webkit.WebSettingsCompat
 import com.febrian.covidapp.databinding.FragmentSettingBinding
 import com.febrian.covidapp.news.utils.SendNotification
+import com.huawei.hms.analytics.HiAnalytics
+import com.huawei.hms.analytics.HiAnalyticsInstance
+import com.huawei.hms.analytics.HiAnalyticsTools
+import com.huawei.hms.analytics.type.ReportPolicy
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -28,15 +32,15 @@ class SettingFragment : Fragment() {
 
     private lateinit var binding: FragmentSettingBinding
 
-    private lateinit var c : Context
+    private lateinit var c: Context
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
         c = context
     }
-    
-    companion object{
+
+    companion object {
         const val NOTIFICATION = "Notification"
     }
 
@@ -52,9 +56,27 @@ class SettingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        HiAnalyticsTools.enableLog()
+        val instance: HiAnalyticsInstance = HiAnalytics.getInstance(c)
+        instance.setAnalyticsEnabled(true)
+        instance.setUserProfile("userKey", "value")
+        instance.setAutoCollectionEnabled(true)
+        instance.regHmsSvcEvent()
+        val launch: ReportPolicy = ReportPolicy.ON_APP_LAUNCH_POLICY
+        val report: MutableSet<ReportPolicy> = HashSet<ReportPolicy>()
+
+        report.add(launch)
+
+        instance.setReportPolicies(report)
+
+        val bundle = Bundle()
+        bundle.putString("Setting", "Setting")
+        instance.onEvent("Setting", bundle)
+
         binding.info.setOnClickListener {
             val builder = AlertDialog.Builder(c)
-            val l_view = LayoutInflater.from(c).inflate(R.layout.alert_dialog_about,null)
+            val l_view = LayoutInflater.from(c).inflate(R.layout.alert_dialog_about, null)
             builder.setView(l_view)
 
             val dialog = builder.create()
@@ -70,15 +92,18 @@ class SettingFragment : Fragment() {
             sharedPreferences.edit().putBoolean(NOTIFICATION, isChecked).apply()
         }
 
-        if(true)
-            SendNotification(c.resources).setRepeat(c)
-
+        if(check) {
+            val sendNotification = SendNotification()
+            sendNotification.setResources(resources)
+            sendNotification.setRepeat(c)
+        }
     }
 
     override fun onResume() {
         super.onResume()
 
-        val sharedPref = view?.context?.getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
+        val sharedPref =
+            view?.context?.getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
         val value: String = sharedPref?.getString("KEY", "Follow By System").toString()
         val itemName = setOf(value, "Yes", "No", "Follow By System")
         val list: ArrayList<String> = ArrayList()
@@ -88,7 +113,13 @@ class SettingFragment : Fragment() {
         }
 
         val adapter =
-            view?.let { ArrayAdapter<String>(it.context, android.R.layout.simple_spinner_dropdown_item, list) }
+            view?.let {
+                ArrayAdapter<String>(
+                    it.context,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    list
+                )
+            }
         binding.darkmodeActive.adapter = adapter
 
         binding.darkmodeActive.onItemSelectedListener =
@@ -99,7 +130,7 @@ class SettingFragment : Fragment() {
                     position: Int,
                     id: Long
                 ) {
-                    if(sharedPref != null) {
+                    if (sharedPref != null) {
                         when {
                             parent?.getItemAtPosition(position).toString() == "Yes" -> {
                                 sharedPref.edit().clear().apply()
@@ -111,7 +142,8 @@ class SettingFragment : Fragment() {
                                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                                 sharedPref.edit().putString("KEY", "No").apply()
                             }
-                            parent?.getItemAtPosition(position).toString() == "Follow By System" -> {
+                            parent?.getItemAtPosition(position)
+                                .toString() == "Follow By System" -> {
                                 sharedPref.edit().clear().apply()
                                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
                                 sharedPref.edit().putString("KEY", "Follow By System").apply()

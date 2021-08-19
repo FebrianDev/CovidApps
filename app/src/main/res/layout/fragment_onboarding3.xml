@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:text="@string/did_we_mention_about"
             android:textSize="28sp"
-            android:gravity="center"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/montserrat_semibold"
@@ -40,7 +39,7 @@
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:gravity="center"
+
             android:fontFamily="@font/montserrat_medium"/>
 
     </LinearLayout>

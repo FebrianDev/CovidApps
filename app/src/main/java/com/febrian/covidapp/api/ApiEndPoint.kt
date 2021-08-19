@@ -16,9 +16,6 @@ import retrofit2.Response as ResponseRetrofit
 
 interface ApiEndPoint {
 
-    @GET("/api/provinsi")
-    fun getProvince() : Call<Response>
-
     //getNews
     @GET("/v2/top-headlines")
     fun getNews(

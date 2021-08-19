@@ -18,7 +18,7 @@ class VaccinesActivity : AppCompatActivity() {
 
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = DropdownInfoAdapter(DataVaccines.getVaccines(applicationContext))
+        binding.rv.adapter = DropdownInfoAdapter(DataVaccines.getVaccines(applicationContext), applicationContext)
 
         binding.back.setOnClickListener { finish() }
     }

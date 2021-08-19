@@ -10,37 +10,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="24dp"
-        android:gravity="center_vertical"
         android:layout_marginBottom="42dp"
-        android:orientation="vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="24dp">
 
         <ImageView
             android:layout_width="120dp"
-            android:layout_marginHorizontal="24dp"
             android:layout_height="210dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/onb4"/>
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/onb4" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/and_of_course"
-            android:textSize="28sp"
             android:layout_gravity="center"
-            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="42dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:layout_marginTop="42dp"/>
+            android:text="@string/and_of_course"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_medium"
+
             android:text="@string/you_can_learn_covid_19_related_information_from_the_best_sources"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:fontFamily="@font/montserrat_medium"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
 </FrameLayout>

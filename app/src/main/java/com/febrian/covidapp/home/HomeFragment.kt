@@ -104,8 +104,8 @@ class HomeFragment : Fragment() {
         instance.setReportPolicies(report)
 
         val bundle = Bundle()
-        bundle.putString("KeyBlue", "Blue")
-        instance.onEvent("Click", bundle)
+        bundle.putString("Home", "Home")
+        instance.onEvent("Home", bundle)
 
         main()
         binding.swiperefresh.setOnRefreshListener {

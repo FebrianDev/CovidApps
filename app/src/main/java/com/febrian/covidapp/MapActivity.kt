@@ -17,6 +17,10 @@ import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.ActivityMapBinding
 import com.febrian.covidapp.global.response.Response
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.huawei.hms.analytics.HiAnalytics
+import com.huawei.hms.analytics.HiAnalyticsInstance
+import com.huawei.hms.analytics.HiAnalyticsTools
+import com.huawei.hms.analytics.type.ReportPolicy
 import com.huawei.hms.maps.*
 import com.huawei.hms.maps.model.LatLng
 import com.huawei.hms.maps.model.MapStyleOptions
@@ -41,6 +45,25 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         binding = ActivityMapBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        HiAnalyticsTools.enableLog()
+        val instance: HiAnalyticsInstance = HiAnalytics.getInstance(applicationContext)
+        instance.setAnalyticsEnabled(true)
+        instance.setUserProfile("userKey", "value")
+        instance.setAutoCollectionEnabled(true)
+        instance.regHmsSvcEvent()
+        val launch: ReportPolicy = ReportPolicy.ON_APP_LAUNCH_POLICY
+        val report: MutableSet<ReportPolicy> = HashSet<ReportPolicy>()
+
+        report.add(launch)
+
+        instance.setReportPolicies(report)
+
+        val bundle = Bundle()
+        bundle.putString("Maps", "Maps")
+        instance.onEvent("Maps", bundle)
+
+
         val mSupportMapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
 
         val searchView = findViewById<androidx.appcompat.widget.SearchView>(R.id.idSearchView)

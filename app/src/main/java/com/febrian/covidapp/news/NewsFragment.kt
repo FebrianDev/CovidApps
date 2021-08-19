@@ -22,9 +22,14 @@ import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.data.NewsResponse
 import com.febrian.covidapp.news.room.NewsRoomDatabase
 import com.febrian.covidapp.news.utils.InternetConnection
+import com.huawei.hms.analytics.HiAnalytics
+import com.huawei.hms.analytics.HiAnalyticsInstance
+import com.huawei.hms.analytics.HiAnalyticsTools
+import com.huawei.hms.analytics.type.ReportPolicy
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.HashSet
 
 class NewsFragment : Fragment() {
 
@@ -50,6 +55,23 @@ class NewsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        HiAnalyticsTools.enableLog()
+        val instance: HiAnalyticsInstance = HiAnalytics.getInstance(c)
+        instance.setAnalyticsEnabled(true)
+        instance.setUserProfile("userKey", "value")
+        instance.setAutoCollectionEnabled(true)
+        instance.regHmsSvcEvent()
+        val launch: ReportPolicy = ReportPolicy.ON_APP_LAUNCH_POLICY
+        val report: MutableSet<ReportPolicy> = HashSet<ReportPolicy>()
+
+        report.add(launch)
+
+        instance.setReportPolicies(report)
+
+        val bundle = Bundle()
+        bundle.putString("News", "News")
+        instance.onEvent("News", bundle)
 
         main()
 
