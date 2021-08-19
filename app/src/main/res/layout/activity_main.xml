@@ -25,7 +25,7 @@
         app:itemTextColor="@color/selected_bottom_navigation"
         app:itemIconTint="@color/selected_bottom_navigation"
         android:layout_width="match_parent"
-        app:itemIconSize="32dp"
+        app:itemIconSize="28dp"
         android:isScrollContainer="false"
         app:elevation="24dp"
         android:elevation="@dimen/upsdk_margin_m"

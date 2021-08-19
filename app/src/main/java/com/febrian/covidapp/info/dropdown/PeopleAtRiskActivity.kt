@@ -1,7 +1,7 @@
 package com.febrian.covidapp.info.dropdown
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.febrian.covidapp.databinding.ActivityPeopleAtRiskBinding
 import com.febrian.covidapp.info.DropdownInfoAdapter

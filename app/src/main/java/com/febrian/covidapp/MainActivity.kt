@@ -2,16 +2,13 @@ package com.febrian.covidapp
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.febrian.covidapp.databinding.ActivityMainBinding
-import com.huawei.agconnect.datastore.annotation.SharedPreference
 
 
 class MainActivity : AppCompatActivity() {

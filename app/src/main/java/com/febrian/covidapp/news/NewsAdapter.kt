@@ -4,8 +4,6 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.SharedPreferences
-import android.os.Parcelable
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.app.ShareCompat
@@ -13,13 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.febrian.covidapp.R
-import com.febrian.covidapp.databinding.ItemNewsBinding
 import com.febrian.covidapp.databinding.ItemNewsTrendingBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.room.EntityNews
 import com.febrian.covidapp.news.room.NewsRoomDatabase
 import com.google.android.material.snackbar.Snackbar
-import java.io.Serializable
 
 class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var activity: Activity?) :
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {

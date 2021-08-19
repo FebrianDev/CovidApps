@@ -1,7 +1,6 @@
 package com.febrian.covidapp.info
 
 import android.app.AlertDialog
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView

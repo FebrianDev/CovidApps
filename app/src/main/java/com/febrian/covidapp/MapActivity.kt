@@ -63,6 +63,10 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         bundle.putString("Maps", "Maps")
         instance.onEvent("Maps", bundle)
 
+        binding.back.setOnClickListener {
+            finish()
+        }
+
 
         val mSupportMapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
 

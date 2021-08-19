@@ -11,14 +11,14 @@ object DataFood {
             ModelList(
                 context.resources.getString(R.string.to_choose),
                 context.resources.getString(R.string.to_choose_info),
-                R.drawable.tochoose
+                R.drawable.choose
         ))
 
         list.add(
             ModelList(
                 context.resources.getString(R.string.to_avoid),
                 context.resources.getString(R.string.to_avoid_info),
-                R.drawable.toavoidrev
+                R.drawable.avoid
         ))
 
         return list

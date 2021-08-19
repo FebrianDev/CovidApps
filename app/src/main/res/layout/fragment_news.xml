@@ -58,10 +58,10 @@
                     android:layout_marginHorizontal="24dp"
                     android:layout_marginVertical="8dp"
                     android:elevation="4dp"
-                    android:background="@drawable/bg_seacrh"
+                    android:background="@drawable/bg_search_transparent"
                     app:iconifiedByDefault="false"
                     app:defaultQueryHint="Search News"
-                    app:queryHint="Search Here"
+                    app:queryHint="Search News"
                     app:searchHintIcon="@drawable/ic_baseline_search_24"
                     app:searchIcon="@drawable/ic_baseline_search_24" />
 

@@ -2,29 +2,21 @@ package com.febrian.covidapp.home
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.graphics.BitmapFactory
 import android.graphics.Typeface
 import android.net.ConnectivityManager
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.SearchView
-import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
-import com.febrian.covidapp.MainActivity
 import com.febrian.covidapp.R
 import com.febrian.covidapp.api.ApiService
 import com.febrian.covidapp.databinding.FragmentHomeBinding
@@ -50,9 +42,6 @@ import retrofit2.Response
 import java.math.BigDecimal
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashSet
@@ -173,7 +162,7 @@ class HomeFragment : Fragment() {
                             binding.swiperefresh.isRefreshing = false
                         } catch (e: Exception) {
                             binding.swiperefresh.isRefreshing = false
-                            Toast.makeText(c, e.message.toString(), Toast.LENGTH_LONG).show()
+//                            Toast.makeText(c, e.message.toString(), Toast.LENGTH_LONG).show()
                         }
                     }
                 }
@@ -288,7 +277,7 @@ class HomeFragment : Fragment() {
                     binding.swiperefresh.isRefreshing = false
 
                 } catch (e: java.lang.Exception) {
-                    Toast.makeText(c, e.message.toString(), Toast.LENGTH_LONG).show()
+//                    Toast.makeText(c, e.message.toString(), Toast.LENGTH_LONG).show()
                     binding.swiperefresh.isRefreshing = false
                 }
             }
@@ -299,7 +288,7 @@ class HomeFragment : Fragment() {
                 responseBody: ByteArray?,
                 error: Throwable?
             ) {
-                Toast.makeText(c, error?.message.toString(), Toast.LENGTH_LONG).show()
+//                Toast.makeText(c, error?.message.toString(), Toast.LENGTH_LONG).show()
                 binding.swiperefresh.isRefreshing = false
             }
 

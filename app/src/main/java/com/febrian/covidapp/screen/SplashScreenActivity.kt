@@ -3,9 +3,9 @@ package com.febrian.covidapp.screen
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.bumptech.glide.Glide
 import com.febrian.covidapp.MainActivity
@@ -53,10 +53,10 @@ class SplashScreenActivity : AppCompatActivity() {
                 application.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)
             when (mode) {
                 Configuration.UI_MODE_NIGHT_YES -> {
-                    Glide.with(applicationContext).load(R.drawable.logo_white).into(binding.imgLogo)
+                    Glide.with(applicationContext).load(R.drawable.logo_big_white).into(binding.imgLogo)
                 }
                 Configuration.UI_MODE_NIGHT_NO -> {
-                    Glide.with(applicationContext).load(R.drawable.logo_black).into(binding.imgLogo)
+                    Glide.with(applicationContext).load(R.drawable.logo_big_black).into(binding.imgLogo)
                 }
             }
 

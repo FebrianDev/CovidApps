@@ -1,10 +1,12 @@
 package com.febrian.covidapp.news
 
 import android.app.AlertDialog
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +31,8 @@ import com.huawei.hms.analytics.type.ReportPolicy
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.util.HashSet
+import java.util.*
+import kotlin.collections.ArrayList
 
 class NewsFragment : Fragment() {
 
@@ -172,7 +175,7 @@ class NewsFragment : Fragment() {
 
                 binding.refreshLayout.isRefreshing = false
 
-                Toast.makeText(c, t.message, Toast.LENGTH_LONG).show()
+//                Toast.makeText(c, t.message, Toast.LENGTH_LONG).show()
             }
 
         })

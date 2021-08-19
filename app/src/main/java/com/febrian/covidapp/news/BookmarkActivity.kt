@@ -1,12 +1,10 @@
 package com.febrian.covidapp.news
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.febrian.covidapp.MainActivity
 import com.febrian.covidapp.databinding.ActivityBookmarkBinding
 import com.febrian.covidapp.news.data.NewsDataResponse
 import com.febrian.covidapp.news.room.NewsRoomDatabase

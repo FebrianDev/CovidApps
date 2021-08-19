@@ -1,7 +1,7 @@
 package com.febrian.covidapp.info
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.febrian.covidapp.databinding.ActivityDetailListInfoBinding
 import com.febrian.covidapp.info.ListInfoAdapter.Companion.KEY_DESCRIPTION

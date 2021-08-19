@@ -16,7 +16,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import com.febrian.covidapp.MapActivity
@@ -124,7 +123,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
             override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
                 binding.refreshLayout.isRefreshing = false
-                Toast.makeText(c, t.message, Toast.LENGTH_LONG).show()
+//                Toast.makeText(c, t.message, Toast.LENGTH_LONG).show()
             }
 
         })
@@ -173,7 +172,7 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
             mMap.addMarker(MarkerOptions().position(latLng).title(location.toString()))
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(address.latitude, address.longitude), 3f))
         } catch (e: IOException) {
-            Toast.makeText(c, e.message, Toast.LENGTH_LONG).show()
+//            Toast.makeText(c, e.message, Toast.LENGTH_LONG).show()
             e.printStackTrace()
         }
 
@@ -203,18 +202,18 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
         val listColors = ArrayList<Int>()
 
         listPie.add(PieEntry(confirmed.toFloat()))
-        c?.resources?.getColor(R.color.yellow_primary)?.let { listColors.add(it) }
+        c.resources?.getColor(R.color.yellow_primary)?.let { listColors.add(it) }
         listPie.add(PieEntry(recovered.toFloat()))
-        c?.resources?.getColor(R.color.green_custom)?.let { listColors.add(it) }
+        c.resources?.getColor(R.color.green_custom)?.let { listColors.add(it) }
         listPie.add(PieEntry(death.toFloat()))
-        c?.resources?.getColor(R.color.red_custom)?.let { listColors.add(it) }
+        c.resources?.getColor(R.color.red_custom)?.let { listColors.add(it) }
 
         val pieDataSet = PieDataSet(listPie, "")
         pieDataSet.colors = listColors
 
         val pieData = PieData(pieDataSet)
         pieData.setValueTextSize(0f)
-        c?.resources?.getColor(android.R.color.transparent)?.let {
+        c.resources?.getColor(android.R.color.transparent)?.let {
             pieData.setValueTextColor(
                 it
             )
@@ -266,12 +265,12 @@ class GlobalFragment : Fragment(), OnMapReadyCallback {
 
     override fun onStart() {
         val intent = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
-        c?.registerReceiver(broadcastReceiver, intent)
+        c.registerReceiver(broadcastReceiver, intent)
         super.onStart()
     }
 
     override fun onStop() {
-        c?.unregisterReceiver(broadcastReceiver)
+        c.unregisterReceiver(broadcastReceiver)
         super.onStop()
     }
 

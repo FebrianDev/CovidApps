@@ -2,7 +2,6 @@ package com.febrian.covidapp.news.data
 
 import android.os.Parcel
 import android.os.Parcelable
-import java.io.Serializable
 
 data class NewsDataResponse(
     val title : String?,

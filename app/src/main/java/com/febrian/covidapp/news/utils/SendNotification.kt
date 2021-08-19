@@ -16,9 +16,6 @@ import androidx.core.app.NotificationCompat
 import com.febrian.covidapp.MainActivity
 import com.febrian.covidapp.R
 import com.febrian.covidapp.home.HomeFragment
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class SendNotification() : BroadcastReceiver() {
@@ -82,8 +79,8 @@ class SendNotification() : BroadcastReceiver() {
         val intent = Intent(context, SendNotification::class.java)
 
         val calendar = Calendar.getInstance()
-        calendar[Calendar.HOUR_OF_DAY] = 10
-        calendar[Calendar.MINUTE] = 9
+        calendar[Calendar.HOUR_OF_DAY] = 18
+        calendar[Calendar.MINUTE] = 0
         calendar[Calendar.SECOND] = 0
 
         val pendingIntent = PendingIntent.getBroadcast(context, 1, intent, 0)
