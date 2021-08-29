@@ -12,13 +12,13 @@ International COVID Center (ICC) is an application developed by Delta Team. Base
 [https://appgallery.huawei.com/app/C104531441](https://appgallery.huawei.com/app/C104531441)
 
 ## Home
-<img src="https://github.com/FebrianDev/ICC/blob/master/home.jpg" width="270" height="520" />
+<img src="https://github.com/FebrianDev/ICC/blob/master/home.jpg" width="270" height="600" />
 
 ## Info
-<img src="https://github.com/FebrianDev/ICC/blob/master/info.jpg" width="270" height="520" />
+<img src="https://github.com/FebrianDev/ICC/blob/master/info.jpg" width="270" height="600" />
 
 ## News
-<img src="https://github.com/FebrianDev/ICC/blob/master/news.jpg" width="270" height="520"/>
+<img src="https://github.com/FebrianDev/ICC/blob/master/news.jpg" width="270" height="540"/>
 
 ## Maps
 <img src="https://github.com/FebrianDev/ICC/blob/master/maps.jpg" width="270" height="520"/>
