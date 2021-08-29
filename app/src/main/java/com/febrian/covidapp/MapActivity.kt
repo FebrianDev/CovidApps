@@ -94,7 +94,9 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                             }
 
                             for (i in 0 until list.size) {
-                                if(list[i].combinedKey?.toUpperCase()!!.contains(location.toUpperCase())) {
+                                if(list[i].combinedKey?.uppercase(Locale.getDefault())!!.contains(location.uppercase(
+                                        Locale.getDefault()
+                                    ))) {
                                     hMap!!.animateCamera(
                                         CameraUpdateFactory.newLatLngZoom(
                                             LatLng(

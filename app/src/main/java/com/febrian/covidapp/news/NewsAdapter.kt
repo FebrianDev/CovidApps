@@ -29,9 +29,9 @@ class NewsAdapter(private var listNews: ArrayList<NewsDataResponse>, private var
 
     init {
         if (listNews != null && listNews.size > 0) {
-            myListNews.clear();
-            myListNews.addAll(listNews);
-            notifyDataSetChanged();
+            myListNews.clear()
+            myListNews.addAll(listNews)
+            notifyDataSetChanged()
         }
     }
 

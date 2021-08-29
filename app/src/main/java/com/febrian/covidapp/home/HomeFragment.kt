@@ -56,11 +56,11 @@ class HomeFragment : Fragment() {
         const val TAG = "Home Activity"
     }
 
-    private lateinit var c : Context
+    private lateinit var c: Context
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        
+
         c = context
     }
 
@@ -109,6 +109,16 @@ class HomeFragment : Fragment() {
 
         if (location == "" || location == null)
             location = "Indonesia"
+        else if (location.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } == "Macau" || location.replaceFirstChar {
+                if (it.isLowerCase()) it.titlecase(
+                    Locale.getDefault()
+                ) else it.toString()
+            } == "Hong Kong" || location.replaceFirstChar {
+                if (it.isLowerCase()) it.titlecase(
+                    Locale.getDefault()
+                ) else it.toString()
+            } == "Taiwan")
+            location = "China"
 
         showStatistic(location.toString())
         showTotalCase(location.toString())
@@ -118,9 +128,16 @@ class HomeFragment : Fragment() {
         binding.tgl.text = currentDate
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                showStatistic(query)
-                showTotalCase(query)
-                return true
+                if (query.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } == "Macau" ||
+                    query.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } == "Hong Kong" ||
+                    query.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } == "Taiwan") {
+                    Log.d("Test", query.capitalize())
+                }else{
+                    showStatistic(query)
+                    showTotalCase(query)
+                }
+
+                return false
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
@@ -169,7 +186,8 @@ class HomeFragment : Fragment() {
 
                 override fun onFailure(call: Call<GlobalResponse>, t: Throwable) {
                     binding.swiperefresh.isRefreshing = false
-                    Toast.makeText(c.applicationContext, t.message.toString(), Toast.LENGTH_LONG).show()
+                    Toast.makeText(c.applicationContext, t.message.toString(), Toast.LENGTH_LONG)
+                        .show()
                 }
 
             })
@@ -227,26 +245,32 @@ class HomeFragment : Fragment() {
                     for (i in 8 downTo 2) {
                         var getCases = 0
 
-                        if(cases.getInt(DateUtils.getDate(-i)) != 0)
-                            getCases = cases.getInt(DateUtils.getDate(-i)) - cases.getInt(DateUtils.getDate(-(i + 1)))
+                        if (cases.getInt(DateUtils.getDate(-i)) != 0)
+                            getCases = cases.getInt(DateUtils.getDate(-i)) - cases.getInt(
+                                DateUtils.getDate(-(i + 1))
+                            )
 
                         listCases.add(Entry(j, getCases.toFloat()))
 
                         var getRecovered = 0
-                        if(recoveredCase.getInt(DateUtils.getDate(-i)) != 0) {
-                         getRecovered = recoveredCase.getInt(DateUtils.getDate(-i)) - recoveredCase.getInt(DateUtils.getDate(-(i + 1)))
+                        if (recoveredCase.getInt(DateUtils.getDate(-i)) != 0) {
+                            getRecovered =
+                                recoveredCase.getInt(DateUtils.getDate(-i)) - recoveredCase.getInt(
+                                    DateUtils.getDate(-(i + 1))
+                                )
                         }
 
                         listRecovered.add(Entry(j, getRecovered.toFloat()))
                         var getDeath = 0
 
-                        if(deathCase.getInt(DateUtils.getDate(-i)) != 0)
-                            getDeath = deathCase.getInt(DateUtils.getDate(-i)) - deathCase.getInt(DateUtils.getDate(-(i + 1))
-                        )
+                        if (deathCase.getInt(DateUtils.getDate(-i)) != 0)
+                            getDeath = deathCase.getInt(DateUtils.getDate(-i)) - deathCase.getInt(
+                                DateUtils.getDate(-(i + 1))
+                            )
 
                         listDeath.add(Entry(j, getDeath.toFloat()))
 
-                        if(getCases == 0 || getRecovered == 0)
+                        if (getCases == 0 || getRecovered == 0)
                             listActive.add(Entry(j, 0f))
                         else {
                             val getActive = getCases - (getRecovered - getDeath)
@@ -325,13 +349,13 @@ class HomeFragment : Fragment() {
         val legend = binding.lineChart.legend
         legend.isEnabled = false
 
-        val date = ArrayList<String>();
+        val date = ArrayList<String>()
         for (i in 9 downTo 2) {
             date.add(DateUtils.getDateStatistic(-i))
         }
 
         val tanggal = AxisDateFormatter(date.toArray(arrayOfNulls<String>(date.size)))
-        binding.lineChart.xAxis?.valueFormatter = tanggal;
+        binding.lineChart.xAxis?.valueFormatter = tanggal
 
         binding.lineChart.description.isEnabled = false
         binding.lineChart.xAxis.position = XAxis.XAxisPosition.BOTTOM
@@ -382,7 +406,11 @@ class HomeFragment : Fragment() {
         binding.pieChart.animateY(1400, Easing.EaseInOutQuad)
 
         //set text center
-        binding.pieChart.centerText = countryName.capitalize()
+        binding.pieChart.centerText = countryName.replaceFirstChar {
+            if (it.isLowerCase()) it.titlecase(
+                Locale.getDefault()
+            ) else it.toString()
+        }
         binding.pieChart.setCenterTextColor(resources.getColor(R.color.colorPrimary))
         binding.pieChart.setCenterTextSize(22f)
         // val myFont = Typeface.createFromAsset(c?.assets, "font/montserrat_black.ttf")

@@ -23,7 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="34dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_arrow_back_ios_24"/>
@@ -40,7 +40,7 @@
             android:background="@drawable/bg_seacrh"
             android:elevation="5dp"
             app:iconifiedByDefault="false"
-            app:queryHint="Search Location" />
+            app:queryHint="Search Region" />
 
 
     </LinearLayout>

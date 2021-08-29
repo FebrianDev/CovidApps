@@ -21,9 +21,9 @@ class BookmarkAdapter(private var listNews: ArrayList<NewsDataResponse>, private
 val myListNews: ArrayList<NewsDataResponse> = ArrayList()
     init {
         if (listNews != null && listNews.size > 0) {
-            myListNews.clear();
-            myListNews.addAll(listNews);
-            notifyDataSetChanged();
+            myListNews.clear()
+            myListNews.addAll(listNews)
+            notifyDataSetChanged()
         }
     }
 

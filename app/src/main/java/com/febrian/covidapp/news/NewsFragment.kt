@@ -187,7 +187,7 @@ class NewsFragment : Fragment() {
             binding.titleNews2.text = listNews[1].title.toString()
             binding.titleNews3.text = listNews[2].title.toString()
 
-            c?.applicationContext?.let {
+            c.applicationContext?.let {
                 Glide.with(it)
                     .load(listNews[0].urlToImage)
                     .apply(
@@ -196,7 +196,7 @@ class NewsFragment : Fragment() {
                     )
                     .into(binding.imageNews1)
             }
-            c?.applicationContext?.let {
+            c.applicationContext?.let {
                 Glide.with(it)
                     .load(listNews[1].urlToImage)
                     .apply(
@@ -205,7 +205,7 @@ class NewsFragment : Fragment() {
                     )
                     .into(binding.imageNews2)
             }
-            c?.applicationContext?.let {
+            c.applicationContext?.let {
                 Glide.with(it)
                     .load(listNews[2].urlToImage)
                     .apply(

@@ -18,7 +18,7 @@ import com.febrian.covidapp.R
 import com.febrian.covidapp.home.HomeFragment
 import java.util.*
 
-class SendNotification() : BroadcastReceiver() {
+class SendNotification : BroadcastReceiver() {
 
     private var resource : Resources? = null
 

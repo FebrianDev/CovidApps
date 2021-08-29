@@ -17,7 +17,4 @@ class Onboarding1 : Fragment() {
         return inflater.inflate(R.layout.fragment_onboarding1, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
 }
